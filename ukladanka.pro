@@ -25,10 +25,54 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        coknoglowne.cpp
+    GUI/coknoglowne.cpp \
+    GUI/GUImsg/cguimsg.cpp \
+    GUI/GUImsg/cguimsgzadaniekonfiguracji.cpp \
+    GUI/GUImsg/cguimsginstrukcja.cpp \
+    GUI/GUImsg/cguimsgkonfiguracja.cpp \
+    GUI/GUImsg/cguimsgoprogramie.cpp \
+    GUI/GUImsg/cguimsgresetuj.cpp \
+    GUI/GUImsg/cguimsgrozwiaz.cpp \
+    GUI/GUImsg/cguimsgtasuj.cpp \
+    GUI/GUImsg/cguimsgustawieniareczne.cpp \
+    GUI/GUImsg/cguimsgwcisnietepole.cpp \
+    GUI/GUImsg/cguimsgwyjscie.cpp \
+    GUI/cplansza.cpp \
+    GUI/coknokonf.cpp \
+    GUI/coknoinstrukcje.cpp \
+    Kontroler/ckontroler.cpp \
+    GUI/coknooprogramie.cpp \
+    GUI/cpole.cpp
 
 HEADERS += \
-        coknoglowne.h
+    GUI/coknoglowne.h \
+    Kontroler/ckontroler.h \
+    Kontroler/ikontroler.h \
+    GUI/igui.h \
+    GUI/coknoinstrukcje.h \
+    GUI/coknooprogramie.h \
+    GUI/coknokonf.h \
+    GUI/GUImsg/cguimsg.h \
+    GUI/GUImsg/cguimsgzadaniekonfiguracji.h \
+    GUI/GUImsg/cguimsginstrukcja.h \
+    GUI/GUImsg/cguimsgkonfiguracja.h \
+    GUI/GUImsg/cguimsgoprogramie.h \
+    GUI/GUImsg/cguimsgresetuj.h \
+    GUI/GUImsg/cguimsgrozwiaz.h \
+    GUI/GUImsg/cguimsgtasuj.h \
+    GUI/GUImsg/cguimsgustawieniareczne.h \
+    GUI/GUImsg/cguimsgwcisnietepole.h \
+    GUI/GUImsg/cguimsgwyjscie.h \
+    GUI/cplansza.h \
+    GUI/coknokonf.h \
+    GUI/coknoinstrukcje.h \
+    GUI/cpole.h
 
 FORMS += \
-        coknoglowne.ui
+    GUI/coknokonf.ui \
+    GUI/coknoglowne.ui \
+    GUI/coknoinstrukcje.ui \
+    GUI/coknooprogramie.ui
+
+RESOURCES += \
+    Resources/ikony.qrc

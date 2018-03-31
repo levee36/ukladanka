@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/gnome_emblem_shared.png</file>
+        <file>img/gnome_media_eject.png</file>
+        <file>img/gnome_media_playback_start.png</file>
+        <file>img/gnome_media_playback_stop.png</file>
+        <file>img/gnome_media_playlist_repeat.png</file>
+        <file>img/gnome_media_playlist_shuffle.png</file>
+        <file>img/gnome_preferences_system.png</file>
+        <file>img/gnome_window_close.png</file>
+        <file>img/gnome_emblem_important.png</file>
+        <file>img/puzzle_red.png</file>
+    </qresource>
+</RCC>

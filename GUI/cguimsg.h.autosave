@@ -1,0 +1,88 @@
+#ifndef CGUIMSG_H
+#define CGUIMSG_H
+
+#include <string>
+
+class CGUIMsg
+{
+
+public:
+    virtual CGUIMsg();
+    virtual CGUIMsg(string opis);
+    virtual string getOpis();
+protected:
+    string opis;
+};
+
+class CGUIMsgZadanieKonfiguracji : public CGUIMsg {
+
+public:
+    CGUIMsgZadanieKonfiguracji();
+}
+
+class CGUIMsgKonfiguracja : public CGUIMsg {
+
+public:
+    CGUIMsgKonfiguracja(int N, int M);
+    int getN();
+    int getM();
+protected:
+    int N;
+    int M;
+}
+
+class CGUIMsgWyjscie : public CGUIMsg {
+
+public:
+    CGUIMsgWyjscie();
+}
+
+class CGUIMsgTasuj : public CGUIMsg {
+
+public:
+    CGUIMsgTasuj();
+}
+
+class CGUIMsgRozwiaz : public CGUIMsg {
+
+public:
+    CGUIMsgRozwiaz();
+}
+
+class CGUIMsgResetuj : public CGUIMsg {
+
+public:
+    CGUIMsgResetuj();
+}
+
+class CGUIMsgUstawianieReczne : public CGUIMsg {
+
+public:
+    CGUIMsgUstawianieReczne(bool wlaczone);
+    bool getWlaczone();
+protected:
+    bool wlaczone;
+}
+
+class CGUIMsgInstrukcja : public CGUIMsg {
+
+public:
+    CGUIMsgInstrukcja();
+}
+
+class CGUIMsgOprogramie : public CGUIMsg {
+
+public:
+    CGUIMsgOprogramie();
+}
+
+class CGUIMsgWcisnietePole : public CGUIMsg {
+
+public:
+    CGUIMsgWcisnietePole(int pole);
+    int getPole();
+protected:
+    int pole;
+}
+
+#endif // CGUIMSG_H

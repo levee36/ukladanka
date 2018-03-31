@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>COknoGlowne</class>
+ <widget class="QMainWindow" name="COknoGlowne">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>524</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Układanka</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../Resources/ikony.qrc">
+    <normaloff>:/img/img/puzzle_red.png</normaloff>:/img/img/puzzle_red.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>524</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionKonfiguracja"/>
+    <addaction name="separator"/>
+    <addaction name="actionWyjscie"/>
+   </widget>
+   <widget class="QMenu" name="menuUk_adanka">
+    <property name="title">
+     <string>Układanka</string>
+    </property>
+    <addaction name="actionTasuj"/>
+    <addaction name="actionRozwiaz"/>
+    <addaction name="actionResetuj"/>
+    <addaction name="separator"/>
+    <addaction name="actionReczneUstawianie"/>
+   </widget>
+   <widget class="QMenu" name="menuPomoc">
+    <property name="title">
+     <string>Pomoc</string>
+    </property>
+    <addaction name="actionInstrukcje"/>
+    <addaction name="separator"/>
+    <addaction name="actionOprogramie"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuUk_adanka"/>
+   <addaction name="menuPomoc"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionKonfiguracja">
+   <property name="icon">
+    <iconset resource="../Resources/ikony.qrc">
+     <normaloff>:/img/img/gnome_preferences_system.png</normaloff>:/img/img/gnome_preferences_system.png</iconset>
+   </property>
+   <property name="text">
+    <string>Konfiguracja</string>
+   </property>
+  </action>
+  <action name="actionWyjscie">
+   <property name="icon">
+    <iconset resource="../Resources/ikony.qrc">
+     <normaloff>:/img/img/gnome_window_close.png</normaloff>:/img/img/gnome_window_close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Wyjście</string>
+   </property>
+  </action>
+  <action name="actionTasuj">
+   <property name="icon">
+    <iconset resource="../Resources/ikony.qrc">
+     <normaloff>:/img/img/gnome_media_playlist_shuffle.png</normaloff>:/img/img/gnome_media_playlist_shuffle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tasuj</string>
+   </property>
+  </action>
+  <action name="actionRozwiaz">
+   <property name="icon">
+    <iconset resource="../Resources/ikony.qrc">
+     <normaloff>:/img/img/gnome_media_playback_start.png</normaloff>:/img/img/gnome_media_playback_start.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rozwiąż</string>
+   </property>
+  </action>
+  <action name="actionResetuj">
+   <property name="icon">
+    <iconset resource="../Resources/ikony.qrc">
+     <normaloff>:/img/img/gnome_media_playlist_repeat.png</normaloff>:/img/img/gnome_media_playlist_repeat.png</iconset>
+   </property>
+   <property name="text">
+    <string>Resetuj</string>
+   </property>
+  </action>
+  <action name="actionReczneUstawianie">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources/ikony.qrc">
+     <normaloff>:/img/img/gnome_emblem_shared.png</normaloff>:/img/img/gnome_emblem_shared.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ręczne Ustawianie</string>
+   </property>
+  </action>
+  <action name="actionInstrukcje">
+   <property name="icon">
+    <iconset resource="../Resources/ikony.qrc">
+     <normaloff>:/img/img/gnome_emblem_important.png</normaloff>:/img/img/gnome_emblem_important.png</iconset>
+   </property>
+   <property name="text">
+    <string>Instrukcje</string>
+   </property>
+  </action>
+  <action name="actionOprogramie">
+   <property name="icon">
+    <iconset resource="../Resources/ikony.qrc">
+     <normaloff>:/img/img/puzzle_red.png</normaloff>:/img/img/puzzle_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>O programie</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../Resources/ikony.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -5,6 +5,7 @@ CPole::CPole(int pozycja, int numer) :
     QPushButton(QString::number(numer)),
     pozycja(pozycja)
 {
+    this->setMinimumSize(25,25);
     this->setNumer(numer);
 }
 

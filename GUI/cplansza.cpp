@@ -16,7 +16,7 @@ CPlansza::CPlansza(std::vector<int> tbl, int N, int M, IKontroler *kontroler, QW
     for(std::vector<int>::iterator it=tbl.begin();it!=tbl.end() && i<N*M;it++) {
         p=new CPole(i,*it);
         p->setSizePolicy(sizePolicy);
-        layout->addWidget(p,i / M,i % M);
+        layout->addWidget(p,i / N,i % N);
         listaPol.push_back(p);
         connect(p,SIGNAL(pressed()),this,SLOT(on_actionPole_pressed()));
         i++;

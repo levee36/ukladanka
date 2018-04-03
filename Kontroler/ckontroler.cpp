@@ -8,12 +8,22 @@
 #include "GUI/GUImsg/cguimsgkonfiguracja.h"
 #include "GUI/GUImsg/cguimsginstrukcja.h"
 #include "GUI/GUImsg/cguimsgoprogramie.h"
+#include "GUI/GUImsg/cguimsgresetuj.h"
+#include "GUI/GUImsg/cguimsgtasuj.h"
+#include "GUI/GUImsg/cguimsgustawieniareczne.h"
+#include "Model/Ukladanka/cmodelukladanka.h"
 
 #include <iostream>
 
-CKontroler::CKontroler()
+CKontroler::CKontroler(IGUI *gui) :
+    gui(gui)
 {
-
+    //twórz model układanki z domyślnym rozmiarem
+    ukladanka = new CModelUkladanka(4,4);
+    gui->setKontroler(this); //przekaż wskaźnik na siebie do gui (do przesyłania wiadomości)
+    //przerysuj planszę zgodnie z modelem;
+    gui->rysujPlansze(ukladanka->getPlansza()->wektor(),ukladanka->getPlansza()->getN(),ukladanka->getPlansza()->getM());
+    scObsluzStan();
 }
 
 CKontroler::~CKontroler()
@@ -21,40 +31,37 @@ CKontroler::~CKontroler()
 
 }
 
-CKontroler::setGUI(IGUI *gui)
-{
-    this->gui=gui;
-}
-
 void CKontroler::wyslijWiadomosc(CGUIMsg *wiadomosc)
 {
-    std::cout << wiadomosc->getOpis() <<std::endl;
-
     if (dynamic_cast<CGUIMsgWcisnietePole*>(wiadomosc)!=0) {
-        CGUIMsgWcisnietePole *wiadomoscWcisnietePole=dynamic_cast<CGUIMsgWcisnietePole*>(wiadomosc);
-        std::cout << wiadomoscWcisnietePole->getPole() << std::endl;
-        std::array<int,2> para = {wiadomoscWcisnietePole->getPole(),(wiadomoscWcisnietePole->getPole()-1)%36};
-        std::vector<std::array<int,2>> v;
-        v.push_back(para);
-        gui->zamienPola(v);
+        scWykonajRuch(wiadomosc);
+        scObsluzStan();
+    }
+    else if (dynamic_cast<CGUIMsgResetuj*>(wiadomosc)!=0) {
+        scResetuj();
+        scObsluzStan();
+    }
+    else if (dynamic_cast<CGUIMsgTasuj*>(wiadomosc)!=0) {
+        scTasuj();
+        scObsluzStan();
     }
     else if (dynamic_cast<CGUIMsgZadanieKonfiguracji*>(wiadomosc)!=0) {
         std::map<std::string, std::string> parametry;
-        parametry.insert(std::pair<std::string,std::string>("N","3"));
+        parametry.insert(std::pair<std::string,std::string>("N",std::to_string(ukladanka->getPlansza()->getN())));
         parametry.insert(std::pair<std::string,std::string>("N_min","2"));
         parametry.insert(std::pair<std::string,std::string>("N_max","8"));
-        parametry.insert(std::pair<std::string,std::string>("M","3"));
+        parametry.insert(std::pair<std::string,std::string>("M",std::to_string(ukladanka->getPlansza()->getM())));
         parametry.insert(std::pair<std::string,std::string>("M_min","2"));
         parametry.insert(std::pair<std::string,std::string>("M_max","8"));
         gui->wyswietlKonfiguracje(parametry);
     }
-    if (dynamic_cast<CGUIMsgKonfiguracja*>(wiadomosc)!=0) {
-        CGUIMsgKonfiguracja *wiadomoscKonfiguracja=dynamic_cast<CGUIMsgKonfiguracja*>(wiadomosc);
-        std::cout << "N: " << wiadomoscKonfiguracja->getN() << " M: " << wiadomoscKonfiguracja->getM() << std::endl;
-        std::vector<int> ciag;
-        for (int i = 0;i<wiadomoscKonfiguracja->getN()*wiadomoscKonfiguracja->getM();i++)
-            ciag.push_back((i+1)%(wiadomoscKonfiguracja->getN()*wiadomoscKonfiguracja->getM()));
-        gui->rysujPlansze(ciag,wiadomoscKonfiguracja->getN(),wiadomoscKonfiguracja->getM());
+    else if (dynamic_cast<CGUIMsgKonfiguracja*>(wiadomosc)!=0) {
+        scKonfiguruj(wiadomosc);
+        scObsluzStan();
+    }
+    else if (dynamic_cast<CGUIMsgUstawianieReczne*>(wiadomosc)!=0) {
+        scReczneUstawianie(wiadomosc);
+        scObsluzStan();
     }
     else if (dynamic_cast<CGUIMsgInstrukcja*>(wiadomosc)!=0) {
         std::map<std::string,std::string> parametry;
@@ -70,9 +77,74 @@ void CKontroler::wyslijWiadomosc(CGUIMsg *wiadomosc)
 
     }
     else if (dynamic_cast<CGUIMsgWyjscie*>(wiadomosc)!=0) {
-        gui->zamknijOkno();
+        scZamknij();
     }
     else {
 
+    }
+}
+
+void CKontroler::scZamknij()
+{
+    //usuń model
+    delete ukladanka;
+}
+
+void CKontroler::scKonfiguruj(CGUIMsg *wiadomosc)
+{
+    CGUIMsgKonfiguracja *wiadomoscKonfiguracja=dynamic_cast<CGUIMsgKonfiguracja*>(wiadomosc);
+    ukladanka->resetuj(wiadomoscKonfiguracja->getN(),wiadomoscKonfiguracja->getM());
+    gui->rysujPlansze(ukladanka->getPlansza()->wektor(),ukladanka->getPlansza()->getN(),ukladanka->getPlansza()->getM());
+}
+
+void CKontroler::scTasuj()
+{
+    ukladanka->wygenerujLosoweUstawienie();
+    gui->rysujPlansze(ukladanka->getPlansza()->wektor(),ukladanka->getPlansza()->getN(),ukladanka->getPlansza()->getM());
+}
+
+void CKontroler::scRozwiazuj()
+{
+
+}
+
+void CKontroler::scResetuj()
+{
+    ukladanka->resetuj(ukladanka->getPlansza()->getN(),ukladanka->getPlansza()->getM());
+    gui->rysujPlansze(ukladanka->getPlansza()->wektor(),ukladanka->getPlansza()->getN(),ukladanka->getPlansza()->getM());
+}
+
+void CKontroler::scReczneUstawianie(CGUIMsg *wiadomosc)
+{
+    CGUIMsgUstawianieReczne *wiadomoscUstawianieReczne=dynamic_cast<CGUIMsgUstawianieReczne*>(wiadomosc);
+    ukladanka->setReczneUstawianie(wiadomoscUstawianieReczne->getWlaczone());
+}
+
+void CKontroler::scWykonajRuch(CGUIMsg *wiadomosc)
+{
+    CGUIMsgWcisnietePole *wiadomoscWcisnietePole=dynamic_cast<CGUIMsgWcisnietePole*>(wiadomosc);
+    if (ukladanka->wykonajRuch(wiadomoscWcisnietePole->getPole())>-1) {
+        std::vector<std::array<int,2>> v;
+        v.push_back(ukladanka->getOstatniRuch());
+        gui->zamienPola(v);
+    }
+}
+
+void CKontroler::scObsluzStan() {
+    switch(ukladanka->getStan()) {
+    case EStan::rozwiazany:
+        if (ukladanka->getLiczbaRuchow()>0) gui->wyswietlStatus("Rozwiązany!  liczba ruchów: " + std::to_string(ukladanka->getLiczbaRuchow()) + ", czas: " + std::to_string(ukladanka->getCzas()/1000)+"."+std::to_string(ukladanka->getCzas()%1000)+"s");
+        else gui->wyswietlStatus("");
+        break;
+    case EStan::ustawianie:
+        gui->wyswietlStatus("Ręczne ustawianie pozycji - aby rozpocząć układanie wyłącz tę opcję w menu->układanka");
+        gui->setUstawianieReczne(true);
+        break;
+    case EStan::wolny:
+        gui->wyswietlStatus("Dowolny ruch rozpocznie liczenie czasu");
+        break;
+    case EStan::rozwiazywanie:
+        gui->wyswietlStatus("Liczba ruchów: " + std::to_string(ukladanka->getLiczbaRuchow()));
+        break;
     }
 }

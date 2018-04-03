@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>524</width>
-    <height>410</height>
+    <width>523</width>
+    <height>405</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,30 +21,14 @@
    <property name="autoFillBackground">
     <bool>true</bool>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <property name="leftMargin">
-     <number>0</number>
-    </property>
-    <property name="topMargin">
-     <number>0</number>
-    </property>
-    <property name="rightMargin">
-     <number>0</number>
-    </property>
-    <property name="bottomMargin">
-     <number>0</number>
-    </property>
-    <property name="spacing">
-     <number>0</number>
-    </property>
-   </layout>
+   <layout class="QGridLayout" name="gridLayout"/>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>524</width>
+     <width>523</width>
      <height>21</height>
     </rect>
    </property>
@@ -56,7 +40,7 @@
     <addaction name="separator"/>
     <addaction name="actionWyjscie"/>
    </widget>
-   <widget class="QMenu" name="menuUk_adanka">
+   <widget class="QMenu" name="menuUkladanka">
     <property name="title">
      <string>Układanka</string>
     </property>
@@ -75,7 +59,7 @@
     <addaction name="actionOprogramie"/>
    </widget>
    <addaction name="menuMenu"/>
-   <addaction name="menuUk_adanka"/>
+   <addaction name="menuUkladanka"/>
    <addaction name="menuPomoc"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>

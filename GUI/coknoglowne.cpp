@@ -13,21 +13,23 @@
 #include "GUImsg/cguimsgoprogramie.h"
 
 
-COknoGlowne::COknoGlowne(std::vector<int> tbl, int N, int M, IKontroler *kontroler, QWidget *parent) :
+COknoGlowne::COknoGlowne(QWidget *parent) :
     QMainWindow(parent),
-    kontroler(kontroler),
     ui(new Ui::COknoGlowne)
 {
-    plansza = new CPlansza(tbl,N,M,kontroler,this);
     ui->setupUi(this);
-    ui->gridLayout->addWidget(plansza,0,0);
+    plansza = new CPlansza(std::vector<int>(1,-1),1,1,0,this);
 }
-
 
 COknoGlowne::~COknoGlowne()
 {
     delete plansza;
     delete ui;
+}
+
+void COknoGlowne::setKontroler(IKontroler *kontroler)
+{
+    this->kontroler = kontroler;
 }
 
 //definicje metod z interfejsu IGUI
@@ -40,6 +42,11 @@ bool COknoGlowne::rysujPlansze(std::vector<int> tbl, int N, int M) {
 
 bool COknoGlowne::zamienPola(std::vector<std::array<int,2>> pary) {
     return plansza->zamienPola(pary);
+}
+
+bool COknoGlowne::setUstawianieReczne(bool ustawianie)
+{
+    ui->actionReczneUstawianie->setChecked(ustawianie);
 }
 
 bool COknoGlowne::wyswietlKonfiguracje(std::map<std::string,std::string> param) {

@@ -1,10 +1,11 @@
 #include "cguimsgkonfiguracja.h"
 
 CGUIMsgKonfiguracja::CGUIMsgKonfiguracja(int N, int M)
-    : CGUIMsg(std::string("Konfiguracja"))
+    : CGUIMsg(std::string("Konfiguracja")),
+      N(N),
+      M(M)
 {
-    this->N=N;
-    this->M=M;
+
 }
 
 int CGUIMsgKonfiguracja::getN()

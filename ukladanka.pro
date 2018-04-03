@@ -42,7 +42,11 @@ SOURCES += \
     GUI/coknoinstrukcje.cpp \
     Kontroler/ckontroler.cpp \
     GUI/coknooprogramie.cpp \
-    GUI/cpole.cpp
+    GUI/cpole.cpp \
+    Model/Ukladanka/cmodelukladanka.cpp \
+    Model/Ukladanka/heurystyki/cheurystyka.cpp \
+    Model/Ukladanka/heurystyki/cheurystykamanhattan.cpp \
+    Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.cpp
 
 HEADERS += \
     GUI/coknoglowne.h \
@@ -66,7 +70,13 @@ HEADERS += \
     GUI/cplansza.h \
     GUI/coknokonf.h \
     GUI/coknoinstrukcje.h \
-    GUI/cpole.h
+    GUI/cpole.h \
+    Model/Ukladanka/iukladanka.h \
+    Model/Ukladanka/carray2d.h \
+    Model/Ukladanka/cmodelukladanka.h \
+    Model/Ukladanka/heurystyki/cheurystyka.h \
+    Model/Ukladanka/heurystyki/cheurystykamanhattan.h \
+    Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.h
 
 FORMS += \
     GUI/coknokonf.ui \

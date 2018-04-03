@@ -20,10 +20,12 @@ class COknoGlowne : public QMainWindow, public IGUI
     Q_OBJECT
 
 public:
-    explicit COknoGlowne(std::vector<int> tbl, int N, int M, IKontroler *kontroler, QWidget *parent = 0);
+    explicit COknoGlowne(QWidget *parent = 0);
     ~COknoGlowne();
+    void setKontroler(IKontroler *kontroler);
     bool rysujPlansze(std::vector<int> tbl, int N, int M);
     bool zamienPola(std::vector<std::array<int,2>> pary);
+    bool setUstawianieReczne(bool ustawianie);
     bool wyswietlKonfiguracje(std::map<std::string,std::string> param);
     bool wyswietlStatus(std::string status);
     bool zamknijOkno();

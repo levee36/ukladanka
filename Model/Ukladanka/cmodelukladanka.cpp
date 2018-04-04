@@ -182,12 +182,7 @@ double CModelUkladanka::podajOcene(CArray2D<int> *stan, CHeurystyka *heurystyka)
     return heurystyka->policzOcene(stan);
 }
 
-std::vector<int> CModelUkladanka::zwrocMozliweRuchy(CArray2D<int> stan)
-{
-
-}
-
-bool CModelUkladanka::czyPrawidlowyUklad(CArray2D<int> stan)
+std::vector<int> CModelUkladanka::zwrocMozliweRuchy(CArray2D<int> *stan)
 {
 
 }

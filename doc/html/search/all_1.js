@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['carray2d',['CArray2D',['../class_c_array2_d.html',1,'CArray2D&lt; T &gt;'],['../class_c_array2_d.html#adbecde6a7908b195fc840a88119d5e91',1,'CArray2D::CArray2D(size_t n, size_t m, T wartosc)'],['../class_c_array2_d.html#af4935ba862daabafafc5f350c016d926',1,'CArray2D::CArray2D(size_t n, size_t m, std::vector&lt; T &gt; tbl)']]],
+  ['carray2d_3c_20int_20_3e',['CArray2D&lt; int &gt;',['../class_c_array2_d.html',1,'']]],
+  ['cguimsg',['CGUIMsg',['../class_c_g_u_i_msg.html',1,'']]],
+  ['cguimsginstrukcja',['CGUIMsgInstrukcja',['../class_c_g_u_i_msg_instrukcja.html',1,'']]],
+  ['cguimsgkonfiguracja',['CGUIMsgKonfiguracja',['../class_c_g_u_i_msg_konfiguracja.html',1,'']]],
+  ['cguimsgoprogramie',['CGUIMsgOprogramie',['../class_c_g_u_i_msg_oprogramie.html',1,'']]],
+  ['cguimsgresetuj',['CGUIMsgResetuj',['../class_c_g_u_i_msg_resetuj.html',1,'']]],
+  ['cguimsgrozwiaz',['CGUIMsgRozwiaz',['../class_c_g_u_i_msg_rozwiaz.html',1,'']]],
+  ['cguimsgtasuj',['CGUIMsgTasuj',['../class_c_g_u_i_msg_tasuj.html',1,'']]],
+  ['cguimsgustawianiereczne',['CGUIMsgUstawianieReczne',['../class_c_g_u_i_msg_ustawianie_reczne.html',1,'']]],
+  ['cguimsgwcisnietepole',['CGUIMsgWcisnietePole',['../class_c_g_u_i_msg_wcisniete_pole.html',1,'']]],
+  ['cguimsgwyjscie',['CGUIMsgWyjscie',['../class_c_g_u_i_msg_wyjscie.html',1,'']]],
+  ['cguimsgzadaniekonfiguracji',['CGUIMsgZadanieKonfiguracji',['../class_c_g_u_i_msg_zadanie_konfiguracji.html',1,'']]],
+  ['cheurystyka',['CHeurystyka',['../class_c_heurystyka.html',1,'']]],
+  ['cheurystykaliczbaroznic',['CHeurystykaLiczbaRoznic',['../class_c_heurystyka_liczba_roznic.html',1,'']]],
+  ['cheurystykamanhattan',['CHeurystykaManhattan',['../class_c_heurystyka_manhattan.html',1,'']]],
+  ['ckontroler',['CKontroler',['../class_c_kontroler.html',1,'']]],
+  ['cmodelukladanka',['CModelUkladanka',['../class_c_model_ukladanka.html',1,'CModelUkladanka'],['../class_c_model_ukladanka.html#a2f2fcac72671a4d5e0f2565e681842c9',1,'CModelUkladanka::CModelUkladanka(int N, int M)'],['../class_c_model_ukladanka.html#acb7120f0b4bb915c351b7d60ed248830',1,'CModelUkladanka::CModelUkladanka(std::vector&lt; int &gt; tbl, int N, int M)']]],
+  ['coknoglowne',['COknoGlowne',['../class_c_okno_glowne.html',1,'']]],
+  ['coknoinstrukcje',['COknoInstrukcje',['../class_c_okno_instrukcje.html',1,'']]],
+  ['coknokonf',['COknoKonf',['../class_c_okno_konf.html',1,'']]],
+  ['coknooprogramie',['COknoOprogramie',['../class_c_okno_oprogramie.html',1,'']]],
+  ['cplansza',['CPlansza',['../class_c_plansza.html',1,'']]],
+  ['cpole',['CPole',['../class_c_pole.html',1,'']]],
+  ['czyulozona',['czyUlozona',['../class_c_model_ukladanka.html#aced5e62485f5272eb8ea1584b3f6faf2',1,'CModelUkladanka::czyUlozona()'],['../class_c_model_ukladanka.html#af63442b7a4ba9f51fe8d547137dd48c6',1,'CModelUkladanka::czyUlozona(CArray2D&lt; int &gt; *stan)'],['../class_i_ukladanka.html#a1f5168c6db3ae1b16aafedaff0e1f3d6',1,'IUkladanka::czyUlozona()'],['../class_i_ukladanka.html#ac70b506c029acad90130d4549797c5b7',1,'IUkladanka::czyUlozona(CArray2D&lt; int &gt; *stan)']]]
+];

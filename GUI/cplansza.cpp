@@ -31,7 +31,8 @@ CPlansza::CPlansza(std::vector<int> tbl, int N, int M, IKontroler *kontroler, QW
 
 CPlansza::~CPlansza()
 {
-    delete [] listaPol;
+    for(std::vector<CPole*>::iterator it=listaPol.begin();it!=listaPol.end();it++)
+        delete *it;
 }
 
 bool CPlansza::zamienPola(std::vector<std::array<int, 2>> pary)

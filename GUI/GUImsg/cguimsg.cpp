@@ -1,7 +1,5 @@
 #include "cguimsg.h"
 
-CGUIMsg::CGUIMsg() {}
-
 CGUIMsg::CGUIMsg(std::string opis)
 {
     this->opis = opis;

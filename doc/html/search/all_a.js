@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ustawianie',['ustawianie',['../group__model.html#gga32f99beaf5d96e0a04dbd8937c90f8acaf4736369ccff135c14dcd69a0b71a025',1,'iukladanka.h']]]
+  ['on_5factionpole_5fpressed',['on_actionPole_pressed',['../class_c_plansza.html#a40493ca15aaa0cc7bcb634b6bcc6c722',1,'CPlansza']]],
+  ['opis',['opis',['../class_c_g_u_i_msg.html#aa2305fbf0d15adf51bfdea2ea7d15938',1,'CGUIMsg']]]
 ];

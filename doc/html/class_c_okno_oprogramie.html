@@ -66,9 +66,14 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_c_okno_oprogramie-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">COknoOprogramie Class Reference</div>  </div>
+<div class="title">COknoOprogramie Class Reference<div class="ingroups"><a class="el" href="group__view.html">GUI</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>klasa gui realizująca okno modalne do wyświetlania informacji o programie, dziedziczy z klasy QDialog  
+ <a href="class_c_okno_oprogramie.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="coknooprogramie_8h_source.html">coknooprogramie.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for COknoOprogramie:</div>
 <div class="dyncontent">
@@ -80,13 +85,93 @@ Inheritance diagram for COknoOprogramie:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25d7226b484113a80452816ce280c95a"><td class="memItemLeft" align="right" valign="top"><a id="a25d7226b484113a80452816ce280c95a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>COknoOprogramie</b> (std::map&lt; std::string, std::string &gt; parametry, <a class="el" href="class_i_kontroler.html">IKontroler</a> *kontroler, QWidget *parent=0)</td></tr>
+<tr class="memitem:a25d7226b484113a80452816ce280c95a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_oprogramie.html#a25d7226b484113a80452816ce280c95a">COknoOprogramie</a> (std::map&lt; std::string, std::string &gt; parametry, <a class="el" href="class_i_kontroler.html">IKontroler</a> *kontroler, QWidget *parent=0)</td></tr>
+<tr class="memdesc:a25d7226b484113a80452816ce280c95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor obiektu okna o programie  <a href="#a25d7226b484113a80452816ce280c95a">More...</a><br /></td></tr>
 <tr class="separator:a25d7226b484113a80452816ce280c95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8019385aff850a3a099a67f05557543c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_oprogramie.html#a8019385aff850a3a099a67f05557543c">~COknoOprogramie</a> ()</td></tr>
+<tr class="memdesc:a8019385aff850a3a099a67f05557543c"><td class="mdescLeft">&#160;</td><td class="mdescRight">destruktor  <a href="#a8019385aff850a3a099a67f05557543c">More...</a><br /></td></tr>
+<tr class="separator:a8019385aff850a3a099a67f05557543c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>klasa gui realizująca okno modalne do wyświetlania informacji o programie, dziedziczy z klasy QDialog </p>
+<dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2018-04-10 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a25d7226b484113a80452816ce280c95a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d7226b484113a80452816ce280c95a">&#9670;&nbsp;</a></span>COknoOprogramie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">COknoOprogramie::COknoOprogramie </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>parametry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_kontroler.html">IKontroler</a> *&#160;</td>
+          <td class="paramname"><em>kontroler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>konstruktor obiektu okna o programie </p>
+<p>konstruktor inicjuje obiekt ui oraz ustawia teksty na etykietach tytuł, podtytuł i autor zgodnie z wartościami odpowiadającymi kluczom w mapie przekazanej jako parametr jeśli któryś z kluczy nie zostanie odnaleziony w mapie- nadawana jest wartość domyślna</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>mapa parametrów - zarówno klucz jak i wartość są zmiennymi łańcuchowymi </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kontroler</td><td>- wskaźnik na obiekt kontrolera - do ewentualnego przesyłania informacji o akcji uzytkownika za pomocą metody <a class="el" href="class_c_kontroler.html#ae03fe2afbc43841d6bdef65de644ce42" title="metoda przesyłająca z gui do kontrolera obiekt z hierarchii klas wyprowadzonej z klasy bazowej CGUIMs...">CKontroler::wyslijWiadomosc</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8019385aff850a3a099a67f05557543c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8019385aff850a3a099a67f05557543c">&#9670;&nbsp;</a></span>~COknoOprogramie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COknoOprogramie::~COknoOprogramie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>destruktor </p>
+<p>niszczy obiekt ui </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>GUI/<a class="el" href="coknooprogramie_8h_source.html">coknooprogramie.h</a></li>
-<li>GUI/coknooprogramie.cpp</li>
+<li>X:/okno/zc++/projekt/ukladanka/GUI/<a class="el" href="coknooprogramie_8h_source.html">coknooprogramie.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/GUI/coknooprogramie.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

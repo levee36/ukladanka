@@ -30,14 +30,14 @@ public:
     ///
     /// @brief konstruktor ustawiający nazwę heurystyki w polu opisowym
     ///
-    /// @param nazwa nazwa funkcji heurystyki realizowanej przez klasę
+    /// @param[in] nazwa nazwa funkcji heurystyki realizowanej przez klasę
     ///
     CHeurystyka(std::string nazwa);
 
     ///
     /// @brief metoda wyliczająca wartość heurystyki dla wskazanego rozstawienia elementów układanki
     ///
-    /// @param stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
+    /// @param[in] stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
     ///
     virtual double policzOcene(CArray2D<int> *stan) = 0;
 
@@ -49,7 +49,7 @@ public:
     std::string getNazwa();
 
 protected:
-    std::string nazwa;
+    std::string nazwa; ///< nazwa heurystyki
 };
 
 #endif // CHEURYSTYKA_H

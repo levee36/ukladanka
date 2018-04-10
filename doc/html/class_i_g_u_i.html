@@ -66,51 +66,405 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_i_g_u_i-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IGUI Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">IGUI Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__view.html">GUI</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>interfejs klasy <a class="el" href="class_c_okno_glowne.html" title="główna klasa gui - realizuje główne okno aplikacji, dziedziczy z klasy QMainWindow ...">COknoGlowne</a> do komunikacji z kontrolerem - klasą <a class="el" href="class_c_kontroler.html" title="klasa realizująca główny obiekt aplikacji - kontroler ">CKontroler</a>  
+ <a href="class_i_g_u_i.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="igui_8h_source.html">igui.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IGUI:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_i_g_u_i.png" usemap="#IGUI_map" alt=""/>
   <map id="IGUI_map" name="IGUI_map">
-<area href="class_c_okno_glowne.html" alt="COknoGlowne" shape="rect" coords="0,56,93,80"/>
+<area href="class_c_okno_glowne.html" title="główna klasa gui - realizuje główne okno aplikacji, dziedziczy z klasy QMainWindow ..." alt="COknoGlowne" shape="rect" coords="0,56,93,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8cfc7882064ee084c7dfc3b17d5c2a39"><td class="memItemLeft" align="right" valign="top"><a id="a8cfc7882064ee084c7dfc3b17d5c2a39"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>rysujPlansze</b> (std::vector&lt; int &gt; tbl, int N, int M)=0</td></tr>
+<tr class="memitem:a8cfc7882064ee084c7dfc3b17d5c2a39"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#a8cfc7882064ee084c7dfc3b17d5c2a39">rysujPlansze</a> (std::vector&lt; int &gt; tbl, int N, int M)=0</td></tr>
+<tr class="memdesc:a8cfc7882064ee084c7dfc3b17d5c2a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda ustawiająca rozmiar planszy i układająca elementy zgodnie z podanym wektorem 1-wymiarowym (odczyt liniowy wierszami poczynając od elementu (0,0))  <a href="#a8cfc7882064ee084c7dfc3b17d5c2a39">More...</a><br /></td></tr>
 <tr class="separator:a8cfc7882064ee084c7dfc3b17d5c2a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0cc96aed390a50abf15100856848ba7"><td class="memItemLeft" align="right" valign="top"><a id="ab0cc96aed390a50abf15100856848ba7"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>zamienPola</b> (std::vector&lt; std::array&lt; int, 2 &gt;&gt; pary)=0</td></tr>
+<tr class="memitem:ab0cc96aed390a50abf15100856848ba7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#ab0cc96aed390a50abf15100856848ba7">zamienPola</a> (std::vector&lt; std::array&lt; int, 2 &gt;&gt; pary)=0</td></tr>
+<tr class="memdesc:ab0cc96aed390a50abf15100856848ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zamieniająca miejscami wskazane pola na planszy  <a href="#ab0cc96aed390a50abf15100856848ba7">More...</a><br /></td></tr>
 <tr class="separator:ab0cc96aed390a50abf15100856848ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f9ba34ab47a86251282a81fbeab432"><td class="memItemLeft" align="right" valign="top"><a id="a19f9ba34ab47a86251282a81fbeab432"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>setUstawianieReczne</b> (bool <a class="el" href="group__model.html#gga32f99beaf5d96e0a04dbd8937c90f8acaf4736369ccff135c14dcd69a0b71a025">ustawianie</a>)=0</td></tr>
+<tr class="memitem:a19f9ba34ab47a86251282a81fbeab432"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#a19f9ba34ab47a86251282a81fbeab432">setUstawianieReczne</a> (bool <a class="el" href="group__model.html#gga32f99beaf5d96e0a04dbd8937c90f8acaf4736369ccff135c14dcd69a0b71a025">ustawianie</a>)=0</td></tr>
+<tr class="memdesc:a19f9ba34ab47a86251282a81fbeab432"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda ustawiająca opcję Ustawienie Ręczne z menu okna  <a href="#a19f9ba34ab47a86251282a81fbeab432">More...</a><br /></td></tr>
 <tr class="separator:a19f9ba34ab47a86251282a81fbeab432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa87afdd469ac705c22344ab6aee831e9"><td class="memItemLeft" align="right" valign="top"><a id="aa87afdd469ac705c22344ab6aee831e9"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>wyswietlKonfiguracje</b> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
+<tr class="memitem:aa87afdd469ac705c22344ab6aee831e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#aa87afdd469ac705c22344ab6aee831e9">wyswietlKonfiguracje</a> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
+<tr class="memdesc:aa87afdd469ac705c22344ab6aee831e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyświetlająca okno konfiguracji (okno modalne) i ustawiająca parametry wyświetlane w tym oknie zgodnie z przekazanym słownikiem (mapą)  <a href="#aa87afdd469ac705c22344ab6aee831e9">More...</a><br /></td></tr>
 <tr class="separator:aa87afdd469ac705c22344ab6aee831e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5449863eb779bf70f1ec8bc56a887a27"><td class="memItemLeft" align="right" valign="top"><a id="a5449863eb779bf70f1ec8bc56a887a27"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>wyswietlStatus</b> (std::string status)=0</td></tr>
+<tr class="memitem:a5449863eb779bf70f1ec8bc56a887a27"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#a5449863eb779bf70f1ec8bc56a887a27">wyswietlStatus</a> (std::string status)=0</td></tr>
+<tr class="memdesc:a5449863eb779bf70f1ec8bc56a887a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyświetlająca przekazany jako parametr tekst w StatusBarze okna głównego  <a href="#a5449863eb779bf70f1ec8bc56a887a27">More...</a><br /></td></tr>
 <tr class="separator:a5449863eb779bf70f1ec8bc56a887a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29b35cbd8ddbbc9c84eb7fe8fffb54f"><td class="memItemLeft" align="right" valign="top"><a id="ac29b35cbd8ddbbc9c84eb7fe8fffb54f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>zamknijOkno</b> ()=0</td></tr>
+<tr class="memitem:ac29b35cbd8ddbbc9c84eb7fe8fffb54f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#ac29b35cbd8ddbbc9c84eb7fe8fffb54f">zamknijOkno</a> ()=0</td></tr>
+<tr class="memdesc:ac29b35cbd8ddbbc9c84eb7fe8fffb54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zamykająca okno główne  <a href="#ac29b35cbd8ddbbc9c84eb7fe8fffb54f">More...</a><br /></td></tr>
 <tr class="separator:ac29b35cbd8ddbbc9c84eb7fe8fffb54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a383002925a1a6b9032b683686e027c70"><td class="memItemLeft" align="right" valign="top"><a id="a383002925a1a6b9032b683686e027c70"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>wyswietlOprogramie</b> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
+<tr class="memitem:a383002925a1a6b9032b683686e027c70"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#a383002925a1a6b9032b683686e027c70">wyswietlOprogramie</a> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
+<tr class="memdesc:a383002925a1a6b9032b683686e027c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyświetlająca okno O programie (okno modalne) z informacjami przekazanymi przez parametr  <a href="#a383002925a1a6b9032b683686e027c70">More...</a><br /></td></tr>
 <tr class="separator:a383002925a1a6b9032b683686e027c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61b07aed2716469cc58252ef23b4c6b6"><td class="memItemLeft" align="right" valign="top"><a id="a61b07aed2716469cc58252ef23b4c6b6"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>wyswietlInstrukcje</b> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
+<tr class="memitem:a61b07aed2716469cc58252ef23b4c6b6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#a61b07aed2716469cc58252ef23b4c6b6">wyswietlInstrukcje</a> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
+<tr class="memdesc:a61b07aed2716469cc58252ef23b4c6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyświetlająca okno Instrukcje (okno modalne) z informacjami przekazanymi przez parametr  <a href="#a61b07aed2716469cc58252ef23b4c6b6">More...</a><br /></td></tr>
 <tr class="separator:a61b07aed2716469cc58252ef23b4c6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d51ff77f97fb78cd6fe69abcc23f86"><td class="memItemLeft" align="right" valign="top"><a id="ad7d51ff77f97fb78cd6fe69abcc23f86"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setKontroler</b> (<a class="el" href="class_i_kontroler.html">IKontroler</a> *kontroler)=0</td></tr>
+<tr class="memitem:ad7d51ff77f97fb78cd6fe69abcc23f86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#ad7d51ff77f97fb78cd6fe69abcc23f86">setKontroler</a> (<a class="el" href="class_i_kontroler.html">IKontroler</a> *kontroler)=0</td></tr>
+<tr class="memdesc:ad7d51ff77f97fb78cd6fe69abcc23f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda ustawiająca wskaźnik na obiekt kontrolera (przez interfejs <a class="el" href="class_i_kontroler.html" title="interfejs klasy CKontroler do komunikacji z gui - klasą COknoGlowne ">IKontroler</a>)  <a href="#ad7d51ff77f97fb78cd6fe69abcc23f86">More...</a><br /></td></tr>
 <tr class="separator:ad7d51ff77f97fb78cd6fe69abcc23f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>interfejs klasy <a class="el" href="class_c_okno_glowne.html" title="główna klasa gui - realizuje główne okno aplikacji, dziedziczy z klasy QMainWindow ...">COknoGlowne</a> do komunikacji z kontrolerem - klasą <a class="el" href="class_c_kontroler.html" title="klasa realizująca główny obiekt aplikacji - kontroler ">CKontroler</a> </p>
+<p>interfejs zawiera metody umozliwiające kontrolerowi sterowanie informacjami wyświetlanymi w gui na podstawie akcji użytkownika i odpowiedzi modelu</p>
+<dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2018-04-09 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8cfc7882064ee084c7dfc3b17d5c2a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cfc7882064ee084c7dfc3b17d5c2a39">&#9670;&nbsp;</a></span>rysujPlansze()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::rysujPlansze </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>tbl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>M</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda ustawiająca rozmiar planszy i układająca elementy zgodnie z podanym wektorem 1-wymiarowym (odczyt liniowy wierszami poczynając od elementu (0,0)) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tbl</td><td>1-wymiarowy wektor przedstawiający docelowy układ elementów układanki (odczyt liniowy wierszami poczynając od elementu (0,0)) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">N</td><td>liczba kolumn planszy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>liczba wierszy planszy</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#ae20a81687e64dc929a7b02578072a5e7">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="ad7d51ff77f97fb78cd6fe69abcc23f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d51ff77f97fb78cd6fe69abcc23f86">&#9670;&nbsp;</a></span>setKontroler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IGUI::setKontroler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_kontroler.html">IKontroler</a> *&#160;</td>
+          <td class="paramname"><em>kontroler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda ustawiająca wskaźnik na obiekt kontrolera (przez interfejs <a class="el" href="class_i_kontroler.html" title="interfejs klasy CKontroler do komunikacji z gui - klasą COknoGlowne ">IKontroler</a>) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kontroler</td><td>wskaźnik na obiekt kontrolera </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#aea38e2a5ea1ca6b5fde171516cd158a5">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="a19f9ba34ab47a86251282a81fbeab432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f9ba34ab47a86251282a81fbeab432">&#9670;&nbsp;</a></span>setUstawianieReczne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::setUstawianieReczne </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ustawianie</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda ustawiająca opcję Ustawienie Ręczne z menu okna </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ustawienie</td><td>jeśli true - opcja Ustawienie Ręczne z menu okna zostanie zaznaczona, jeśli false - wyłączona</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#ac40e76ce59eb75f4e6b5f99197df405e">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="a61b07aed2716469cc58252ef23b4c6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b07aed2716469cc58252ef23b4c6b6">&#9670;&nbsp;</a></span>wyswietlInstrukcje()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::wyswietlInstrukcje </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda wyświetlająca okno Instrukcje (okno modalne) z informacjami przekazanymi przez parametr </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>mapa parametrów - zarówno klucz jak i wartość są zmiennymi łańcuchowymi</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#ae13a2afd03801295977f8632d3b76ed1">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="aa87afdd469ac705c22344ab6aee831e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87afdd469ac705c22344ab6aee831e9">&#9670;&nbsp;</a></span>wyswietlKonfiguracje()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::wyswietlKonfiguracje </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda wyświetlająca okno konfiguracji (okno modalne) i ustawiająca parametry wyświetlane w tym oknie zgodnie z przekazanym słownikiem (mapą) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>mapa parametrów - zarówno klucz jak i wartość są zmiennymi łańcuchowymi</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#aad2eca43e3ad37ee7067ee162332e468">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="a383002925a1a6b9032b683686e027c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383002925a1a6b9032b683686e027c70">&#9670;&nbsp;</a></span>wyswietlOprogramie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::wyswietlOprogramie </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda wyświetlająca okno O programie (okno modalne) z informacjami przekazanymi przez parametr </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>mapa parametrów - zarówno klucz jak i wartość są zmiennymi łańcuchowymi</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#acc4533dfd8ab0ebd41f1bd9abcc0dc46">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="a5449863eb779bf70f1ec8bc56a887a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5449863eb779bf70f1ec8bc56a887a27">&#9670;&nbsp;</a></span>wyswietlStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::wyswietlStatus </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda wyświetlająca przekazany jako parametr tekst w StatusBarze okna głównego </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>tekst do wyświetlenia w StatusBarze okna głównego</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#a4e9e97daf2b5739580aff70fc22b19f8">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="ab0cc96aed390a50abf15100856848ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cc96aed390a50abf15100856848ba7">&#9670;&nbsp;</a></span>zamienPola()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::zamienPola </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::array&lt; int, 2 &gt;&gt;&#160;</td>
+          <td class="paramname"><em>pary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda zamieniająca miejscami wskazane pola na planszy </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pary</td><td>wektor par liczb - liczby w każdej parze określają nr pól do zamiany miejscami.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#a36e1552c00817aa28ae519119a5b2b30">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="ac29b35cbd8ddbbc9c84eb7fe8fffb54f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29b35cbd8ddbbc9c84eb7fe8fffb54f">&#9670;&nbsp;</a></span>zamknijOkno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::zamknijOkno </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda zamykająca okno główne </p>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#adf5846bc70203f6787764c8ed85440dc">COknoGlowne</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>GUI/<a class="el" href="igui_8h_source.html">igui.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/GUI/<a class="el" href="igui_8h_source.html">igui.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

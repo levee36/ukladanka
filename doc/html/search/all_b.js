@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['wektor',['wektor',['../class_c_array2_d.html#a7872b4dddf5a0c0b2dc81f75c3f52b0d',1,'CArray2D']]],
-  ['wolny',['wolny',['../group__model.html#gga32f99beaf5d96e0a04dbd8937c90f8acaa3e6b817b33e117578dca49c931ee080',1,'iukladanka.h']]],
-  ['wygenerujlosoweustawienie',['wygenerujLosoweUstawienie',['../class_c_model_ukladanka.html#a386916742266b1315e9b3ccc3814ccdc',1,'CModelUkladanka::wygenerujLosoweUstawienie()'],['../class_i_ukladanka.html#afab90fd8574a3d3dfcfacc13d956292e',1,'IUkladanka::wygenerujLosoweUstawienie()']]],
-  ['wykonajruch',['wykonajRuch',['../class_c_model_ukladanka.html#a07d290b3fbc67ce744dcb933ef9e9a5f',1,'CModelUkladanka::wykonajRuch(int nrPola)'],['../class_c_model_ukladanka.html#a9955e42ce9401eb63612a22cf66e2441',1,'CModelUkladanka::wykonajRuch(int nrPola, CArray2D&lt; int &gt; &amp;stan)'],['../class_i_ukladanka.html#a635d0ede8c3ca7cb791640fa3b96e8a8',1,'IUkladanka::wykonajRuch(int nrPola)=0'],['../class_i_ukladanka.html#a02847af9623c6610fd0f8de913cff840',1,'IUkladanka::wykonajRuch(int nrPola, CArray2D&lt; int &gt; &amp;stan)']]]
+  ['podajocene',['podajOcene',['../class_c_model_ukladanka.html#a5a512a4a097239e335ef0f527af93762',1,'CModelUkladanka::podajOcene()'],['../class_i_ukladanka.html#af4a84f41425fd95233e146c5e399078b',1,'IUkladanka::podajOcene()']]],
+  ['pole',['pole',['../class_c_g_u_i_msg_wcisniete_pole.html#a612c2af911a451748011b129bdc630ef',1,'CGUIMsgWcisnietePole']]],
+  ['policzocene',['policzOcene',['../class_c_heurystyka.html#a0b445106f16026b84e232d64f193618f',1,'CHeurystyka::policzOcene()'],['../class_c_heurystyka_liczba_roznic.html#a381b68de375035b13691ff9da94af89c',1,'CHeurystykaLiczbaRoznic::policzOcene()'],['../class_c_heurystyka_manhattan.html#ae5fbc164685c61961be4e8feae5a4136',1,'CHeurystykaManhattan::policzOcene()']]]
 ];

@@ -66,9 +66,14 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_c_pole-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CPole Class Reference</div>  </div>
+<div class="title">CPole Class Reference<div class="ingroups"><a class="el" href="group__view.html">GUI</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>klasa gui realizująca kontrolkę(widget) reprezentującą pojedynczy element układanki, dziedziczy z klasy QPushButton  
+ <a href="class_c_pole.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cpole_8h_source.html">cpole.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CPole:</div>
 <div class="dyncontent">
@@ -80,22 +85,138 @@ Inheritance diagram for CPole:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2010d734e6ed4def106d6e6ecbbb6ce8"><td class="memItemLeft" align="right" valign="top"><a id="a2010d734e6ed4def106d6e6ecbbb6ce8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CPole</b> (int pozycja, int numer)</td></tr>
+<tr class="memitem:a2010d734e6ed4def106d6e6ecbbb6ce8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_pole.html#a2010d734e6ed4def106d6e6ecbbb6ce8">CPole</a> (int pozycja, int numer)</td></tr>
+<tr class="memdesc:a2010d734e6ed4def106d6e6ecbbb6ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor kontrolki reprezentującej element układanki  <a href="#a2010d734e6ed4def106d6e6ecbbb6ce8">More...</a><br /></td></tr>
 <tr class="separator:a2010d734e6ed4def106d6e6ecbbb6ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16370e29d3c2536b86a21be494a3dedc"><td class="memItemLeft" align="right" valign="top"><a id="a16370e29d3c2536b86a21be494a3dedc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setNumer</b> (int numer)</td></tr>
+<tr class="memitem:a16370e29d3c2536b86a21be494a3dedc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_pole.html#a16370e29d3c2536b86a21be494a3dedc">setNumer</a> (int numer)</td></tr>
+<tr class="memdesc:a16370e29d3c2536b86a21be494a3dedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda ustawiająca numer elementu znajdującego się w tym polu  <a href="#a16370e29d3c2536b86a21be494a3dedc">More...</a><br /></td></tr>
 <tr class="separator:a16370e29d3c2536b86a21be494a3dedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3acff54324349537db5857420dd7e56"><td class="memItemLeft" align="right" valign="top"><a id="ab3acff54324349537db5857420dd7e56"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getNumer</b> ()</td></tr>
+<tr class="memitem:ab3acff54324349537db5857420dd7e56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_pole.html#ab3acff54324349537db5857420dd7e56">getNumer</a> ()</td></tr>
+<tr class="memdesc:ab3acff54324349537db5857420dd7e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca numer elementu znajdujący się w tym polu układanki  <a href="#ab3acff54324349537db5857420dd7e56">More...</a><br /></td></tr>
 <tr class="separator:ab3acff54324349537db5857420dd7e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a780885d0d95a2921a6f362bb06e0b8a3"><td class="memItemLeft" align="right" valign="top"><a id="a780885d0d95a2921a6f362bb06e0b8a3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getPozycja</b> ()</td></tr>
+<tr class="memitem:a780885d0d95a2921a6f362bb06e0b8a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_pole.html#a780885d0d95a2921a6f362bb06e0b8a3">getPozycja</a> ()</td></tr>
+<tr class="memdesc:a780885d0d95a2921a6f362bb06e0b8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca pozycję tego pola na planszy (w odczycie liniowym planszy wierszami poczynając od elementu (0,0))  <a href="#a780885d0d95a2921a6f362bb06e0b8a3">More...</a><br /></td></tr>
 <tr class="separator:a780885d0d95a2921a6f362bb06e0b8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>klasa gui realizująca kontrolkę(widget) reprezentującą pojedynczy element układanki, dziedziczy z klasy QPushButton </p>
+<p>klasa stanowi rozszerzenie klasy QPushButton przez dodanie pól do pamiętania własnej pozycji (nr pola w odczycie liniowym planszy) oraz własnego nr elementu oraz metod umożliwiających odczyt tych danych oraz zmianę wartości nr elementu (pozycja nie może być zmieniona)</p>
+<dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2018-04-10 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2010d734e6ed4def106d6e6ecbbb6ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2010d734e6ed4def106d6e6ecbbb6ce8">&#9670;&nbsp;</a></span>CPole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPole::CPole </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pozycja</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>konstruktor kontrolki reprezentującej element układanki </p>
+<p>konstruktor tworzy obiekt elementu układanki jako zwykły przycisk QPushButton zapamiętuje przekazaną przez parametry konstruktora pozycję na planszy (w odczycie liniowym planszy wierszami poczynając od elementu (0,0)) oraz ustawia numer elementu znajdujący się an tej pozycji i wyświetlany w postaci tekstu na tym przycisku za pomocą metody setNumer <br />
+ jeśli numer jest równy 0 - przycisk nie jest widoczny (visible=false), co symuluje puste pole układanki <br />
+ jeśli numer jest równy -1 - przycisk jest wyświetlany, ale jest zablokowany (enabled = false), co symuluje nieaktywne pole układanki (dla plansz nie będących prostokątami jest to pole "brzegu") <br />
+</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pozycja</td><td>pozycja na planszy (w odczycie liniowym planszy wierszami poczynając od elementu (0,0)) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numer</td><td>numer elementu znajdujący się na tej pozycji i wyświetlany w postaci tekstu na tym przycisku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab3acff54324349537db5857420dd7e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3acff54324349537db5857420dd7e56">&#9670;&nbsp;</a></span>getNumer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CPole::getNumer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>metoda zwracająca numer elementu znajdujący się w tym polu układanki </p>
+<dl class="section return"><dt>Returns</dt><dd>numer elementu znajdujący się w tym polu </dd></dl>
+
+</div>
+</div>
+<a id="a780885d0d95a2921a6f362bb06e0b8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780885d0d95a2921a6f362bb06e0b8a3">&#9670;&nbsp;</a></span>getPozycja()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CPole::getPozycja </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>metoda zwracająca pozycję tego pola na planszy (w odczycie liniowym planszy wierszami poczynając od elementu (0,0)) </p>
+<dl class="section return"><dt>Returns</dt><dd>pozycję tego pola na planszy (w odczycie liniowym planszy wierszami poczynając od elementu (0,0)) </dd></dl>
+
+</div>
+</div>
+<a id="a16370e29d3c2536b86a21be494a3dedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16370e29d3c2536b86a21be494a3dedc">&#9670;&nbsp;</a></span>setNumer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPole::setNumer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>metoda ustawiająca numer elementu znajdującego się w tym polu </p>
+<p>zapamiętuje przekazaną przez parametr wartość w polu numer oraz na jej podstawie zarządza widocznością i dostępnością przycisku w tym celu wykorzystywana jest metoda <a class="el" href="class_c_pole.html#ab3acff54324349537db5857420dd7e56" title="metoda zwracająca numer elementu znajdujący się w tym polu układanki ">CPole::getNumer</a> do odczytu nr elementu w danym polu <br />
+ jeśli numer jest równy 0 - przycisk nie jest widoczny (visible=false), co symuluje puste pole układanki jeśli numer jest równy -1 - przycisk jest wyświetlany, ale jest zablokowany (enabled = false), co symuluje nieaktywne pole układanki (dla plansz nie będących prostokątami jest to pole "brzegu") jeśli numer jest większy od 0 - przycisk jest wyświetlany i jest dostępny, tekst wyświetlany na nim odpowiada przekazanemu numerowi</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">numer</td><td>numer elementu znajdujący się na tej pozycji i wyświetlany w postaci tekstu na tym przycisku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>GUI/<a class="el" href="cpole_8h_source.html">cpole.h</a></li>
-<li>GUI/cpole.cpp</li>
+<li>X:/okno/zc++/projekt/ukladanka/GUI/<a class="el" href="cpole_8h_source.html">cpole.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/GUI/cpole.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

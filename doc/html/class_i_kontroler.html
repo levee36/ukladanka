@@ -66,27 +66,74 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_i_kontroler-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IKontroler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">IKontroler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__controller.html">Kontroler</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>interfejs klasy <a class="el" href="class_c_kontroler.html" title="klasa realizująca główny obiekt aplikacji - kontroler ">CKontroler</a> do komunikacji z gui - klasą <a class="el" href="class_c_okno_glowne.html" title="główna klasa gui - realizuje główne okno aplikacji, dziedziczy z klasy QMainWindow ...">COknoGlowne</a>  
+ <a href="class_i_kontroler.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ikontroler_8h_source.html">ikontroler.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IKontroler:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_i_kontroler.png" usemap="#IKontroler_map" alt=""/>
   <map id="IKontroler_map" name="IKontroler_map">
-<area href="class_c_kontroler.html" alt="CKontroler" shape="rect" coords="0,56,73,80"/>
+<area href="class_c_kontroler.html" title="klasa realizująca główny obiekt aplikacji - kontroler " alt="CKontroler" shape="rect" coords="0,56,73,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab64dd8349762be895a2a26aa59f2b0ab"><td class="memItemLeft" align="right" valign="top"><a id="ab64dd8349762be895a2a26aa59f2b0ab"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>wyslijWiadomosc</b> (<a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *wiadomosc)=0</td></tr>
+<tr class="memitem:ab64dd8349762be895a2a26aa59f2b0ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_kontroler.html#ab64dd8349762be895a2a26aa59f2b0ab">wyslijWiadomosc</a> (<a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *wiadomosc)=0</td></tr>
+<tr class="memdesc:ab64dd8349762be895a2a26aa59f2b0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda przesyłająca z gui do kontrolera obiekt z hierarchii klas wyprowadzonej z klasy bazowej <a class="el" href="class_c_g_u_i_msg.html" title="klasa abstrakcyjna - bazowa klasa dla hierarchii wiadomości z gui ">CGUIMsg</a>  <a href="#ab64dd8349762be895a2a26aa59f2b0ab">More...</a><br /></td></tr>
 <tr class="separator:ab64dd8349762be895a2a26aa59f2b0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>interfejs klasy <a class="el" href="class_c_kontroler.html" title="klasa realizująca główny obiekt aplikacji - kontroler ">CKontroler</a> do komunikacji z gui - klasą <a class="el" href="class_c_okno_glowne.html" title="główna klasa gui - realizuje główne okno aplikacji, dziedziczy z klasy QMainWindow ...">COknoGlowne</a> </p>
+<p>interfejs zawiera metodę umozliwiającą przesyłanie z gui do kontrolera informacji o akcjach użytkownika</p>
+<dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2018-04-04 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab64dd8349762be895a2a26aa59f2b0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64dd8349762be895a2a26aa59f2b0ab">&#9670;&nbsp;</a></span>wyslijWiadomosc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IKontroler::wyslijWiadomosc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *&#160;</td>
+          <td class="paramname"><em>wiadomosc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda przesyłająca z gui do kontrolera obiekt z hierarchii klas wyprowadzonej z klasy bazowej <a class="el" href="class_c_g_u_i_msg.html" title="klasa abstrakcyjna - bazowa klasa dla hierarchii wiadomości z gui ">CGUIMsg</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wiadomosc</td><td>wskaźnik na obiekt z hierarchii klas wyprowadzonej z klasy bazowej <a class="el" href="class_c_g_u_i_msg.html" title="klasa abstrakcyjna - bazowa klasa dla hierarchii wiadomości z gui ">CGUIMsg</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_kontroler.html#ae03fe2afbc43841d6bdef65de644ce42">CKontroler</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Kontroler/<a class="el" href="ikontroler_8h_source.html">ikontroler.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/Kontroler/<a class="el" href="ikontroler_8h_source.html">ikontroler.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

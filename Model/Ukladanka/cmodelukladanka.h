@@ -40,17 +40,17 @@ public:
     /// @brief konstruktor ustawiający rozmiar planszy <br>
     /// wszystkie elementy planszy zostaną wyzerowane
     ///
-    /// @param N liczba kolumn
-    /// @param M liczba wierszy
+    /// @param[in] N liczba kolumn
+    /// @param[in] M liczba wierszy
     ///
     CModelUkladanka(int N, int M);
 
     ///
     /// @brief konstruktor ustawiający rozmiar planszy i przypisujący przekazane rozmieszczenie elementów
     ///
-    /// @param N liczba kolumn
-    /// @param M liczba wierszy
-    /// @param tbl wektor liczb int określających kolejne numery elementów do umieszczenia na planszy <br>
+    /// @param[in] N liczba kolumn
+    /// @param[in] M liczba wierszy
+    /// @param[in] tbl wektor liczb int określających kolejne numery elementów do umieszczenia na planszy <br>
     /// (w odczycie liniowym poczynając od elementu (0,0))
     /// jeśli wektor tbl zawiera mniej elementów niż rozmiar planszy N*M, pozostałe elementy zostaną wyzerowane
     /// jeśli wektor tbl zawiera więcej elementów niż rozmiar planszy N*M, pozostałe elementy zostaną pominięte
@@ -60,8 +60,8 @@ public:
     ///
     /// @brief metoda resetująca model układanki - ustawiająca nową planszę o podanym rozmiarze z ułożeniem końcowym (rozwiązaniem)
     ///
-    /// @param N nowa liczba kolumn
-    /// @param M nowa liczba wierszy
+    /// @param[in] N nowa liczba kolumn
+    /// @param[in] M nowa liczba wierszy
     /// @return zwraca wartość true gdy reset planszy się powiódł
     ///
     bool resetuj(int N, int M);
@@ -76,7 +76,7 @@ public:
     ///
     /// @brief metoda podmieniająca obiekt planszy w modelu układanki na wskazany przez wskaźnik przekazany jako argument
     ///
-    /// @param plansza wskaźnik na obiekt planszy do ustawienia w modelu układanki
+    /// @param[in] plansza wskaźnik na obiekt planszy do ustawienia w modelu układanki
     ///
     void setPlansza(CArray2D<int>* plansza);
 
@@ -86,7 +86,7 @@ public:
     /// @details metoda numeruje kolejne elementy układanki według numeracji przekazanej w postaci wektora liczb <br>
     /// (przy odczycie liniowym planszy wierszami poczynając od elementu (0,0))
     ///
-    /// @param tbl wektor liczb int określających kolejne numery elementów do umieszczenia na planszy <br>
+    /// @param[in] tbl wektor liczb int określających kolejne numery elementów do umieszczenia na planszy <br>
     /// (w odczycie liniowym poczynając od elementu (0,0))
     /// jeśli wektor tbl zawiera mniej elementów niż rozmiar planszy N*M, pozostałe elementy zostaną wyzerowane
     /// jeśli wektor tbl zawiera więcej elementów niż rozmiar planszy N*M, pozostałe elementy zostaną pominięte
@@ -101,7 +101,7 @@ public:
     ///  - na wskazanym polu znajduje się element układanki (nie jest to pole puste) <br>
     ///  - w sąsiedztwie pola (góra,dół,lewo,prawo) znajduje się pole puste <br>
     ///
-    /// @param nrPola numer pola planszy z którego ma zostać przesunięty element
+    /// @param[in] nrPola numer pola planszy z którego ma zostać przesunięty element
     /// @return true jeśli ruch jest możliwy do wykonania
     ///
     bool sprawdzRuch(int nrPola);
@@ -116,7 +116,7 @@ public:
     /// Jeśli ruch jest możliwy do wykonania metoda wykonuje ten ruch przez aktualizację rozstawienia elementów układanki <br>
     /// Dodatkowo aktualizowana jest zmienna prywatna obiektu pamiętająca ostatni wykonany ruch
     ///
-    /// @param nrPola numer pola planszy z którego ma zostać przesunięty element
+    /// @param[in] nrPola numer pola planszy z którego ma zostać przesunięty element
     /// @return nr pola na który został przesunięty wskazany do wykonania ruchu element <br>
     /// jeśli ruch nie był możliwy do wykonania zwracany jest nr pola wskazanego jako argument
     ///
@@ -168,7 +168,7 @@ public:
     ///
     /// @brief metoda włącza lub wyłącza status ręcznego ustawiania rozmieszczenia elementów układanki
     ///
-    /// @param ustawianie jeśli true - ustawiany jest status EStan::ustawianie <br> jeśli false - ustawiany jest status EStan::wolny lub EStan::rozwiazany (jeśli rozmieszczenie na planszy jest rozwiązaniem)
+    /// @param[in] ustawianie jeśli true - ustawiany jest status EStan::ustawianie <br> jeśli false - ustawiany jest status EStan::wolny lub EStan::rozwiazany (jeśli rozmieszczenie na planszy jest rozwiązaniem)
     ///
     void setReczneUstawianie(bool ustawianie);
 
@@ -191,8 +191,8 @@ public:
     ///  - na wskazanym polu znajduje się element układanki (nie jest to pole puste) <br>
     ///  - w sąsiedztwie pola (góra,dół,lewo,prawo) znajduje się pole puste <br>
     ///
-    /// @param nrPola numer pola planszy z którego ma zostać przesunięty element
-    /// @param stan wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
+    /// @param[in] nrPola numer pola planszy z którego ma zostać przesunięty element
+    /// @param[in] stan wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
     /// @return true jeśli ruch jest możliwy do wykonania na wskazanym rozstawieniu układanki
     ///
     static bool sprawdzRuch(int nrPola, CArray2D<int> &stan);
@@ -206,8 +206,8 @@ public:
     ///  - w sąsiedztwie pola (góra,dół,lewo,prawo) znajduje się pole puste <br>
     /// Jeśli ruch jest możliwy do wykonania metoda wykonuje ten ruch przez aktualizację rozstawienia elementów układanki wskazanego przez referencję <br>
     ///
-    /// @param nrPola numer pola planszy z którego ma zostać przesunięty element
-    /// @param stan wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
+    /// @param[in] nrPola numer pola planszy z którego ma zostać przesunięty element
+    /// @param[in,out] stan wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
     /// @return nr pola na który został przesunięty wskazany do wykonania ruchu element <br>
     /// jeśli ruch nie był możliwy do wykonania zwracany jest nr pola wskazanego jako argument
     ///
@@ -218,7 +218,7 @@ public:
     ///
     /// @details metoda zwraca informację sprawdzając czy każdy element znajduje się na polu mu odpowiadającym
     ///
-    /// @param stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
+    /// @param[in] stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
     /// @return true - jeśli rozstawienie elementów na wskazanej planszy jest ustawieniem końcowym (rozwiązaniem)
     ///
     static bool czyUlozona(CArray2D<int> *stan);
@@ -228,8 +228,8 @@ public:
     ///
     /// @details metoda uruchamia metodę CHeurystyka::policzOcene wskazanego obiektu heurytyski
     ///
-    /// @param stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
-    /// @param heurystyka wskaźnik na obiekt heurystyki zawierający metodę wyliczającą ocenę
+    /// @param[in] stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
+    /// @param[in] heurystyka wskaźnik na obiekt heurystyki zawierający metodę wyliczającą ocenę
     /// @return wartość oceny - szacowania liczby ruchów potrzebnych do rozwiązania układanki
     ///
     static double podajOcene(CArray2D<int> *stan, CHeurystyka *heurystyka);
@@ -237,7 +237,7 @@ public:
     ///
     /// @brief metoda statyczna zwracająca możliwe do wykonania ruchy we wskazanym rozstawieniu elementów układanki
     ///
-    /// @param stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
+    /// @param[in] stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
     /// @return wektor liczb - nr pól z których można przesunąć element (czyli sąsiedztwo pola pustego)
     ///
     static std::vector<int> zwrocMozliweRuchy(CArray2D<int> *stan);

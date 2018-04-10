@@ -47,29 +47,35 @@ bool COknoGlowne::zamienPola(std::vector<std::array<int,2>> pary) {
 bool COknoGlowne::setUstawianieReczne(bool ustawianie)
 {
     ui->actionReczneUstawianie->setChecked(ustawianie);
+    return true;
 }
 
 bool COknoGlowne::wyswietlKonfiguracje(std::map<std::string,std::string> param) {
     COknoKonf *konf = new COknoKonf(param,kontroler,this);
     konf->exec();
+    return true;
 }
 
 bool COknoGlowne::wyswietlStatus(std::string status) {
     this->statusBar()->showMessage(QString::fromStdString(status));
+    return true;
 }
 
 bool COknoGlowne::zamknijOkno() {
     close();
+    return true;
 }
 
 bool COknoGlowne::wyswietlOprogramie(std::map<std::string,std::string> param) {
     COknoOprogramie *oprogramie = new COknoOprogramie(param,kontroler,this);
     oprogramie->exec();
+    return true;
 }
 
 bool COknoGlowne::wyswietlInstrukcje(std::map<std::string,std::string> param) {
     COknoInstrukcje *instrukcje = new COknoInstrukcje(param,kontroler,this);
     instrukcje->exec();
+    return true;
 }
 
 void COknoGlowne::on_actionKonfiguracja_triggered()

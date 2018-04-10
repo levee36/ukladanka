@@ -24,7 +24,7 @@ public:
     ///
     /// @brief metoda wyliczająca wartość heurystyki dla wskazanego rozstawienia elementów układanki
     ///
-    /// @param stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
+    /// @param[in] stan wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance
     /// @return suma odległości (w metryce miejskiej) każdego elementu układanki od jego domyślnej pozycji (nie uwzględniając połozenia pola pustego)
     ///
     double policzOcene(CArray2D<int> *stan);

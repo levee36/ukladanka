@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>interfejs klasy <a class="el" href="class_c_model_ukladanka.html" title="klasa realizująca model układanki ">CModelUkladanka</a> na potrzeby klasy <a class="el" href="class_c_kontroler.html">CKontroler</a>  
+<p>interfejs klasy <a class="el" href="class_c_model_ukladanka.html" title="klasa realizująca model układanki ">CModelUkladanka</a> na potrzeby klasy <a class="el" href="class_c_kontroler.html" title="klasa realizująca główny obiekt aplikacji - kontroler ">CKontroler</a>  
  <a href="class_i_ukladanka.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="iukladanka_8h_source.html">iukladanka.h</a>&gt;</code></p>
@@ -142,13 +142,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af4a84f41425fd95233e146c5e399078b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_ukladanka.html#af4a84f41425fd95233e146c5e399078b">podajOcene</a> (<a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *stan, <a class="el" href="class_c_heurystyka.html">CHeurystyka</a> *heurystyka)</td></tr>
 <tr class="memdesc:af4a84f41425fd95233e146c5e399078b"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda statyczna podająca ocenę wskazanego rozstawienia elementów układanki wg wskazanej heurystyki  <a href="#af4a84f41425fd95233e146c5e399078b">More...</a><br /></td></tr>
 <tr class="separator:af4a84f41425fd95233e146c5e399078b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724dcc2e153cdc79d5a32cbf3f0e66a1"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_ukladanka.html#a724dcc2e153cdc79d5a32cbf3f0e66a1">zwrocMozliweRuchy</a> (<a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; stan)</td></tr>
-<tr class="memdesc:a724dcc2e153cdc79d5a32cbf3f0e66a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda statyczna zwracająca możliwe do wykonania ruchy we wskazanym rozstawieniu elementów układanki  <a href="#a724dcc2e153cdc79d5a32cbf3f0e66a1">More...</a><br /></td></tr>
-<tr class="separator:a724dcc2e153cdc79d5a32cbf3f0e66a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154e9207f82e07277ef4e04e82c3f7a4"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_ukladanka.html#a154e9207f82e07277ef4e04e82c3f7a4">zwrocMozliweRuchy</a> (<a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *stan)</td></tr>
+<tr class="memdesc:a154e9207f82e07277ef4e04e82c3f7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda statyczna zwracająca możliwe do wykonania ruchy we wskazanym rozstawieniu elementów układanki  <a href="#a154e9207f82e07277ef4e04e82c3f7a4">More...</a><br /></td></tr>
+<tr class="separator:a154e9207f82e07277ef4e04e82c3f7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>interfejs klasy <a class="el" href="class_c_model_ukladanka.html" title="klasa realizująca model układanki ">CModelUkladanka</a> na potrzeby klasy <a class="el" href="class_c_kontroler.html">CKontroler</a> </p>
-<p>interfejs zawiera metody zrealizowane w klasie <a class="el" href="class_c_model_ukladanka.html" title="klasa realizująca model układanki ">CModelUkladanka</a> na potrzeby klasy <a class="el" href="class_c_kontroler.html">CKontroler</a></p>
+<div class="textblock"><p>interfejs klasy <a class="el" href="class_c_model_ukladanka.html" title="klasa realizująca model układanki ">CModelUkladanka</a> na potrzeby klasy <a class="el" href="class_c_kontroler.html" title="klasa realizująca główny obiekt aplikacji - kontroler ">CKontroler</a> </p>
+<p>interfejs zawiera metody zrealizowane w klasie <a class="el" href="class_c_model_ukladanka.html" title="klasa realizująca model układanki ">CModelUkladanka</a> na potrzeby klasy <a class="el" href="class_c_kontroler.html" title="klasa realizująca główny obiekt aplikacji - kontroler ">CKontroler</a></p>
 <dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2018-04-04 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -199,7 +199,7 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda statyczna sprawdzająca czy przekazane przez argument rozstawienie elementów jest ustawieniem końcowym (rozwiązaniem) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stan</td><td>wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stan</td><td>referencja do wektora dwuwymiarowego przedstawiającego rozmieszczenie elementów na układance </td></tr>
   </table>
   </dd>
 </dl>
@@ -394,8 +394,8 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda statyczna podająca ocenę wskazanego rozstawienia elementów układanki wg wskazanej heurystyki </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stan</td><td>wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance </td></tr>
-    <tr><td class="paramname">heurystyka</td><td>wskaźnik na obiekt heurystyki zawierający metodę wyliczającą ocenę </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stan</td><td>wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">heurystyka</td><td>wskaźnik na obiekt heurystyki zawierający metodę wyliczającą ocenę </td></tr>
   </table>
   </dd>
 </dl>
@@ -440,8 +440,8 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda resetująca model układanki - ustawiająca nową planszę o podanym rozmiarze z ułożeniem końcowym (rozwiązaniem) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N</td><td>nowa liczba kolumn </td></tr>
-    <tr><td class="paramname">M</td><td>nowa liczba wierszy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">N</td><td>nowa liczba kolumn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>nowa liczba wierszy </td></tr>
   </table>
   </dd>
 </dl>
@@ -478,7 +478,7 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda podmieniająca obiekt planszy w modelu układanki na wskazany przez wskaźnik przekazany jako argument </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">plansza</td><td>wskaźnik na obiekt planszy do ustawienia w modelu układanki </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plansza</td><td>wskaźnik na obiekt planszy do ustawienia w modelu układanki </td></tr>
   </table>
   </dd>
 </dl>
@@ -514,7 +514,7 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda ustawiająca elementy planszy zgodnie z podanym wektorem liczb </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tbl</td><td>wektor liczb int określających kolejne numery elementów do umieszczenia na planszy <br />
+    <tr><td class="paramdir">[in]</td><td class="paramname">tbl</td><td>wektor liczb int określających kolejne numery elementów do umieszczenia na planszy <br />
  (w odczycie liniowym poczynając od elementu (0,0)) jeśli wektor tbl zawiera mniej elementów niż rozmiar planszy N*M, pozostałe elementy zostaną wyzerowane jeśli wektor tbl zawiera więcej elementów niż rozmiar planszy N*M, pozostałe elementy zostaną pominięte </td></tr>
   </table>
   </dd>
@@ -551,7 +551,7 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda włącza lub wyłącza status ręcznego ustawiania rozmieszczenia elementów układanki </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ustawianie</td><td>jeśli true - ustawiany jest status EStan::ustawianie <br />
+    <tr><td class="paramdir">[in]</td><td class="paramname">ustawianie</td><td>jeśli true - ustawiany jest status EStan::ustawianie <br />
  jeśli false - ustawiany jest status EStan::wolny lub EStan::rozwiazany (jeśli rozmieszczenie na planszy jest rozwiązaniem) </td></tr>
   </table>
   </dd>
@@ -588,7 +588,7 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda sprawdzająca czy wskazany ruch jest możliwy do wykonania </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nrPola</td><td>numer pola planszy z którego ma zostać przesunięty element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nrPola</td><td>numer pola planszy z którego ma zostać przesunięty element </td></tr>
   </table>
   </dd>
 </dl>
@@ -635,8 +635,8 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda statyczna sprawdzająca czy wskazany ruch jest możliwy do wykonania na wskazanym rozstawieniu elementów układanki </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nrPola</td><td>numer pola planszy z którego ma zostać przesunięty element </td></tr>
-    <tr><td class="paramname">stan</td><td>wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nrPola</td><td>numer pola planszy z którego ma zostać przesunięty element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stan</td><td>referencja do wektora dwuwymiarowego przedstawiającego rozmieszczenie elementów na układance </td></tr>
   </table>
   </dd>
 </dl>
@@ -671,7 +671,7 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda wykonująca wskazany ruch i aktualizująca rozstawienie na planszy </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nrPola</td><td>numer pola planszy z którego ma zostać przesunięty element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nrPola</td><td>numer pola planszy z którego ma zostać przesunięty element </td></tr>
   </table>
   </dd>
 </dl>
@@ -719,8 +719,8 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda statyczna wykonująca wskazany ruch na wskazanym przez referencję rozstawieniu elementów układanki i aktualizująca to rozstawienie </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nrPola</td><td>numer pola planszy z którego ma zostać przesunięty element </td></tr>
-    <tr><td class="paramname">stan</td><td>wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nrPola</td><td>numer pola planszy z którego ma zostać przesunięty element </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">stan</td><td>referencja do wektora dwuwymiarowego przedstawiającego rozmieszczenie elementów na układance </td></tr>
   </table>
   </dd>
 </dl>
@@ -729,8 +729,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a724dcc2e153cdc79d5a32cbf3f0e66a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724dcc2e153cdc79d5a32cbf3f0e66a1">&#9670;&nbsp;</a></span>zwrocMozliweRuchy()</h2>
+<a id="a154e9207f82e07277ef4e04e82c3f7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154e9207f82e07277ef4e04e82c3f7a4">&#9670;&nbsp;</a></span>zwrocMozliweRuchy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -741,7 +741,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static std::vector&lt;int&gt; IUkladanka::zwrocMozliweRuchy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *&#160;</td>
           <td class="paramname"><em>stan</em></td><td>)</td>
           <td></td>
         </tr>
@@ -756,7 +756,7 @@ Static Public Member Functions</h2></td></tr>
 <p>metoda statyczna zwracająca możliwe do wykonania ruchy we wskazanym rozstawieniu elementów układanki </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stan</td><td>wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stan</td><td>wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance </td></tr>
   </table>
   </dd>
 </dl>
@@ -765,7 +765,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Model/Ukladanka/<a class="el" href="iukladanka_8h_source.html">iukladanka.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/Model/Ukladanka/<a class="el" href="iukladanka_8h_source.html">iukladanka.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

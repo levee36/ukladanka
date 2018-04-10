@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['podajocene',['podajOcene',['../class_c_model_ukladanka.html#a5a512a4a097239e335ef0f527af93762',1,'CModelUkladanka::podajOcene()'],['../class_i_ukladanka.html#af4a84f41425fd95233e146c5e399078b',1,'IUkladanka::podajOcene()']]]
+  ['on_5factionpole_5fpressed',['on_actionPole_pressed',['../class_c_plansza.html#a40493ca15aaa0cc7bcb634b6bcc6c722',1,'CPlansza']]]
 ];

@@ -67,9 +67,14 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_c_plansza-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CPlansza Class Reference</div>  </div>
+<div class="title">CPlansza Class Reference<div class="ingroups"><a class="el" href="group__view.html">GUI</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>klasa gui realizująca kontrolkę(widget) reprezentującą planszę układanki, dziedziczy z klasy QFrame  
+ <a href="class_c_plansza.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cplansza_8h_source.html">cplansza.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CPlansza:</div>
 <div class="dyncontent">
@@ -82,24 +87,171 @@ Inheritance diagram for CPlansza:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:a40493ca15aaa0cc7bcb634b6bcc6c722"><td class="memItemLeft" align="right" valign="top"><a id="a40493ca15aaa0cc7bcb634b6bcc6c722"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>on_actionPole_pressed</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_plansza.html#a40493ca15aaa0cc7bcb634b6bcc6c722">on_actionPole_pressed</a> ()</td></tr>
+<tr class="memdesc:a40493ca15aaa0cc7bcb634b6bcc6c722"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot powiązany z sygnałem wysyłanym po wciśnięciu któregokolwiek przycisku reprezentującego element układanki, wysyła za pomocą metody <a class="el" href="class_c_kontroler.html#ae03fe2afbc43841d6bdef65de644ce42" title="metoda przesyłająca z gui do kontrolera obiekt z hierarchii klas wyprowadzonej z klasy bazowej CGUIMs...">CKontroler::wyslijWiadomosc</a> do kontrolera wiadomość określającą nr wciśniętego pola (<a class="el" href="class_c_g_u_i_msg_wcisniete_pole.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik kliknął wy...">CGUIMsgWcisnietePole</a>) <br /></td></tr>
 <tr class="separator:a40493ca15aaa0cc7bcb634b6bcc6c722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a83b9838cb3f1b929e652825e9feef9"><td class="memItemLeft" align="right" valign="top"><a id="a1a83b9838cb3f1b929e652825e9feef9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CPlansza</b> (std::vector&lt; int &gt; tbl, int N, int M, <a class="el" href="class_i_kontroler.html">IKontroler</a> *kontroler, QWidget *parent=0)</td></tr>
+<tr class="memitem:a1a83b9838cb3f1b929e652825e9feef9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_plansza.html#a1a83b9838cb3f1b929e652825e9feef9">CPlansza</a> (std::vector&lt; int &gt; tbl, int N, int M, <a class="el" href="class_i_kontroler.html">IKontroler</a> *kontroler, QWidget *parent=0)</td></tr>
+<tr class="memdesc:a1a83b9838cb3f1b929e652825e9feef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor kontrolki reprezentującej planszę  <a href="#a1a83b9838cb3f1b929e652825e9feef9">More...</a><br /></td></tr>
 <tr class="separator:a1a83b9838cb3f1b929e652825e9feef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a516ef52b538349c550327ca7fc97b132"><td class="memItemLeft" align="right" valign="top"><a id="a516ef52b538349c550327ca7fc97b132"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>zamienPola</b> (std::vector&lt; std::array&lt; int, 2 &gt;&gt; pary)</td></tr>
+<tr class="memitem:a3971b9f7d99e4f109193cb9bfafd72f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_plansza.html#a3971b9f7d99e4f109193cb9bfafd72f8">~CPlansza</a> ()</td></tr>
+<tr class="memdesc:a3971b9f7d99e4f109193cb9bfafd72f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">destruktor  <a href="#a3971b9f7d99e4f109193cb9bfafd72f8">More...</a><br /></td></tr>
+<tr class="separator:a3971b9f7d99e4f109193cb9bfafd72f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516ef52b538349c550327ca7fc97b132"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_plansza.html#a516ef52b538349c550327ca7fc97b132">zamienPola</a> (std::vector&lt; std::array&lt; int, 2 &gt;&gt; pary)</td></tr>
+<tr class="memdesc:a516ef52b538349c550327ca7fc97b132"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zamieniająca miejscami wskazane pola na graficznej reprezentacji planszy  <a href="#a516ef52b538349c550327ca7fc97b132">More...</a><br /></td></tr>
 <tr class="separator:a516ef52b538349c550327ca7fc97b132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19d6b41e9b929e59507b37f465eadbb4"><td class="memItemLeft" align="right" valign="top"><a id="a19d6b41e9b929e59507b37f465eadbb4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ustawKolejnosc</b> (std::vector&lt; int &gt; tbl)</td></tr>
+<tr class="memitem:a19d6b41e9b929e59507b37f465eadbb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_plansza.html#a19d6b41e9b929e59507b37f465eadbb4">ustawKolejnosc</a> (std::vector&lt; int &gt; tbl)</td></tr>
+<tr class="memdesc:a19d6b41e9b929e59507b37f465eadbb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda ustawiająca nr elementów na graficznej reprezentacji planszy zgodnie z przekazanym przez parametr porządkiem (w odczycie liniowym)  <a href="#a19d6b41e9b929e59507b37f465eadbb4">More...</a><br /></td></tr>
 <tr class="separator:a19d6b41e9b929e59507b37f465eadbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>klasa gui realizująca kontrolkę(widget) reprezentującą planszę układanki, dziedziczy z klasy QFrame </p>
+<p>klasa stanowi kompozytowe rozszerzenie klasy QFrame przez dodanie zestawu przycisków QPushButton wraz z obsługą ich kliknięcia i rozpoznania, który został kliknięty</p>
+<dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2018-04-10 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1a83b9838cb3f1b929e652825e9feef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a83b9838cb3f1b929e652825e9feef9">&#9670;&nbsp;</a></span>CPlansza()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPlansza::CPlansza </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>tbl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_kontroler.html">IKontroler</a> *&#160;</td>
+          <td class="paramname"><em>kontroler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>konstruktor kontrolki reprezentującej planszę </p>
+<p>konstruktor tworzy obiekt planszy jako zwykły obiekt QFrame tworzy layout typu siatkowego (QGridLayout) o liczbie kolumn i wierszy zgodnej z przekazanymi parametrami wypełnia komórki layoutu nowotworzonymi obiektami klasy <a class="el" href="class_c_pole.html" title="klasa gui realizująca kontrolkę(widget) reprezentującą pojedynczy element układanki, dziedziczy z klasy QPushButton ">CPole</a> (reprezentującymi poszczególne pola układanki) <br />
+ obiekty <a class="el" href="class_c_pole.html" title="klasa gui realizująca kontrolkę(widget) reprezentującą pojedynczy element układanki, dziedziczy z klasy QPushButton ">CPole</a> są tworzone z parametrami (numerem elementu) zgodnymi z odczytanymi z dostarczonego wektora 1-wymiarowego będącego reprezentacją liniową planszy układanki (w odczycie liniowym wierszami poczynając od elementu (0,0)) <br />
+ w wektorze listaPol pamiętane są wskaźniki do wszystkich utworzonych przycisków (na i-tej pozycji wektora pamiętany jest wskaźnik do i-tego pola układanki w odczycie liniowym)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tbl</td><td>wektor 1-wymiarowy będący reprezentacją liniową planszy układanki (nr pól w odczycie liniowym wierszami poczynając od elementu (0,0)) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">N</td><td>- liczba kolumn tworzonej planszy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>- liczba wierszy tworzonej planszy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kontroler</td><td>- wskaźnik na obiekt kontrolera - do ewentualnego przesyłania informacji o akcji uzytkownika za pomocą metody <a class="el" href="class_c_kontroler.html#ae03fe2afbc43841d6bdef65de644ce42" title="metoda przesyłająca z gui do kontrolera obiekt z hierarchii klas wyprowadzonej z klasy bazowej CGUIMs...">CKontroler::wyslijWiadomosc</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3971b9f7d99e4f109193cb9bfafd72f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3971b9f7d99e4f109193cb9bfafd72f8">&#9670;&nbsp;</a></span>~CPlansza()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPlansza::~CPlansza </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>destruktor </p>
+<p>niszczy wektor przycisków </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a19d6b41e9b929e59507b37f465eadbb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d6b41e9b929e59507b37f465eadbb4">&#9670;&nbsp;</a></span>ustawKolejnosc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPlansza::ustawKolejnosc </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>tbl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>metoda ustawiająca nr elementów na graficznej reprezentacji planszy zgodnie z przekazanym przez parametr porządkiem (w odczycie liniowym) </p>
+<p>za pomocą <a class="el" href="class_c_pole.html#a16370e29d3c2536b86a21be494a3dedc" title="metoda ustawiająca numer elementu znajdującego się w tym polu ">CPole::setNumer</a> oraz iteratora po wektorze przekazanym przez parametr metoda ustawia w kolejnych polach graficznej reprezentacji planszy (do których wskaźniki przechowywane są w wektorze listaPol) nr elementów odczytane kolejno z przekazanego wektora Jesli w przekazanym wektorze jest mniej elementów niż w wektorze listaPol (mniej niż pól układanki) - pozostałe pola układanki są pomijane (zachowują poprzednie nr elementów) jeśli przekazany wektor ma więcej wartości niż pól planszy - nadwyżka jest pomijana</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tbl</td><td>wektor 1-wymiarowy będący reprezentacją liniową planszy układanki (nr pól w odczycie liniowym wierszami poczynając od elementu (0,0))</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+</div>
+</div>
+<a id="a516ef52b538349c550327ca7fc97b132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516ef52b538349c550327ca7fc97b132">&#9670;&nbsp;</a></span>zamienPola()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPlansza::zamienPola </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::array&lt; int, 2 &gt;&gt;&#160;</td>
+          <td class="paramname"><em>pary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>metoda zamieniająca miejscami wskazane pola na graficznej reprezentacji planszy </p>
+<p>zamiana pól polega na zamianie wartości nrPola we wskazanych elementach każdej pary w tym celu wykorzystywana jest metoda <a class="el" href="class_c_pole.html#ab3acff54324349537db5857420dd7e56" title="metoda zwracająca numer elementu znajdujący się w tym polu układanki ">CPole::getNumer</a> do odczytu nr elementu w danym polu oraz metoda <a class="el" href="class_c_pole.html#a16370e29d3c2536b86a21be494a3dedc" title="metoda ustawiająca numer elementu znajdującego się w tym polu ">CPole::setNumer</a> do ustawienia nr elementu w danym polu</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pary</td><td>wektor par liczb - liczby w każdej parze określają nr pól do zamiany miejscami.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>GUI/<a class="el" href="cplansza_8h_source.html">cplansza.h</a></li>
-<li>GUI/cplansza.cpp</li>
+<li>X:/okno/zc++/projekt/ukladanka/GUI/<a class="el" href="cplansza_8h_source.html">cplansza.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/GUI/cplansza.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

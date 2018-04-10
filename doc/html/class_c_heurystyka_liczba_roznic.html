@@ -66,42 +66,95 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_c_heurystyka_liczba_roznic-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CHeurystykaLiczbaRoznic Class Reference</div>  </div>
+<div class="title">CHeurystykaLiczbaRoznic Class Reference<div class="ingroups"><a class="el" href="group__model.html">Model</a> &raquo; <a class="el" href="group__heurystyki.html">Heurystyki</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>klasa realizująca heurystykę opartą na liczbie elementów znajdujących się na niewłaściwej pozycji  
+ <a href="class_c_heurystyka_liczba_roznic.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cheurystykaliczbaroznic_8h_source.html">cheurystykaliczbaroznic.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CHeurystykaLiczbaRoznic:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_c_heurystyka_liczba_roznic.png" usemap="#CHeurystykaLiczbaRoznic_map" alt=""/>
   <map id="CHeurystykaLiczbaRoznic_map" name="CHeurystykaLiczbaRoznic_map">
-<area href="class_c_heurystyka.html" alt="CHeurystyka" shape="rect" coords="0,0,160,24"/>
+<area href="class_c_heurystyka.html" title="klasa abstrakcyjna - bazowa klasa dla klas realizujących konkretne funkcje heurystyk ..." alt="CHeurystyka" shape="rect" coords="0,0,160,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a381b68de375035b13691ff9da94af89c"><td class="memItemLeft" align="right" valign="top"><a id="a381b68de375035b13691ff9da94af89c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>policzOcene</b> (<a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *stan)</td></tr>
+<tr class="memitem:a376c700c483b2b8daffe09440c5ac6c9"><td class="memItemLeft" align="right" valign="top"><a id="a376c700c483b2b8daffe09440c5ac6c9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_heurystyka_liczba_roznic.html#a376c700c483b2b8daffe09440c5ac6c9">CHeurystykaLiczbaRoznic</a> ()</td></tr>
+<tr class="memdesc:a376c700c483b2b8daffe09440c5ac6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor ustawiający nazwę heurystyki w polu opisowym <br /></td></tr>
+<tr class="separator:a376c700c483b2b8daffe09440c5ac6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381b68de375035b13691ff9da94af89c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_heurystyka_liczba_roznic.html#a381b68de375035b13691ff9da94af89c">policzOcene</a> (<a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *stan)</td></tr>
+<tr class="memdesc:a381b68de375035b13691ff9da94af89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyliczająca wartość heurystyki dla wskazanego rozstawienia elementów układanki  <a href="#a381b68de375035b13691ff9da94af89c">More...</a><br /></td></tr>
 <tr class="separator:a381b68de375035b13691ff9da94af89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c_heurystyka"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_heurystyka')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_c_heurystyka.html">CHeurystyka</a></td></tr>
-<tr class="memitem:a340679b525875f6b06213fe4d311b096 inherit pub_methods_class_c_heurystyka"><td class="memItemLeft" align="right" valign="top"><a id="a340679b525875f6b06213fe4d311b096"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CHeurystyka</b> (std::string nazwa)</td></tr>
+<tr class="memitem:a340679b525875f6b06213fe4d311b096 inherit pub_methods_class_c_heurystyka"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_heurystyka.html#a340679b525875f6b06213fe4d311b096">CHeurystyka</a> (std::string <a class="el" href="class_c_heurystyka.html#ab5e7d80c5f4eba378e6e7adbb371a3bd">nazwa</a>)</td></tr>
+<tr class="memdesc:a340679b525875f6b06213fe4d311b096 inherit pub_methods_class_c_heurystyka"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor ustawiający nazwę heurystyki w polu opisowym  <a href="class_c_heurystyka.html#a340679b525875f6b06213fe4d311b096">More...</a><br /></td></tr>
 <tr class="separator:a340679b525875f6b06213fe4d311b096 inherit pub_methods_class_c_heurystyka"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cd845630ab12d4e3e67a8e84ec52e1b inherit pub_methods_class_c_heurystyka"><td class="memItemLeft" align="right" valign="top"><a id="a5cd845630ab12d4e3e67a8e84ec52e1b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getNazwa</b> ()</td></tr>
+<tr class="memitem:a5cd845630ab12d4e3e67a8e84ec52e1b inherit pub_methods_class_c_heurystyka"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_heurystyka.html#a5cd845630ab12d4e3e67a8e84ec52e1b">getNazwa</a> ()</td></tr>
+<tr class="memdesc:a5cd845630ab12d4e3e67a8e84ec52e1b inherit pub_methods_class_c_heurystyka"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca nazwę funkcji heurystyki realizowanej przez klasę  <a href="class_c_heurystyka.html#a5cd845630ab12d4e3e67a8e84ec52e1b">More...</a><br /></td></tr>
 <tr class="separator:a5cd845630ab12d4e3e67a8e84ec52e1b inherit pub_methods_class_c_heurystyka"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_c_heurystyka"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_heurystyka')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c_heurystyka.html">CHeurystyka</a></td></tr>
 <tr class="memitem:ab5e7d80c5f4eba378e6e7adbb371a3bd inherit pro_attribs_class_c_heurystyka"><td class="memItemLeft" align="right" valign="top"><a id="ab5e7d80c5f4eba378e6e7adbb371a3bd"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>nazwa</b></td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_heurystyka.html#ab5e7d80c5f4eba378e6e7adbb371a3bd">nazwa</a></td></tr>
+<tr class="memdesc:ab5e7d80c5f4eba378e6e7adbb371a3bd inherit pro_attribs_class_c_heurystyka"><td class="mdescLeft">&#160;</td><td class="mdescRight">nazwa heurystyki <br /></td></tr>
 <tr class="separator:ab5e7d80c5f4eba378e6e7adbb371a3bd inherit pro_attribs_class_c_heurystyka"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>klasa realizująca heurystykę opartą na liczbie elementów znajdujących się na niewłaściwej pozycji </p>
+<p>wartośc tej funkcji heurystyki jest równa liczbie elementów układanki, które znajdują się na niewłaściwych pozycjach (nie uwzględniając połozenia pola pustego)</p>
+<dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2018-04-04 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a381b68de375035b13691ff9da94af89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381b68de375035b13691ff9da94af89c">&#9670;&nbsp;</a></span>policzOcene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CHeurystykaLiczbaRoznic::policzOcene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>stan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda wyliczająca wartość heurystyki dla wskazanego rozstawienia elementów układanki </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stan</td><td>wskaźnik na wektor dwuwymiarowy przedstawiający rozmieszczenie elementów na układance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>liczba elementów układanki, które znajdują się na niewłaściwych pozycjach (nie uwzględniając połozenia pola pustego) </dd></dl>
+
+<p>Implements <a class="el" href="class_c_heurystyka.html#a0b445106f16026b84e232d64f193618f">CHeurystyka</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Model/Ukladanka/heurystyki/<a class="el" href="cheurystykaliczbaroznic_8h_source.html">cheurystykaliczbaroznic.h</a></li>
-<li>Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.cpp</li>
+<li>X:/okno/zc++/projekt/ukladanka/Model/Ukladanka/heurystyki/<a class="el" href="cheurystykaliczbaroznic_8h_source.html">cheurystykaliczbaroznic.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

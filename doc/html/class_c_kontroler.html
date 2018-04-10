@@ -64,33 +64,482 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_c_kontroler-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CKontroler Class Reference</div>  </div>
+<div class="title">CKontroler Class Reference<div class="ingroups"><a class="el" href="group__controller.html">Kontroler</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>klasa realizująca główny obiekt aplikacji - kontroler  
+ <a href="class_c_kontroler.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ckontroler_8h_source.html">ckontroler.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CKontroler:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_c_kontroler.png" usemap="#CKontroler_map" alt=""/>
   <map id="CKontroler_map" name="CKontroler_map">
-<area href="class_i_kontroler.html" alt="IKontroler" shape="rect" coords="0,0,73,24"/>
+<area href="class_i_kontroler.html" title="interfejs klasy CKontroler do komunikacji z gui - klasą COknoGlowne " alt="IKontroler" shape="rect" coords="0,0,73,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab07c7e1d7103fd241c38301ffb38c610"><td class="memItemLeft" align="right" valign="top"><a id="ab07c7e1d7103fd241c38301ffb38c610"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CKontroler</b> (<a class="el" href="class_i_g_u_i.html">IGUI</a> *gui)</td></tr>
+<tr class="memitem:ab07c7e1d7103fd241c38301ffb38c610"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#ab07c7e1d7103fd241c38301ffb38c610">CKontroler</a> (<a class="el" href="class_i_g_u_i.html">IGUI</a> *gui)</td></tr>
+<tr class="memdesc:ab07c7e1d7103fd241c38301ffb38c610"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor przekazujący wskaźnik na obiekt gui (<a class="el" href="class_c_okno_glowne.html" title="główna klasa gui - realizuje główne okno aplikacji, dziedziczy z klasy QMainWindow ...">COknoGlowne</a> przez interfejs <a class="el" href="class_i_g_u_i.html" title="interfejs klasy COknoGlowne do komunikacji z kontrolerem - klasą CKontroler ">IGUI</a>)  <a href="#ab07c7e1d7103fd241c38301ffb38c610">More...</a><br /></td></tr>
 <tr class="separator:ab07c7e1d7103fd241c38301ffb38c610"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03fe2afbc43841d6bdef65de644ce42"><td class="memItemLeft" align="right" valign="top"><a id="ae03fe2afbc43841d6bdef65de644ce42"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>wyslijWiadomosc</b> (<a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *wiadomosc)</td></tr>
+<tr class="memitem:adfc87449664bc62f32eb5a68f446eceb"><td class="memItemLeft" align="right" valign="top"><a id="adfc87449664bc62f32eb5a68f446eceb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#adfc87449664bc62f32eb5a68f446eceb">~CKontroler</a> ()</td></tr>
+<tr class="memdesc:adfc87449664bc62f32eb5a68f446eceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">destruktor - usuwa obiekty modelu <br /></td></tr>
+<tr class="separator:adfc87449664bc62f32eb5a68f446eceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03fe2afbc43841d6bdef65de644ce42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#ae03fe2afbc43841d6bdef65de644ce42">wyslijWiadomosc</a> (<a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *wiadomosc)</td></tr>
+<tr class="memdesc:ae03fe2afbc43841d6bdef65de644ce42"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda przesyłająca z gui do kontrolera obiekt z hierarchii klas wyprowadzonej z klasy bazowej <a class="el" href="class_c_g_u_i_msg.html" title="klasa abstrakcyjna - bazowa klasa dla hierarchii wiadomości z gui ">CGUIMsg</a>  <a href="#ae03fe2afbc43841d6bdef65de644ce42">More...</a><br /></td></tr>
 <tr class="separator:ae03fe2afbc43841d6bdef65de644ce42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a851bbbed7fc42db018de6198324209a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a851bbbed7fc42db018de6198324209a1">scZamknij</a> ()</td></tr>
+<tr class="memdesc:a851bbbed7fc42db018de6198324209a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; metody realizujące scenariusze są chronione - dostępne tylko z wewnątrz klasy oraz ewentualnych klas pochodnych  <a href="#a851bbbed7fc42db018de6198324209a1">More...</a><br /></td></tr>
+<tr class="separator:a851bbbed7fc42db018de6198324209a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1a23b808b2d9d41acf97b331abe69d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a9a1a23b808b2d9d41acf97b331abe69d">scKonfiguruj</a> (<a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *wiadomosc)</td></tr>
+<tr class="memdesc:a9a1a23b808b2d9d41acf97b331abe69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz parametryzująca obiekt modelu na podstawie danych otrzymancyh z gui (poprzez obiekt klasy <a class="el" href="class_c_g_u_i_msg_konfiguracja.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik ustawi par...">CGUIMsgKonfiguracja</a>)  <a href="#a9a1a23b808b2d9d41acf97b331abe69d">More...</a><br /></td></tr>
+<tr class="separator:a9a1a23b808b2d9d41acf97b331abe69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4465d8853c0fc33271c811e005dd14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a8c4465d8853c0fc33271c811e005dd14">scTasuj</a> ()</td></tr>
+<tr class="memdesc:a8c4465d8853c0fc33271c811e005dd14"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz wykonujący losowe rozłożenie elementów układanki dla obecnego rozmiaru modelu układanki  <a href="#a8c4465d8853c0fc33271c811e005dd14">More...</a><br /></td></tr>
+<tr class="separator:a8c4465d8853c0fc33271c811e005dd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3b8d86a27cf70a6748714bbb8049ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a4e3b8d86a27cf70a6748714bbb8049ad">scRozwiazuj</a> ()</td></tr>
+<tr class="memdesc:a4e3b8d86a27cf70a6748714bbb8049ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz znajdujący rozwiązanie za pomocą algorytmu A*  <a href="#a4e3b8d86a27cf70a6748714bbb8049ad">More...</a><br /></td></tr>
+<tr class="separator:a4e3b8d86a27cf70a6748714bbb8049ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327ba0b6d28983f5132d4550f3ac0056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a327ba0b6d28983f5132d4550f3ac0056">scResetuj</a> ()</td></tr>
+<tr class="memdesc:a327ba0b6d28983f5132d4550f3ac0056"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz resetujący model układanki - dla obecnego rozmiaru planszy elementy układanki są rozmieszczane w porządku zgodnym z numeracją pól (układ końcowy - rozwiązanie)  <a href="#a327ba0b6d28983f5132d4550f3ac0056">More...</a><br /></td></tr>
+<tr class="separator:a327ba0b6d28983f5132d4550f3ac0056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33cf03ccf539f275a05d958c62031fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#ab33cf03ccf539f275a05d958c62031fa">scReczneUstawianie</a> (<a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *wiadomosc)</td></tr>
+<tr class="memdesc:ab33cf03ccf539f275a05d958c62031fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz włączający/wyłączający w modelu status ręcznego ustawiania pozycji startowej  <a href="#ab33cf03ccf539f275a05d958c62031fa">More...</a><br /></td></tr>
+<tr class="separator:ab33cf03ccf539f275a05d958c62031fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8359912e0f6ee5f5ac7b91c5840775b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a8359912e0f6ee5f5ac7b91c5840775b9">scWykonajRuch</a> (<a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *wiadomosc)</td></tr>
+<tr class="memdesc:a8359912e0f6ee5f5ac7b91c5840775b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz sprawdzający możliwość wykonania przekazanego z gui ruchu oraz realizujący go (jeśli wykonanie jest możliwe)  <a href="#a8359912e0f6ee5f5ac7b91c5840775b9">More...</a><br /></td></tr>
+<tr class="separator:a8359912e0f6ee5f5ac7b91c5840775b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5ce1f2fa8aa4c996497d68ce2b9c9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a3c5ce1f2fa8aa4c996497d68ce2b9c9c">scObsluzStan</a> ()</td></tr>
+<tr class="memdesc:a3c5ce1f2fa8aa4c996497d68ce2b9c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz pomocniczy - odpowiedzialny za wyświetlanie informacji w StatusBarze okna głównego gui  <a href="#a3c5ce1f2fa8aa4c996497d68ce2b9c9c">More...</a><br /></td></tr>
+<tr class="separator:a3c5ce1f2fa8aa4c996497d68ce2b9c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b550f89618095aadbe1755a96c4b36a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a3b550f89618095aadbe1755a96c4b36a">scZadanieKonfiguracji</a> ()</td></tr>
+<tr class="memdesc:a3b550f89618095aadbe1755a96c4b36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz zlecająca gui wyświetlenie okna konfiguracji z danymi pobranymi z modelu  <a href="#a3b550f89618095aadbe1755a96c4b36a">More...</a><br /></td></tr>
+<tr class="separator:a3b550f89618095aadbe1755a96c4b36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a0daaef0ba22a9f344147db0111db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#ad1a0daaef0ba22a9f344147db0111db8">scWyswietlInstrukcje</a> ()</td></tr>
+<tr class="memdesc:ad1a0daaef0ba22a9f344147db0111db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz zlecająca gui wyświetlenie okna z instrukcjami  <a href="#ad1a0daaef0ba22a9f344147db0111db8">More...</a><br /></td></tr>
+<tr class="separator:ad1a0daaef0ba22a9f344147db0111db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22becd55ffdb69cbd730acdb4598205c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a22becd55ffdb69cbd730acdb4598205c">scWyswietlOprogramie</a> ()</td></tr>
+<tr class="memdesc:a22becd55ffdb69cbd730acdb4598205c"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz zlecająca gui wyświetlenie okna z infromacjami o programie  <a href="#a22becd55ffdb69cbd730acdb4598205c">More...</a><br /></td></tr>
+<tr class="separator:a22becd55ffdb69cbd730acdb4598205c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>klasa realizująca główny obiekt aplikacji - kontroler </p>
+<p>klasa kontrolera odpowiada za sterowanie aplikacją na podstawie wykonanych przez użytkownika na obiektach gui akcjach <br />
+ główną i jedyną metodą dostępną publicznie jest metoda umożliwiająca przekazywanie z gui do kontrolera informacji o wykonanej przez użytkownika akcji na interfejscie graficznym aplikacji</p>
+<dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2018-04-04 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab07c7e1d7103fd241c38301ffb38c610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07c7e1d7103fd241c38301ffb38c610">&#9670;&nbsp;</a></span>CKontroler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CKontroler::CKontroler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_g_u_i.html">IGUI</a> *&#160;</td>
+          <td class="paramname"><em>gui</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>konstruktor przekazujący wskaźnik na obiekt gui (<a class="el" href="class_c_okno_glowne.html" title="główna klasa gui - realizuje główne okno aplikacji, dziedziczy z klasy QMainWindow ...">COknoGlowne</a> przez interfejs <a class="el" href="class_i_g_u_i.html" title="interfejs klasy COknoGlowne do komunikacji z kontrolerem - klasą CKontroler ">IGUI</a>) </p>
+<p>konstruktor kontrolera tworzy obiekt modelu <a class="el" href="class_c_model_ukladanka.html" title="klasa realizująca model układanki ">CModelUkladanka</a>, inicjalizuje go domyślnymi wartościami parametrów, oraz przekazuje dane odczytane z obiektu modelu do gui w celu wyświetlenia stanu planszy zgodnego z zapamiętanym w modelu </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9a1a23b808b2d9d41acf97b331abe69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1a23b808b2d9d41acf97b331abe69d">&#9670;&nbsp;</a></span>scKonfiguruj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scKonfiguruj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *&#160;</td>
+          <td class="paramname"><em>wiadomosc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz parametryzująca obiekt modelu na podstawie danych otrzymancyh z gui (poprzez obiekt klasy <a class="el" href="class_c_g_u_i_msg_konfiguracja.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik ustawi par...">CGUIMsgKonfiguracja</a>) </p>
+<p>metoda dynamicznie rzutuje wiadomosc na klasę pochodną <a class="el" href="class_c_g_u_i_msg_konfiguracja.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik ustawi par...">CGUIMsgKonfiguracja</a>, odczytuje z niej parametry (metody <a class="el" href="class_c_g_u_i_msg_konfiguracja.html#afc721efe2d8d265fe357fda424933d1f" title="metoda zwracająca wybraną przez użytkownika liczbę kolumn ">CGUIMsgKonfiguracja::getN</a> i <a class="el" href="class_c_g_u_i_msg_konfiguracja.html#afb27045e1153547cab64b10215001cd0" title="metoda zwracająca wybraną przez użytkownika liczbę wierszy ">CGUIMsgKonfiguracja::getM</a>), wykonuje reset planszy w modelu z podanymi nowymi wymiarami (<a class="el" href="class_c_model_ukladanka.html#afb2a215962891c31c280df015ee7d6fd" title="metoda resetująca model układanki - ustawiająca nową planszę o podanym rozmiarze z ułożeniem końcowym...">CModelUkladanka::resetuj</a>) i przekazuje do gui (metoda <a class="el" href="class_c_okno_glowne.html#ae20a81687e64dc929a7b02578072a5e7" title="metoda ustawiająca rozmiar planszy i układająca elementy zgodnie z podanym wektorem 1-wymiarowym (odc...">COknoGlowne::rysujPlansze</a>) odczytane z modelu: układ planszy w postaci 1-wymiarowego wektora (metoda CModelUkladanka::wektor) oraz wymiary (metody CModelUkladanka::getN i CModelUkladanka::getM)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wiadomosc</td><td>wskaźnik na obiekt klasy <a class="el" href="class_c_g_u_i_msg_konfiguracja.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik ustawi par...">CGUIMsgKonfiguracja</a> - wiadomość przekazana z gui (nowy rozmiar planszy) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c5ce1f2fa8aa4c996497d68ce2b9c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5ce1f2fa8aa4c996497d68ce2b9c9c">&#9670;&nbsp;</a></span>scObsluzStan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scObsluzStan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz pomocniczy - odpowiedzialny za wyświetlanie informacji w StatusBarze okna głównego gui </p>
+<p>metoda uruchamiana po zrealizowaniu innych scenariuszy - tych, w wyniku których może zmienić się status modelu układanki metoda sprawdza status modelu (metoda <a class="el" href="class_c_model_ukladanka.html#adf7cb18ca65dc63e157c0d2c217b1df6" title="metoda zwraca aktualny status modelu układanki EStan ">CModelUkladanka::getStan</a>) i na jego podstawie wywołuje w gui metodę wyświetlającą odpowiedni opis w StatusBarze (metoda <a class="el" href="class_c_okno_glowne.html#a4e9e97daf2b5739580aff70fc22b19f8" title="metoda wyświetlająca przekazany jako parametr tekst w StatusBarze okna głównego ">COknoGlowne::wyswietlStatus</a>) </p>
+
+</div>
+</div>
+<a id="ab33cf03ccf539f275a05d958c62031fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33cf03ccf539f275a05d958c62031fa">&#9670;&nbsp;</a></span>scReczneUstawianie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scReczneUstawianie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *&#160;</td>
+          <td class="paramname"><em>wiadomosc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz włączający/wyłączający w modelu status ręcznego ustawiania pozycji startowej </p>
+<p>metoda dynamicznie rzutuje wiadomosc na klasę pochodną <a class="el" href="class_c_g_u_i_msg_ustawianie_reczne.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik wybierze z...">CGUIMsgUstawianieReczne</a>, odczytuje z niej parametr (metoda <a class="el" href="class_c_g_u_i_msg_ustawianie_reczne.html#a83c67cf75e33900bba10177a030cd467" title="metoda zwracająca aktualne zaznaczenie opcji Ręczne Ustawianie w gui ">CGUIMsgUstawianieReczne::getWlaczone</a>) - informację czy status ma być włączony (true), czy wyłączony (false) i wywołuje odpowiednią metodę w modelu układanki (<a class="el" href="class_c_model_ukladanka.html#ab9c63eaf8386468bdb23f097b634c0a9" title="metoda włącza lub wyłącza status ręcznego ustawiania rozmieszczenia elementów układanki ...">CModelUkladanka::setReczneUstawianie</a>) w celu ustawienia aktualnego statusu modelu: <br />
+ włączenie statusu polega na ustawieniu w modelu układanki stanu EStan::ustawianie, gdy z gui przekazano informację o włączeniu tego statusu wyłączenie statusu polega na ustawieniu w modelu układanki stanu EStan::wolny, pod warunkiem, że poprzedni status był równy EStan::ustawianie oraz informacja z gui mówi o wyłączeniu tego statusu</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wiadomosc</td><td>wskaźnik na obiekt klasy <a class="el" href="class_c_g_u_i_msg_ustawianie_reczne.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik wybierze z...">CGUIMsgUstawianieReczne</a> - wiadomość przekazana z gui (włączenie/wyłączenie ręcznego ustawiania) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a327ba0b6d28983f5132d4550f3ac0056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327ba0b6d28983f5132d4550f3ac0056">&#9670;&nbsp;</a></span>scResetuj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scResetuj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz resetujący model układanki - dla obecnego rozmiaru planszy elementy układanki są rozmieszczane w porządku zgodnym z numeracją pól (układ końcowy - rozwiązanie) </p>
+<p>metoda ustawia wszystkie elementy układanki zgodnie z ich domyślnymi pozycjami (numery elementów odpowiadają numerom pól) wykonuje reset planszy w modelu z podanymi nowymi wymiarami (<a class="el" href="class_c_model_ukladanka.html#afb2a215962891c31c280df015ee7d6fd" title="metoda resetująca model układanki - ustawiająca nową planszę o podanym rozmiarze z ułożeniem końcowym...">CModelUkladanka::resetuj</a>) i przekazuje do gui (metoda <a class="el" href="class_c_okno_glowne.html#ae20a81687e64dc929a7b02578072a5e7" title="metoda ustawiająca rozmiar planszy i układająca elementy zgodnie z podanym wektorem 1-wymiarowym (odc...">COknoGlowne::rysujPlansze</a>) odczytane z modelu: układ planszy w postaci 1-wymiarowego wektora (metoda CModelUkladanka::wektor) oraz wymiary (metody CModelUkladanka::getN i CModelUkladanka::getM) </p>
+
+</div>
+</div>
+<a id="a4e3b8d86a27cf70a6748714bbb8049ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3b8d86a27cf70a6748714bbb8049ad">&#9670;&nbsp;</a></span>scRozwiazuj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scRozwiazuj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz znajdujący rozwiązanie za pomocą algorytmu A* </p>
+<p>TODO </p>
+
+</div>
+</div>
+<a id="a8c4465d8853c0fc33271c811e005dd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4465d8853c0fc33271c811e005dd14">&#9670;&nbsp;</a></span>scTasuj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scTasuj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz wykonujący losowe rozłożenie elementów układanki dla obecnego rozmiaru modelu układanki </p>
+<p>metoda zleca modelowi wygenerowanie losowego rozłożenia elementów na planszy o obecnych wymiarach (metoda <a class="el" href="class_c_model_ukladanka.html#a386916742266b1315e9b3ccc3814ccdc" title="metoda losowo rozmieszczająca elementy układanki ">CModelUkladanka::wygenerujLosoweUstawienie</a>), i przekazuje do gui (metoda <a class="el" href="class_c_okno_glowne.html#ae20a81687e64dc929a7b02578072a5e7" title="metoda ustawiająca rozmiar planszy i układająca elementy zgodnie z podanym wektorem 1-wymiarowym (odc...">COknoGlowne::rysujPlansze</a>) odczytane z modelu: układ planszy w postaci 1-wymiarowego wektora (metoda CModelUkladanka::wektor) oraz wymiary (metody CModelUkladanka::getN i CModelUkladanka::getM) </p>
+
+</div>
+</div>
+<a id="a8359912e0f6ee5f5ac7b91c5840775b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8359912e0f6ee5f5ac7b91c5840775b9">&#9670;&nbsp;</a></span>scWykonajRuch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scWykonajRuch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *&#160;</td>
+          <td class="paramname"><em>wiadomosc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz sprawdzający możliwość wykonania przekazanego z gui ruchu oraz realizujący go (jeśli wykonanie jest możliwe) </p>
+<p>metoda dynamicznie rzutuje wiadomosc na klasę pochodną <a class="el" href="class_c_g_u_i_msg_wcisniete_pole.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik kliknął wy...">CGUIMsgWcisnietePole</a>, odczytuje z niej parametr (metoda <a class="el" href="class_c_g_u_i_msg_wcisniete_pole.html#aa720bc37683e78828cc4c2338e290985" title="metoda zwracająca nr pola klikniętego przez użytkownika w gui ">CGUIMsgWcisnietePole::getPole</a>) - nr pola, które zostało kliknięte w gui (nr w liniowym odczycie planszy wierszami poczynając od lewego górnego rogu - pole (0,0)) i wywołuje odpowiednią metodę w modelu układanki (<a class="el" href="class_c_model_ukladanka.html#a07d290b3fbc67ce744dcb933ef9e9a5f" title="metoda wykonująca wskazany ruch i aktualizująca rozstawienie na planszy ">CModelUkladanka::wykonajRuch</a>) w celu sprawdzenia możliwości i ewentualnego wykonania ruchu <br />
+ jesli metoda zwróci wartość różną od -1:</p><ul>
+<li>ruch został wykonany (przez wywołaną metodę, aktualizuje ona układ planszy w modelu),</li>
+<li>pobierana jest informacja z modelu o ostatnim ruchu (<a class="el" href="class_c_model_ukladanka.html#afdb565e21e151d574ff54db588289657" title="metoda zwracająca ostatni wykonany ruch na planszy (w postaci pary wartości - nr pola z którego przes...">CModelUkladanka::getOstatniRuch</a>)</li>
+<li>w gui wywoływana jest metoda aktualizująca tylko dwa pola układanki - kliknięte i puste (metoda CModelUkladanka::zamienPola) jesli metoda zwróci wartość równą -1 - ruch nie jest możliwy i układ planszy nie jest zmieniany (w modelu układanki oraz w gui)</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wiadomosc</td><td>wskaźnik na obiekt klasy <a class="el" href="class_c_g_u_i_msg_wcisniete_pole.html" title="klasa realizująca typ wiadomości przesyłany z gui do kontrolera w sytuacji, gdy użytkownik kliknął wy...">CGUIMsgWcisnietePole</a> - wiadomość przekazana z gui (nr klikniętego pola) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad1a0daaef0ba22a9f344147db0111db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a0daaef0ba22a9f344147db0111db8">&#9670;&nbsp;</a></span>scWyswietlInstrukcje()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scWyswietlInstrukcje </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz zlecająca gui wyświetlenie okna z instrukcjami </p>
+<p>metoda wywołuję metodę gui (<a class="el" href="class_c_okno_glowne.html#ae13a2afd03801295977f8632d3b76ed1" title="metoda wyświetlająca okno Instrukcje (okno modalne) z informacjami przekazanymi przez parametr ...">COknoGlowne::wyswietlInstrukcje</a>) i przekazuje za pomocą słownika parametry (tekst do wyświetlenia w oknie) </p>
+
+</div>
+</div>
+<a id="a22becd55ffdb69cbd730acdb4598205c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22becd55ffdb69cbd730acdb4598205c">&#9670;&nbsp;</a></span>scWyswietlOprogramie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scWyswietlOprogramie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz zlecająca gui wyświetlenie okna z infromacjami o programie </p>
+<p>metoda wywołuję metodę gui (<a class="el" href="class_c_okno_glowne.html#acc4533dfd8ab0ebd41f1bd9abcc0dc46" title="metoda wyświetlająca okno O programie (okno modalne) z informacjami przekazanymi przez parametr ...">COknoGlowne::wyswietlOprogramie</a>) i przekazuje za pomocą słownika parametry (tytuł, podtytuł i autora aplikacji) </p>
+
+</div>
+</div>
+<a id="a3b550f89618095aadbe1755a96c4b36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b550f89618095aadbe1755a96c4b36a">&#9670;&nbsp;</a></span>scZadanieKonfiguracji()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scZadanieKonfiguracji </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz zlecająca gui wyświetlenie okna konfiguracji z danymi pobranymi z modelu </p>
+<p>metoda pobiera z modelu rozmiar planszy (CModelUkladanka::getN i CModelUkladanka::getM) i przekazuje go do gui (<a class="el" href="class_c_okno_glowne.html#aad2eca43e3ad37ee7067ee162332e468" title="metoda wyświetlająca okno konfiguracji (okno modalne) i ustawiająca parametry wyświetlane w tym oknie...">COknoGlowne::wyswietlKonfiguracje</a>) </p>
+
+</div>
+</div>
+<a id="a851bbbed7fc42db018de6198324209a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851bbbed7fc42db018de6198324209a1">&#9670;&nbsp;</a></span>scZamknij()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scZamknij </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&lt; metody realizujące scenariusze są chronione - dostępne tylko z wewnątrz klasy oraz ewentualnych klas pochodnych </p>
+<p>metoda - scenariusz kończący działanie aplikacji</p>
+<p>metoda sprzątająca - usuwa obiekt modelu (destrukcja obiektów gui jest przeprowadzana przez tamte obiekty) </p>
+
+</div>
+</div>
+<a id="ae03fe2afbc43841d6bdef65de644ce42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae03fe2afbc43841d6bdef65de644ce42">&#9670;&nbsp;</a></span>wyslijWiadomosc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::wyslijWiadomosc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_g_u_i_msg.html">CGUIMsg</a> *&#160;</td>
+          <td class="paramname"><em>wiadomosc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda przesyłająca z gui do kontrolera obiekt z hierarchii klas wyprowadzonej z klasy bazowej <a class="el" href="class_c_g_u_i_msg.html" title="klasa abstrakcyjna - bazowa klasa dla hierarchii wiadomości z gui ">CGUIMsg</a> </p>
+<p>główna metoda sterująca aplikacji <br />
+ na podstawie klasy przekazanego w argumencie obiektu z hierarchii klas wyprowadzonej z klasy bazowej <a class="el" href="class_c_g_u_i_msg.html" title="klasa abstrakcyjna - bazowa klasa dla hierarchii wiadomości z gui ">CGUIMsg</a> wywoływana jest jedna metod realizujących zadany scenariusz</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wiadomosc</td><td>wskaźnik na obiekt z hierarchii klas wyprowadzonej z klasy bazowej <a class="el" href="class_c_g_u_i_msg.html" title="klasa abstrakcyjna - bazowa klasa dla hierarchii wiadomości z gui ">CGUIMsg</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_i_kontroler.html#ab64dd8349762be895a2a26aa59f2b0ab">IKontroler</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Kontroler/<a class="el" href="ckontroler_8h_source.html">ckontroler.h</a></li>
-<li>Kontroler/ckontroler.cpp</li>
+<li>X:/okno/zc++/projekt/ukladanka/Kontroler/<a class="el" href="ckontroler_8h_source.html">ckontroler.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/Kontroler/ckontroler.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

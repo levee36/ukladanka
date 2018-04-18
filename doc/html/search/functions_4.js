@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['on_5factionpole_5fpressed',['on_actionPole_pressed',['../class_c_plansza.html#a40493ca15aaa0cc7bcb634b6bcc6c722',1,'CPlansza']]]
+  ['krokwykonany',['krokWykonany',['../class_c_watek_algorytm.html#ac7df3e423c05b54e500648948e25df59',1,'CWatekAlgorytm']]]
 ];

@@ -94,6 +94,22 @@ public:
     virtual bool wyswietlInstrukcje(std::map<std::string,std::string> param) = 0;
 
     ///
+    /// @brief metoda wyświetlająca okno popup (okno modalne) z informacjami przekazanymi przez parametr
+    ///
+    /// @param[in] param mapa parametrów - zarówno klucz jak i wartość są zmiennymi łańcuchowymi
+    ///
+    /// @return true jeśli metoda się powiodła
+    ///
+    virtual bool wyswietlOknoPopup(std::map<std::string,std::string> param) = 0;
+
+    ///
+    /// @brief metoda zamykająca okno popup (jeśli otwarte)
+    ///
+    /// @return true jeśli metoda się powiodła
+    ///
+    virtual bool zamknijOknoPopup() = 0;
+
+    ///
     /// @brief metoda ustawiająca wskaźnik na obiekt kontrolera (przez interfejs IKontroler)
     ///
     /// @param[in] kontroler wskaźnik na obiekt kontrolera
@@ -102,3 +118,4 @@ public:
 };
 
 #endif // IGUI_H
+

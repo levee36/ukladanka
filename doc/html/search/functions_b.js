@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['_7eckontroler',['~CKontroler',['../class_c_kontroler.html#adfc87449664bc62f32eb5a68f446eceb',1,'CKontroler']]],
-  ['_7ecoknoglowne',['~COknoGlowne',['../class_c_okno_glowne.html#a039c79a09a56495b012f491e4612556e',1,'COknoGlowne']]],
-  ['_7ecoknoinstrukcje',['~COknoInstrukcje',['../class_c_okno_instrukcje.html#a01747c2497b3b8c2bb51be705769f34b',1,'COknoInstrukcje']]],
-  ['_7ecoknokonf',['~COknoKonf',['../class_c_okno_konf.html#a3314de9db9f0b9a497567713866a0131',1,'COknoKonf']]],
-  ['_7ecoknooprogramie',['~COknoOprogramie',['../class_c_okno_oprogramie.html#a8019385aff850a3a099a67f05557543c',1,'COknoOprogramie']]],
-  ['_7ecplansza',['~CPlansza',['../class_c_plansza.html#a3971b9f7d99e4f109193cb9bfafd72f8',1,'CPlansza']]]
+  ['zamienpola',['zamienPola',['../class_c_okno_glowne.html#a36e1552c00817aa28ae519119a5b2b30',1,'COknoGlowne::zamienPola()'],['../class_c_plansza.html#a516ef52b538349c550327ca7fc97b132',1,'CPlansza::zamienPola()'],['../class_i_g_u_i.html#ab0cc96aed390a50abf15100856848ba7',1,'IGUI::zamienPola()']]],
+  ['zamknijokno',['zamknijOkno',['../class_c_okno_glowne.html#adf5846bc70203f6787764c8ed85440dc',1,'COknoGlowne::zamknijOkno()'],['../class_i_g_u_i.html#ac29b35cbd8ddbbc9c84eb7fe8fffb54f',1,'IGUI::zamknijOkno()']]],
+  ['zamknijoknopopup',['zamknijOknoPopup',['../class_c_okno_glowne.html#aa51d1c94b333a6cfc0b964eb181a0613',1,'COknoGlowne::zamknijOknoPopup()'],['../class_i_g_u_i.html#aaf9df2041606fc8a142384e2c601b5a1',1,'IGUI::zamknijOknoPopup()']]],
+  ['zamykany',['zamykany',['../class_c_okno_popup.html#a861ebc818d1444b6f289eaa8d5a66630',1,'COknoPopup']]],
+  ['zdolu',['zDolu',['../class_c_array2_d.html#abb69d2ffe636bbe8aafb7fea52c40404',1,'CArray2D::zDolu(size_t n, size_t m)'],['../class_c_array2_d.html#a19935cfec8d4958f5adbdb96ebd8f73f',1,'CArray2D::zDolu(size_t t)']]],
+  ['zgory',['zGory',['../class_c_array2_d.html#a212edac3c53c84fbedfe60fc526d45f8',1,'CArray2D::zGory(size_t n, size_t m)'],['../class_c_array2_d.html#a2e9343e8fbe743b5fbf90f3ac1643e56',1,'CArray2D::zGory(size_t t)']]],
+  ['zlewej',['zLewej',['../class_c_array2_d.html#ad5a1372e461a9a377d025273b1e1d2fd',1,'CArray2D::zLewej(size_t n, size_t m)'],['../class_c_array2_d.html#aa488d6c7868162586e4f5c673498be0c',1,'CArray2D::zLewej(size_t t)']]],
+  ['zprawej',['zPrawej',['../class_c_array2_d.html#acc08b47d779632a7a69082183eabdc53',1,'CArray2D::zPrawej(size_t n, size_t m)'],['../class_c_array2_d.html#a696aa0f076752828422ae2fff16b93c0',1,'CArray2D::zPrawej(size_t t)']]],
+  ['zwrocmozliweruchy',['zwrocMozliweRuchy',['../class_c_model_ukladanka.html#a70704b2e368ca322512262b02fa253c9',1,'CModelUkladanka::zwrocMozliweRuchy()'],['../class_i_ukladanka.html#a154e9207f82e07277ef4e04e82c3f7a4',1,'IUkladanka::zwrocMozliweRuchy()']]],
+  ['zwrocsciezke',['zwrocSciezke',['../class_c_algorytm_a_star.html#a5770c9c94c931411e9fa02b7395e66dc',1,'CAlgorytmAStar::zwrocSciezke()'],['../class_i_algorytm.html#a1c057e961ec93c84e33a3832600b1f0c',1,'IAlgorytm::zwrocSciezke()']]]
 ];

@@ -2,11 +2,11 @@
 #define CHEURYSTYKA_H
 
 #include <string>
-#include "Model/Ukladanka/carray2d.h"
+#include "Model/carray2d.h"
 
 ///
 /// @defgroup heurystyki Heurystyki
-/// @ingroup model
+/// @ingroup modelukladanka
 ///
 /// @brief
 /// Hierarchia klas realizujących różne heurystyki - funkcje szacowania liczby ruchów potrzebnych do rozwiązania układanki

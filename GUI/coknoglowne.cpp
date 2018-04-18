@@ -3,6 +3,7 @@
 #include "coknoinstrukcje.h"
 #include "coknokonf.h"
 #include "coknooprogramie.h"
+#include "coknopopup.h"
 #include "GUImsg/cguimsgzadaniekonfiguracji.h"
 #include "GUImsg/cguimsgwyjscie.h"
 #include "GUImsg/cguimsgtasuj.h"
@@ -19,6 +20,7 @@ COknoGlowne::COknoGlowne(QWidget *parent) :
 {
     ui->setupUi(this);
     plansza = new CPlansza(std::vector<int>(1,-1),1,1,0,this);
+    popup = 0;
 }
 
 COknoGlowne::~COknoGlowne()
@@ -78,6 +80,19 @@ bool COknoGlowne::wyswietlInstrukcje(std::map<std::string,std::string> param) {
     return true;
 }
 
+bool COknoGlowne::wyswietlOknoPopup(std::map<std::string, std::string> param)
+{
+    popup = new COknoPopup(param,kontroler,this);
+    QObject::connect(popup,SIGNAL(zamykany()), SLOT(zamknieciePopup()));
+    popup->exec();
+    return true;
+}
+
+bool COknoGlowne::zamknijOknoPopup()
+{
+    if (popup!=0) popup->close();
+}
+
 void COknoGlowne::on_actionKonfiguracja_triggered()
 {
     kontroler->wyslijWiadomosc(new CGUIMsgZadanieKonfiguracji());
@@ -116,6 +131,11 @@ void COknoGlowne::on_actionInstrukcje_triggered()
 void COknoGlowne::on_actionOprogramie_triggered()
 {
     kontroler->wyslijWiadomosc(new CGUIMsgOprogramie());
+}
+
+void COknoGlowne::zamknieciePopup()
+{
+    popup=0;
 }
 
 void COknoGlowne::closeEvent(QCloseEvent *event)

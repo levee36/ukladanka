@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['resetuj',['resetuj',['../class_c_model_ukladanka.html#afb2a215962891c31c280df015ee7d6fd',1,'CModelUkladanka::resetuj()'],['../class_i_ukladanka.html#a4d74a342f4b44005b9855e02b023ba19',1,'IUkladanka::resetuj()']]],
-  ['rysujplansze',['rysujPlansze',['../class_c_okno_glowne.html#ae20a81687e64dc929a7b02578072a5e7',1,'COknoGlowne::rysujPlansze()'],['../class_i_g_u_i.html#a8cfc7882064ee084c7dfc3b17d5c2a39',1,'IGUI::rysujPlansze()']]]
+  ['podajocene',['podajOcene',['../class_c_model_ukladanka.html#a5a512a4a097239e335ef0f527af93762',1,'CModelUkladanka::podajOcene()'],['../class_i_ukladanka.html#af4a84f41425fd95233e146c5e399078b',1,'IUkladanka::podajOcene()']]],
+  ['policzocene',['policzOcene',['../class_c_heurystyka.html#a0b445106f16026b84e232d64f193618f',1,'CHeurystyka::policzOcene()'],['../class_c_heurystyka_liczba_roznic.html#a381b68de375035b13691ff9da94af89c',1,'CHeurystykaLiczbaRoznic::policzOcene()'],['../class_c_heurystyka_manhattan.html#ae5fbc164685c61961be4e8feae5a4136',1,'CHeurystykaManhattan::policzOcene()']]],
+  ['przerwanedzialanie',['przerwaneDzialanie',['../class_c_watek_algorytm.html#af37bf5b68de45cd470b50cf79bc7a811',1,'CWatekAlgorytm']]],
+  ['przerwij',['przerwij',['../class_c_watek_algorytm.html#afc40884bae7775c9690092e6004c3dab',1,'CWatekAlgorytm']]]
 ];

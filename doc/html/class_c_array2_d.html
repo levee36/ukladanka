@@ -91,6 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af4935ba862daabafafc5f350c016d926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_array2_d.html#af4935ba862daabafafc5f350c016d926">CArray2D</a> (size_t n, size_t m, std::vector&lt; T &gt; tbl)</td></tr>
 <tr class="memdesc:af4935ba862daabafafc5f350c016d926"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor ustawiający rozmiar i wartości z podanego wektora int  <a href="#af4935ba862daabafafc5f350c016d926">More...</a><br /></td></tr>
 <tr class="separator:af4935ba862daabafafc5f350c016d926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7077a7e1be033f8f6e6f7a76abe0fbbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_array2_d.html#a7077a7e1be033f8f6e6f7a76abe0fbbf">CArray2D</a> (const <a class="el" href="class_c_array2_d.html">CArray2D</a> &amp;ob)</td></tr>
+<tr class="memdesc:a7077a7e1be033f8f6e6f7a76abe0fbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">konstruktor kopiujący  <a href="#a7077a7e1be033f8f6e6f7a76abe0fbbf">More...</a><br /></td></tr>
+<tr class="separator:a7077a7e1be033f8f6e6f7a76abe0fbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac44d40019960b4c2c0a471afe718095f"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_array2_d.html#ac44d40019960b4c2c0a471afe718095f">at</a> (size_t n, size_t m)</td></tr>
 <tr class="memdesc:ac44d40019960b4c2c0a471afe718095f"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca referencję do elementu wektora o współrzędnych n,m  <a href="#ac44d40019960b4c2c0a471afe718095f">More...</a><br /></td></tr>
 <tr class="separator:ac44d40019960b4c2c0a471afe718095f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +157,7 @@ class CArray2D&lt; T &gt;</h3>
 <dl class="section date"><dt>Date</dt><dd>2018-04-04 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adbecde6a7908b195fc840a88119d5e91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbecde6a7908b195fc840a88119d5e91">&#9670;&nbsp;</a></span>CArray2D() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adbecde6a7908b195fc840a88119d5e91">&#9670;&nbsp;</a></span>CArray2D() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,7 +211,7 @@ template&lt;typename T = int&gt; </div>
 </div>
 </div>
 <a id="af4935ba862daabafafc5f350c016d926"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4935ba862daabafafc5f350c016d926">&#9670;&nbsp;</a></span>CArray2D() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4935ba862daabafafc5f350c016d926">&#9670;&nbsp;</a></span>CArray2D() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,6 +261,42 @@ template&lt;typename T = int&gt; </div>
     <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>liczba kolumn </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>liczba wierszy </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tbl</td><td>wektor wartości do ustawienia w kolejnych komórkach wektora dwuwymiarowego </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7077a7e1be033f8f6e6f7a76abe0fbbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7077a7e1be033f8f6e6f7a76abe0fbbf">&#9670;&nbsp;</a></span>CArray2D() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T = int&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; T &gt;::<a class="el" href="class_c_array2_d.html">CArray2D</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>konstruktor kopiujący </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ob</td><td>obiekt wzór do skopiowania </td></tr>
   </table>
   </dd>
 </dl>
@@ -801,7 +840,7 @@ template&lt;typename T = int&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>X:/okno/zc++/projekt/ukladanka/Model/Ukladanka/<a class="el" href="carray2d_8h_source.html">carray2d.h</a></li>
+<li>X:/okno/zc++/projekt/ukladanka/Model/<a class="el" href="carray2d_8h_source.html">carray2d.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model',['Model',['../group__model.html',1,'']]]
+  ['kontroler',['Kontroler',['../group__controller.html',1,'']]]
 ];

@@ -60,6 +60,17 @@ public:
     }
 
     ///
+    /// @brief konstruktor kopiujący
+    ///
+    /// @param[in] ob obiekt wzór do skopiowania
+    ///
+    CArray2D(const CArray2D &ob) :
+        N(ob.N),
+        M(ob.M),
+        std::vector<std::vector<T>>((std::vector<std::vector<T>>)ob)
+    { }
+
+    ///
     /// @brief metoda zwracająca referencję do elementu wektora o współrzędnych n,m
     ///
     /// @param[in] n współrzędna kolumny
@@ -205,3 +216,4 @@ public:
 };
 
 #endif // CARRAY2D_H
+

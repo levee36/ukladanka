@@ -92,7 +92,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0cc96aed390a50abf15100856848ba7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#ab0cc96aed390a50abf15100856848ba7">zamienPola</a> (std::vector&lt; std::array&lt; int, 2 &gt;&gt; pary)=0</td></tr>
 <tr class="memdesc:ab0cc96aed390a50abf15100856848ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zamieniająca miejscami wskazane pola na planszy  <a href="#ab0cc96aed390a50abf15100856848ba7">More...</a><br /></td></tr>
 <tr class="separator:ab0cc96aed390a50abf15100856848ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f9ba34ab47a86251282a81fbeab432"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#a19f9ba34ab47a86251282a81fbeab432">setUstawianieReczne</a> (bool <a class="el" href="group__model.html#gga32f99beaf5d96e0a04dbd8937c90f8acaf4736369ccff135c14dcd69a0b71a025">ustawianie</a>)=0</td></tr>
+<tr class="memitem:a19f9ba34ab47a86251282a81fbeab432"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#a19f9ba34ab47a86251282a81fbeab432">setUstawianieReczne</a> (bool <a class="el" href="group__modelukladanka.html#gga32f99beaf5d96e0a04dbd8937c90f8acaf4736369ccff135c14dcd69a0b71a025">ustawianie</a>)=0</td></tr>
 <tr class="memdesc:a19f9ba34ab47a86251282a81fbeab432"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda ustawiająca opcję Ustawienie Ręczne z menu okna  <a href="#a19f9ba34ab47a86251282a81fbeab432">More...</a><br /></td></tr>
 <tr class="separator:a19f9ba34ab47a86251282a81fbeab432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87afdd469ac705c22344ab6aee831e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#aa87afdd469ac705c22344ab6aee831e9">wyswietlKonfiguracje</a> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
@@ -110,6 +110,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a61b07aed2716469cc58252ef23b4c6b6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#a61b07aed2716469cc58252ef23b4c6b6">wyswietlInstrukcje</a> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
 <tr class="memdesc:a61b07aed2716469cc58252ef23b4c6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyświetlająca okno Instrukcje (okno modalne) z informacjami przekazanymi przez parametr  <a href="#a61b07aed2716469cc58252ef23b4c6b6">More...</a><br /></td></tr>
 <tr class="separator:a61b07aed2716469cc58252ef23b4c6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd589e0b711522db9cfaffbddfa9de9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#addd589e0b711522db9cfaffbddfa9de9">wyswietlOknoPopup</a> (std::map&lt; std::string, std::string &gt; param)=0</td></tr>
+<tr class="memdesc:addd589e0b711522db9cfaffbddfa9de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyświetlająca okno popup (okno modalne) z informacjami przekazanymi przez parametr  <a href="#addd589e0b711522db9cfaffbddfa9de9">More...</a><br /></td></tr>
+<tr class="separator:addd589e0b711522db9cfaffbddfa9de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9df2041606fc8a142384e2c601b5a1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#aaf9df2041606fc8a142384e2c601b5a1">zamknijOknoPopup</a> ()=0</td></tr>
+<tr class="memdesc:aaf9df2041606fc8a142384e2c601b5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zamykająca okno popup (jeśli otwarte)  <a href="#aaf9df2041606fc8a142384e2c601b5a1">More...</a><br /></td></tr>
+<tr class="separator:aaf9df2041606fc8a142384e2c601b5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d51ff77f97fb78cd6fe69abcc23f86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_g_u_i.html#ad7d51ff77f97fb78cd6fe69abcc23f86">setKontroler</a> (<a class="el" href="class_i_kontroler.html">IKontroler</a> *kontroler)=0</td></tr>
 <tr class="memdesc:ad7d51ff77f97fb78cd6fe69abcc23f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda ustawiająca wskaźnik na obiekt kontrolera (przez interfejs <a class="el" href="class_i_kontroler.html" title="interfejs klasy CKontroler do komunikacji z gui - klasą COknoGlowne ">IKontroler</a>)  <a href="#ad7d51ff77f97fb78cd6fe69abcc23f86">More...</a><br /></td></tr>
 <tr class="separator:ad7d51ff77f97fb78cd6fe69abcc23f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,6 +328,43 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="addd589e0b711522db9cfaffbddfa9de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd589e0b711522db9cfaffbddfa9de9">&#9670;&nbsp;</a></span>wyswietlOknoPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::wyswietlOknoPopup </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda wyświetlająca okno popup (okno modalne) z informacjami przekazanymi przez parametr </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>mapa parametrów - zarówno klucz jak i wartość są zmiennymi łańcuchowymi</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#aae7da9511f2297503f24ac190d9f4931">COknoGlowne</a>.</p>
+
+</div>
+</div>
 <a id="a383002925a1a6b9032b683686e027c70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a383002925a1a6b9032b683686e027c70">&#9670;&nbsp;</a></span>wyswietlOprogramie()</h2>
 
@@ -460,6 +503,36 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
 
 <p>Implemented in <a class="el" href="class_c_okno_glowne.html#adf5846bc70203f6787764c8ed85440dc">COknoGlowne</a>.</p>
+
+</div>
+</div>
+<a id="aaf9df2041606fc8a142384e2c601b5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9df2041606fc8a142384e2c601b5a1">&#9670;&nbsp;</a></span>zamknijOknoPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IGUI::zamknijOknoPopup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda zamykająca okno popup (jeśli otwarte) </p>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_okno_glowne.html#aa51d1c94b333a6cfc0b964eb181a0613">COknoGlowne</a>.</p>
 
 </div>
 </div>

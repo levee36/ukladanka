@@ -3,9 +3,11 @@
 
 CPole::CPole(int pozycja, int numer) :
     QPushButton(QString::number(numer)),
-    pozycja(pozycja)
+    pozycja(pozycja),
+    numer(numer)
 {
-    this->setMinimumSize(25,25);
+    QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    this->setSizePolicy(sizePolicy);
     this->setNumer(numer);
 }
 

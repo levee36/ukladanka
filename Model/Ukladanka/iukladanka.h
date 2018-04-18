@@ -1,13 +1,13 @@
 #ifndef IUKLADANKA_H
 #define IUKLADANKA_H
 
-#include "Model/Ukladanka/carray2d.h"
+#include "Model/carray2d.h"
 #include "Model/Ukladanka/heurystyki/cheurystyka.h"
 #include <vector>
 #include <array>
 
 ///
-/// @ingroup model
+/// @ingroup modelukladanka
 /// @brief
 /// typ wyliczeniowy określający aktualny status modelu układanki
 ///

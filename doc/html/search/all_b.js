@@ -2,5 +2,7 @@ var searchData=
 [
   ['podajocene',['podajOcene',['../class_c_model_ukladanka.html#a5a512a4a097239e335ef0f527af93762',1,'CModelUkladanka::podajOcene()'],['../class_i_ukladanka.html#af4a84f41425fd95233e146c5e399078b',1,'IUkladanka::podajOcene()']]],
   ['pole',['pole',['../class_c_g_u_i_msg_wcisniete_pole.html#a612c2af911a451748011b129bdc630ef',1,'CGUIMsgWcisnietePole']]],
-  ['policzocene',['policzOcene',['../class_c_heurystyka.html#a0b445106f16026b84e232d64f193618f',1,'CHeurystyka::policzOcene()'],['../class_c_heurystyka_liczba_roznic.html#a381b68de375035b13691ff9da94af89c',1,'CHeurystykaLiczbaRoznic::policzOcene()'],['../class_c_heurystyka_manhattan.html#ae5fbc164685c61961be4e8feae5a4136',1,'CHeurystykaManhattan::policzOcene()']]]
+  ['policzocene',['policzOcene',['../class_c_heurystyka.html#a0b445106f16026b84e232d64f193618f',1,'CHeurystyka::policzOcene()'],['../class_c_heurystyka_liczba_roznic.html#a381b68de375035b13691ff9da94af89c',1,'CHeurystykaLiczbaRoznic::policzOcene()'],['../class_c_heurystyka_manhattan.html#ae5fbc164685c61961be4e8feae5a4136',1,'CHeurystykaManhattan::policzOcene()']]],
+  ['przerwanedzialanie',['przerwaneDzialanie',['../class_c_watek_algorytm.html#af37bf5b68de45cd470b50cf79bc7a811',1,'CWatekAlgorytm']]],
+  ['przerwij',['przerwij',['../class_c_watek_algorytm.html#afc40884bae7775c9690092e6004c3dab',1,'CWatekAlgorytm']]]
 ];

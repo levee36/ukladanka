@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36e1552c00817aa28ae519119a5b2b30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_glowne.html#a36e1552c00817aa28ae519119a5b2b30">zamienPola</a> (std::vector&lt; std::array&lt; int, 2 &gt;&gt; pary)</td></tr>
 <tr class="memdesc:a36e1552c00817aa28ae519119a5b2b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zamieniająca miejscami wskazane pola na planszy  <a href="#a36e1552c00817aa28ae519119a5b2b30">More...</a><br /></td></tr>
 <tr class="separator:a36e1552c00817aa28ae519119a5b2b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac40e76ce59eb75f4e6b5f99197df405e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_glowne.html#ac40e76ce59eb75f4e6b5f99197df405e">setUstawianieReczne</a> (bool <a class="el" href="group__model.html#gga32f99beaf5d96e0a04dbd8937c90f8acaf4736369ccff135c14dcd69a0b71a025">ustawianie</a>)</td></tr>
+<tr class="memitem:ac40e76ce59eb75f4e6b5f99197df405e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_glowne.html#ac40e76ce59eb75f4e6b5f99197df405e">setUstawianieReczne</a> (bool <a class="el" href="group__modelukladanka.html#gga32f99beaf5d96e0a04dbd8937c90f8acaf4736369ccff135c14dcd69a0b71a025">ustawianie</a>)</td></tr>
 <tr class="memdesc:ac40e76ce59eb75f4e6b5f99197df405e"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda ustawiająca opcję Ustawienie Ręczne z menu okna  <a href="#ac40e76ce59eb75f4e6b5f99197df405e">More...</a><br /></td></tr>
 <tr class="separator:ac40e76ce59eb75f4e6b5f99197df405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2eca43e3ad37ee7067ee162332e468"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_glowne.html#aad2eca43e3ad37ee7067ee162332e468">wyswietlKonfiguracje</a> (std::map&lt; std::string, std::string &gt; param)</td></tr>
@@ -119,6 +119,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae13a2afd03801295977f8632d3b76ed1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_glowne.html#ae13a2afd03801295977f8632d3b76ed1">wyswietlInstrukcje</a> (std::map&lt; std::string, std::string &gt; param)</td></tr>
 <tr class="memdesc:ae13a2afd03801295977f8632d3b76ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyświetlająca okno Instrukcje (okno modalne) z informacjami przekazanymi przez parametr  <a href="#ae13a2afd03801295977f8632d3b76ed1">More...</a><br /></td></tr>
 <tr class="separator:ae13a2afd03801295977f8632d3b76ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7da9511f2297503f24ac190d9f4931"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_glowne.html#aae7da9511f2297503f24ac190d9f4931">wyswietlOknoPopup</a> (std::map&lt; std::string, std::string &gt; param)</td></tr>
+<tr class="memdesc:aae7da9511f2297503f24ac190d9f4931"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda wyświetlająca okno popup (okno modalne) z informacjami przekazanymi przez parametr  <a href="#aae7da9511f2297503f24ac190d9f4931">More...</a><br /></td></tr>
+<tr class="separator:aae7da9511f2297503f24ac190d9f4931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51d1c94b333a6cfc0b964eb181a0613"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_okno_glowne.html#aa51d1c94b333a6cfc0b964eb181a0613">zamknijOknoPopup</a> ()</td></tr>
+<tr class="memdesc:aa51d1c94b333a6cfc0b964eb181a0613"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zamykająca okno popup (jeśli otwarte)  <a href="#aa51d1c94b333a6cfc0b964eb181a0613">More...</a><br /></td></tr>
+<tr class="separator:aa51d1c94b333a6cfc0b964eb181a0613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>główna klasa gui - realizuje główne okno aplikacji, dziedziczy z klasy QMainWindow </p>
@@ -381,6 +387,43 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aae7da9511f2297503f24ac190d9f4931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae7da9511f2297503f24ac190d9f4931">&#9670;&nbsp;</a></span>wyswietlOknoPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool COknoGlowne::wyswietlOknoPopup </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda wyświetlająca okno popup (okno modalne) z informacjami przekazanymi przez parametr </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>mapa parametrów - zarówno klucz jak i wartość są zmiennymi łańcuchowymi</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implements <a class="el" href="class_i_g_u_i.html#addd589e0b711522db9cfaffbddfa9de9">IGUI</a>.</p>
+
+</div>
+</div>
 <a id="acc4533dfd8ab0ebd41f1bd9abcc0dc46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc4533dfd8ab0ebd41f1bd9abcc0dc46">&#9670;&nbsp;</a></span>wyswietlOprogramie()</h2>
 
@@ -521,6 +564,36 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
 
 <p>Implements <a class="el" href="class_i_g_u_i.html#ac29b35cbd8ddbbc9c84eb7fe8fffb54f">IGUI</a>.</p>
+
+</div>
+</div>
+<a id="aa51d1c94b333a6cfc0b964eb181a0613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51d1c94b333a6cfc0b964eb181a0613">&#9670;&nbsp;</a></span>zamknijOknoPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool COknoGlowne::zamknijOknoPopup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda zamykająca okno popup (jeśli otwarte) </p>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli metoda się powiodła </dd></dl>
+
+<p>Implements <a class="el" href="class_i_g_u_i.html#aaf9df2041606fc8a142384e2c601b5a1">IGUI</a>.</p>
 
 </div>
 </div>

@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['carray2d',['CArray2D',['../class_c_array2_d.html',1,'CArray2D&lt; T &gt;'],['../class_c_array2_d.html#adbecde6a7908b195fc840a88119d5e91',1,'CArray2D::CArray2D(size_t n, size_t m, T wartosc)'],['../class_c_array2_d.html#af4935ba862daabafafc5f350c016d926',1,'CArray2D::CArray2D(size_t n, size_t m, std::vector&lt; T &gt; tbl)']]],
+  ['calgorytmastar',['CAlgorytmAStar',['../class_c_algorytm_a_star.html',1,'CAlgorytmAStar'],['../class_c_algorytm_a_star.html#ad722dcb320d371431440ed1a1f6a913c',1,'CAlgorytmAStar::CAlgorytmAStar()']]],
+  ['carray2d',['CArray2D',['../class_c_array2_d.html',1,'CArray2D&lt; T &gt;'],['../class_c_array2_d.html#adbecde6a7908b195fc840a88119d5e91',1,'CArray2D::CArray2D(size_t n, size_t m, T wartosc)'],['../class_c_array2_d.html#af4935ba862daabafafc5f350c016d926',1,'CArray2D::CArray2D(size_t n, size_t m, std::vector&lt; T &gt; tbl)'],['../class_c_array2_d.html#a7077a7e1be033f8f6e6f7a76abe0fbbf',1,'CArray2D::CArray2D(const CArray2D &amp;ob)']]],
   ['carray2d_3c_20int_20_3e',['CArray2D&lt; int &gt;',['../class_c_array2_d.html',1,'']]],
   ['cguimsg',['CGUIMsg',['../class_c_g_u_i_msg.html',1,'CGUIMsg'],['../class_c_g_u_i_msg.html#a57c26330bc633b298d1373214de62cd1',1,'CGUIMsg::CGUIMsg()']]],
   ['cguimsginstrukcja',['CGUIMsgInstrukcja',['../class_c_g_u_i_msg_instrukcja.html',1,'CGUIMsgInstrukcja'],['../class_c_g_u_i_msg_instrukcja.html#a4ce4454e399c44edb4a644fc378f6df0',1,'CGUIMsgInstrukcja::CGUIMsgInstrukcja()']]],
   ['cguimsgkonfiguracja',['CGUIMsgKonfiguracja',['../class_c_g_u_i_msg_konfiguracja.html',1,'CGUIMsgKonfiguracja'],['../class_c_g_u_i_msg_konfiguracja.html#a3f030ee02fc02957a96015974264d903',1,'CGUIMsgKonfiguracja::CGUIMsgKonfiguracja()']]],
   ['cguimsgoprogramie',['CGUIMsgOprogramie',['../class_c_g_u_i_msg_oprogramie.html',1,'CGUIMsgOprogramie'],['../class_c_g_u_i_msg_oprogramie.html#ad4c94f86e81f2be81e7b82dfecd1c60e',1,'CGUIMsgOprogramie::CGUIMsgOprogramie()']]],
+  ['cguimsgpopup',['CGUIMsgPopup',['../class_c_g_u_i_msg_popup.html',1,'CGUIMsgPopup'],['../class_c_g_u_i_msg_popup.html#a1394b3ba245b64f1e13b46468f16cfc5',1,'CGUIMsgPopup::CGUIMsgPopup()']]],
   ['cguimsgresetuj',['CGUIMsgResetuj',['../class_c_g_u_i_msg_resetuj.html',1,'CGUIMsgResetuj'],['../class_c_g_u_i_msg_resetuj.html#a61afcc61036f04c59cb5f7b35877b708',1,'CGUIMsgResetuj::CGUIMsgResetuj()']]],
   ['cguimsgrozwiaz',['CGUIMsgRozwiaz',['../class_c_g_u_i_msg_rozwiaz.html',1,'CGUIMsgRozwiaz'],['../class_c_g_u_i_msg_rozwiaz.html#a221defdd5cb84c5f60d940854073a693',1,'CGUIMsgRozwiaz::CGUIMsgRozwiaz()']]],
   ['cguimsgtasuj',['CGUIMsgTasuj',['../class_c_g_u_i_msg_tasuj.html',1,'CGUIMsgTasuj'],['../class_c_g_u_i_msg_tasuj.html#a6c1186e1d8d48c4a4f9e6c6660b1355a',1,'CGUIMsgTasuj::CGUIMsgTasuj()']]],
@@ -22,7 +24,11 @@ var searchData=
   ['coknoinstrukcje',['COknoInstrukcje',['../class_c_okno_instrukcje.html',1,'COknoInstrukcje'],['../class_c_okno_instrukcje.html#a47e5f551a90a6340b01a2bc5ed3806a5',1,'COknoInstrukcje::COknoInstrukcje()']]],
   ['coknokonf',['COknoKonf',['../class_c_okno_konf.html',1,'COknoKonf'],['../class_c_okno_konf.html#a326f7dd20274ee81347f339e7ca24844',1,'COknoKonf::COknoKonf()']]],
   ['coknooprogramie',['COknoOprogramie',['../class_c_okno_oprogramie.html',1,'COknoOprogramie'],['../class_c_okno_oprogramie.html#a25d7226b484113a80452816ce280c95a',1,'COknoOprogramie::COknoOprogramie()']]],
+  ['coknopopup',['COknoPopup',['../class_c_okno_popup.html',1,'COknoPopup'],['../class_c_okno_popup.html#af088d379df2e7295d87db7f9a066f9d5',1,'COknoPopup::COknoPopup()']]],
   ['cplansza',['CPlansza',['../class_c_plansza.html',1,'CPlansza'],['../class_c_plansza.html#a1a83b9838cb3f1b929e652825e9feef9',1,'CPlansza::CPlansza()']]],
   ['cpole',['CPole',['../class_c_pole.html',1,'CPole'],['../class_c_pole.html#a2010d734e6ed4def106d6e6ecbbb6ce8',1,'CPole::CPole()']]],
+  ['cwatekalgorytm',['CWatekAlgorytm',['../class_c_watek_algorytm.html',1,'CWatekAlgorytm'],['../class_c_watek_algorytm.html#a97ccfff7d7708d4f1fae4c4c028e260b',1,'CWatekAlgorytm::CWatekAlgorytm()']]],
+  ['cwezel',['CWezel',['../class_c_wezel.html',1,'CWezel'],['../class_c_wezel.html#a9a7c36d0ce6240d3de4242294516b6cc',1,'CWezel::CWezel()']]],
+  ['cwezelcompare',['CWezelCompare',['../struct_c_wezel_compare.html',1,'']]],
   ['czyulozona',['czyUlozona',['../class_c_model_ukladanka.html#aced5e62485f5272eb8ea1584b3f6faf2',1,'CModelUkladanka::czyUlozona()'],['../class_c_model_ukladanka.html#af63442b7a4ba9f51fe8d547137dd48c6',1,'CModelUkladanka::czyUlozona(CArray2D&lt; int &gt; *stan)'],['../class_i_ukladanka.html#a1f5168c6db3ae1b16aafedaff0e1f3d6',1,'IUkladanka::czyUlozona()'],['../class_i_ukladanka.html#ac70b506c029acad90130d4549797c5b7',1,'IUkladanka::czyUlozona(CArray2D&lt; int &gt; *stan)']]]
 ];

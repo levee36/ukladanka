@@ -46,7 +46,13 @@ SOURCES += \
     Model/Ukladanka/cmodelukladanka.cpp \
     Model/Ukladanka/heurystyki/cheurystyka.cpp \
     Model/Ukladanka/heurystyki/cheurystykamanhattan.cpp \
-    Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.cpp
+    Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.cpp \
+    Model/Algorytm/calgorytmastar.cpp \
+    Model/Algorytm/cwezel.cpp \
+    Model/Algorytm/cwezelcompare.cpp \
+    GUI/coknopopup.cpp \
+    GUI/GUImsg/cguimsgpopup.cpp \
+    Model/Algorytm/cwatekalgorytm.cpp
 
 HEADERS += \
     GUI/coknoglowne.h \
@@ -72,17 +78,25 @@ HEADERS += \
     GUI/coknoinstrukcje.h \
     GUI/cpole.h \
     Model/Ukladanka/iukladanka.h \
-    Model/Ukladanka/carray2d.h \
     Model/Ukladanka/cmodelukladanka.h \
     Model/Ukladanka/heurystyki/cheurystyka.h \
     Model/Ukladanka/heurystyki/cheurystykamanhattan.h \
-    Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.h
+    Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.h \
+    Model/Algorytm/calgorytmastar.h \
+    Model/Algorytm/ialgorytm.h \
+    Model/Algorytm/cwezel.h \
+    Model/Algorytm/cwezelcompare.h \
+    Model/carray2d.h \
+    GUI/coknopopup.h \
+    GUI/GUImsg/cguimsgpopup.h \
+    Model/Algorytm/cwatekalgorytm.h
 
 FORMS += \
     GUI/coknokonf.ui \
     GUI/coknoglowne.ui \
     GUI/coknoinstrukcje.ui \
-    GUI/coknooprogramie.ui
+    GUI/coknooprogramie.ui \
+    GUI/coknopopup.ui
 
 RESOURCES += \
     Resources/ikony.qrc

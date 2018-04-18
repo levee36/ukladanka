@@ -1,10 +1,14 @@
 #ifndef CKONTROLER_H
 #define CKONTROLER_H
 
+#include <QObject>
 #include "Kontroler/ikontroler.h"
 #include "GUI/igui.h"
 #include "GUI/GUImsg/cguimsg.h"
 #include "Model/Ukladanka/iukladanka.h"
+#include "Model/Algorytm/ialgorytm.h"
+#include "Model/Algorytm/cwatekalgorytm.h"
+#include <QTimer>
 
 ///
 /// @defgroup controller Kontroler
@@ -27,8 +31,9 @@
 /// @author Robert Płatkowski
 /// @date 2018-04-04
 ///
-class CKontroler : public IKontroler
+class CKontroler : public QObject, IKontroler
 {
+    Q_OBJECT
 public:
     ///
     /// @brief konstruktor przekazujący wskaźnik na obiekt gui (COknoGlowne przez interfejs IGUI)
@@ -155,10 +160,38 @@ protected: ///< metody realizujące scenariusze są chronione - dostępne tylko 
     ///
     void scWyswietlOprogramie();
 
+    ///
+    /// @brief metoda - scenariusz przerywająca sekwencyjne wykonywanie ruchów wg wektora sciezka zwróconego przez algorytm przeszukiwania
+    ///
+    /// @details przerwanie działania prezentacji rozwiązania polega na zatrzymaniu działania obiektu QTimer i wyzerowaniu flagi prezentacjaTrwa
+    /// scenariusz jest uruchamiany po każdej interakcji użytkownika, gdy trwa prezentacja (flaga prezentacjaTrwa ustawiona)
+    ///
+    void scPrzerwijPrezentacje();
+
+    ///
+    /// @brief metoda - scenariusz uruchamiana po znalezieniu rozwiązania przez algorytm - inicjuje sekwencję ruchów wg ścieżki przekazanej przez algorytm
+    ///
+    /// @details metoda ustawia flagę prezentacjaTrwa i startuje timer - sygnały timeout wysyłane z timera będą uruchamiały slot krokPrezentacjiRozwiazania, który wykonuje kolejne ruchy na gui wg danych zapisanych w wektorze sciezka
+    ///
+    void scPrezentujRozwiazanie();
+
+
+private slots:
+    void krokAlgorytmu(QString status); ///< slot - metoda powiązana z sygnałem zakończenia kroku algorytmu wysyłanym z wątku CWatekAlgorytm  - wyświetla aktualny stan algorytmu w pasku StatusBar
+    void koniecAlgorytmu(); ///< slot - metoda powiązana z sygnałem zakończenia działania algorytmu (znalezienia rozwiązania) wysyłanym z wątku CWatekAlgorytm - wyświetla komunikat i rozpoczyna wyświetlanie sekwencji ruchów
+    void przerwanyAlgorytm(); ///< slot - metoda powiązana z sygnałem przerwania działania algorytmu przez użytkownika wysyłanym z wątku CWatekAlgorytm - aktualizuje info w StatusBar głownego okna
+    void krokPrezentacjiRozwiazania(); ///< slot - metoda powiązana z sygnałem wysyłanym przez QTimer - wykonuje kolejny ruch zapisany w wektorze sciezka
+
 private:
     IGUI *gui; ///< wskaźnik na obiekt gui (obiekt klasy COknoGlowne realizujący interfejs IGUI)
     IUkladanka *ukladanka; ///< wskaźnik na obiekt modelu układanki (obiekt klasy CModelUkladanka realizujący interfejs IUkladanka)
+    IAlgorytm *algorytm; ///< wskaźnik na obiekt modelu algorytmu (obiekt klasy CAlgorytmAStar realizujący interfejs IAlgorytm)
+    CWatekAlgorytm watek; ///< obiekt sterujący wątkiem pobocznym, w którym uruchomiona jest głowna pętla algorytmu
+    bool prezentacjaTrwa = false; ///flaga oznaczająca trwanie prezentacji rozwiązania znalezionego przez algorytm
+    std::vector<int> sciezka; ////< zmienna pomocnicza do przechowywania znalezionej przez algorytm ścieżki
+    QTimer *timer; ///< wskaźnik na obiekt - timer sterujący opóźnieniem w wyświetlaniu kolejnych ruchów w prezentacji rozwiązania
 
+    const int czasKrokuPrezentacji = 250; //czas w ms pomiędzy kolejnymi ruchami w trakcie prezentacji znalezionego rozwiązania
 };
 
 #endif // CKONTROLER_H

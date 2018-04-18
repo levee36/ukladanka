@@ -81,7 +81,7 @@ Inheritance diagram for CKontroler:</div>
  <div class="center">
   <img src="class_c_kontroler.png" usemap="#CKontroler_map" alt=""/>
   <map id="CKontroler_map" name="CKontroler_map">
-<area href="class_i_kontroler.html" title="interfejs klasy CKontroler do komunikacji z gui - klasą COknoGlowne " alt="IKontroler" shape="rect" coords="0,0,73,24"/>
+<area href="class_i_kontroler.html" title="interfejs klasy CKontroler do komunikacji z gui - klasą COknoGlowne " alt="IKontroler" shape="rect" coords="83,0,156,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -133,6 +133,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a22becd55ffdb69cbd730acdb4598205c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a22becd55ffdb69cbd730acdb4598205c">scWyswietlOprogramie</a> ()</td></tr>
 <tr class="memdesc:a22becd55ffdb69cbd730acdb4598205c"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz zlecająca gui wyświetlenie okna z infromacjami o programie  <a href="#a22becd55ffdb69cbd730acdb4598205c">More...</a><br /></td></tr>
 <tr class="separator:a22becd55ffdb69cbd730acdb4598205c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ac82a2697cb72506f8c6fe3e80af06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#ac1ac82a2697cb72506f8c6fe3e80af06">scPrzerwijPrezentacje</a> ()</td></tr>
+<tr class="memdesc:ac1ac82a2697cb72506f8c6fe3e80af06"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz przerywająca sekwencyjne wykonywanie ruchów wg wektora sciezka zwróconego przez algorytm przeszukiwania  <a href="#ac1ac82a2697cb72506f8c6fe3e80af06">More...</a><br /></td></tr>
+<tr class="separator:ac1ac82a2697cb72506f8c6fe3e80af06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7364bee14f6462b85598ad6000f8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_kontroler.html#a8b7364bee14f6462b85598ad6000f8b2">scPrezentujRozwiazanie</a> ()</td></tr>
+<tr class="memdesc:a8b7364bee14f6462b85598ad6000f8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda - scenariusz uruchamiana po znalezieniu rozwiązania przez algorytm - inicjuje sekwencję ruchów wg ścieżki przekazanej przez algorytm  <a href="#a8b7364bee14f6462b85598ad6000f8b2">More...</a><br /></td></tr>
+<tr class="separator:a8b7364bee14f6462b85598ad6000f8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>klasa realizująca główny obiekt aplikacji - kontroler </p>
@@ -223,6 +229,62 @@ Protected Member Functions</h2></td></tr>
 
 <p>metoda - scenariusz pomocniczy - odpowiedzialny za wyświetlanie informacji w StatusBarze okna głównego gui </p>
 <p>metoda uruchamiana po zrealizowaniu innych scenariuszy - tych, w wyniku których może zmienić się status modelu układanki metoda sprawdza status modelu (metoda <a class="el" href="class_c_model_ukladanka.html#adf7cb18ca65dc63e157c0d2c217b1df6" title="metoda zwraca aktualny status modelu układanki EStan ">CModelUkladanka::getStan</a>) i na jego podstawie wywołuje w gui metodę wyświetlającą odpowiedni opis w StatusBarze (metoda <a class="el" href="class_c_okno_glowne.html#a4e9e97daf2b5739580aff70fc22b19f8" title="metoda wyświetlająca przekazany jako parametr tekst w StatusBarze okna głównego ">COknoGlowne::wyswietlStatus</a>) </p>
+
+</div>
+</div>
+<a id="a8b7364bee14f6462b85598ad6000f8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7364bee14f6462b85598ad6000f8b2">&#9670;&nbsp;</a></span>scPrezentujRozwiazanie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scPrezentujRozwiazanie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz uruchamiana po znalezieniu rozwiązania przez algorytm - inicjuje sekwencję ruchów wg ścieżki przekazanej przez algorytm </p>
+<p>metoda ustawia flagę prezentacjaTrwa i startuje timer - sygnały timeout wysyłane z timera będą uruchamiały slot krokPrezentacjiRozwiazania, który wykonuje kolejne ruchy na gui wg danych zapisanych w wektorze sciezka </p>
+
+</div>
+</div>
+<a id="ac1ac82a2697cb72506f8c6fe3e80af06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ac82a2697cb72506f8c6fe3e80af06">&#9670;&nbsp;</a></span>scPrzerwijPrezentacje()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKontroler::scPrzerwijPrezentacje </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda - scenariusz przerywająca sekwencyjne wykonywanie ruchów wg wektora sciezka zwróconego przez algorytm przeszukiwania </p>
+<p>przerwanie działania prezentacji rozwiązania polega na zatrzymaniu działania obiektu QTimer i wyzerowaniu flagi prezentacjaTrwa scenariusz jest uruchamiany po każdej interakcji użytkownika, gdy trwa prezentacja (flaga prezentacjaTrwa ustawiona) </p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kontroler',['Kontroler',['../group__controller.html',1,'']]]
+  ['heurystyki',['Heurystyki',['../group__heurystyki.html',1,'']]]
 ];

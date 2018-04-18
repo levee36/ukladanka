@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['heurystyki',['Heurystyki',['../group__heurystyki.html',1,'']]]
+  ['guimsg',['GUImsg',['../group__msg.html',1,'']]],
+  ['gui',['GUI',['../group__view.html',1,'']]]
 ];

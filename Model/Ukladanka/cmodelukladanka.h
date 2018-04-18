@@ -3,6 +3,7 @@
 
 #include "iukladanka.h"
 #include "heurystyki/cheurystyka.h"
+#include "heurystyki/cheurystykamanhattan.h"
 #include <array>
 #include <QTime>
 
@@ -16,9 +17,19 @@
 /// @date 2018-04-04
 ///
 
+///
+/// @defgroup modelukladanka ModelUkladanka
+/// @ingroup model
+///
+/// @brief
+/// Klasy realizujące model układanki
+///
+/// @author Robert Płatkowski
+/// @date 2018-04-04
+///
 
 ///
-/// @ingroup model
+/// @ingroup modelukladanka
 /// @brief
 /// klasa realizująca model układanki
 /// @details
@@ -241,6 +252,8 @@ public:
     /// @return wektor liczb - nr pól z których można przesunąć element (czyli sąsiedztwo pola pustego)
     ///
     static std::vector<int> zwrocMozliweRuchy(CArray2D<int> *stan);
+
+
 
 private:
     EStan stan;

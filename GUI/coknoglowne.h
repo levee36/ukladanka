@@ -9,6 +9,7 @@
 #include <string>
 #include "GUI/igui.h"
 #include "GUI/cplansza.h"
+#include "GUI/coknopopup.h"
 #include "Kontroler/ikontroler.h"
 
 ///
@@ -146,6 +147,22 @@ public:
     ///
     bool wyswietlInstrukcje(std::map<std::string,std::string> param);
 
+    ///
+    /// @brief metoda wyświetlająca okno popup (okno modalne) z informacjami przekazanymi przez parametr
+    ///
+    /// @param[in] param mapa parametrów - zarówno klucz jak i wartość są zmiennymi łańcuchowymi
+    ///
+    /// @return true jeśli metoda się powiodła
+    ///
+    bool wyswietlOknoPopup(std::map<std::string,std::string> param);
+
+    ///
+    /// @brief metoda zamykająca okno popup (jeśli otwarte)
+    ///
+    /// @return true jeśli metoda się powiodła
+    ///
+    bool zamknijOknoPopup();
+
 private slots:
     void on_actionKonfiguracja_triggered(); ///< slot powiązany z sygnałem wysyłanym po wybraniu opcji Ustawienia w menu, wysyła za pomocą metody CKontroler::wyslijWiadomosc do kontrolera wiadomość CGUIMsgZadanieKonfiguracji
     void on_actionWyjscie_triggered(); ///< slot powiązany z sygnałem wysyłanym po wybraniu opcji Wyjście w menu lub po kliknięciu przycisku zamykającego okno, wysyła za pomocą metody CKontroler::wyslijWiadomosc do kontrolera wiadomość CGUIMsgWyjscie
@@ -155,6 +172,7 @@ private slots:
     void on_actionReczneUstawianie_triggered(bool checked); ///< slot powiązany z sygnałem wysyłanym po ustawieniu/wyłączeniu opcji Ręczne Ustawienia w menu, wysyła za pomocą metody CKontroler::wyslijWiadomosc do kontrolera wiadomość CGUIMsgUstawianieReczne
     void on_actionInstrukcje_triggered(); ///< slot powiązany z sygnałem wysyłanym po wybraniu opcji Instrukcje w menu, wysyła za pomocą metody CKontroler::wyslijWiadomosc do kontrolera wiadomość CGUIMsgInstrukcja
     void on_actionOprogramie_triggered(); ///< slot powiązany z sygnałem wysyłanym po wybraniu opcji O programie w menu, wysyła za pomocą metody CKontroler::wyslijWiadomosc do kontrolera wiadomość CGUIMsgOprogramie
+    void zamknieciePopup(); ///< slot powiązany z sygnałem wysyłanym z okna popup (COknoPopup) w czasie jego zamykania
 
 private:
     void closeEvent(QCloseEvent *event);
@@ -162,6 +180,7 @@ private:
     Ui::COknoGlowne *ui;
     CPlansza *plansza;
     IKontroler *kontroler;
+    COknoPopup *popup; ///<wskaźnik na bieżące okno popup
 };
 
 #endif // COKNOGLOWNE_H

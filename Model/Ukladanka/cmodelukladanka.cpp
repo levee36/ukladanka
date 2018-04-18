@@ -184,8 +184,20 @@ double CModelUkladanka::podajOcene(CArray2D<int> *stan, CHeurystyka *heurystyka)
 
 std::vector<int> CModelUkladanka::zwrocMozliweRuchy(CArray2D<int> *stan)
 {
-
+    std::vector<int> wynik;
+    int i = 0;
+    int zero=-1; //pozycja elementu 0
+    while (i<stan->getN()*stan->getM() && zero==-1) { //szukanie elementu 0 - pustego pola
+        if (stan->dostepLiniowy(i)==0) zero=i;
+        i++;
+    }
+    if (zero%stan->getN()!=0) wynik.push_back(zero-1); //sprawdź, czy pusty element nie jest na lewym brzegu - jeśli nie dodaj ruch elementu z pola po lewej pola pustego
+    if (zero%stan->getN()!=stan->getN()-1) wynik.push_back(zero+1); //sprawdź, czy pusty element nie jest na prawym brzegu - jeśli nie dodaj ruch elementu z pola po prawej pola pustego
+    if (zero/stan->getN()!=0) wynik.push_back(zero-stan->getN()); //sprawdź, czy pusty element nie jest na górnym brzegu - jeśli nie dodaj ruch elementu z pola u góry pola pustego
+    if (zero/stan->getN()!=stan->getN()-1) wynik.push_back(zero+stan->getN()); //sprawdź, czy pusty element nie jest na dolnym brzegu - jeśli nie dodaj ruch elementu z pola u dołu pola pustego
+    return wynik;
 }
+
 
 void CModelUkladanka::wygenerujLosoweUstawienie()
 {
@@ -193,7 +205,7 @@ void CModelUkladanka::wygenerujLosoweUstawienie()
     //zamianę wykonuje ustaloną liczbę razy - aby układ był rozwiązywalny musi być to parzysta liczba
     int zakres = M*N;
     resetuj(N,M); //zapewnia, że pole puste jest na końcu
-    for (int i=0;i<2*((zakres-1)/2+1);i++) { //liczba losowan  jest równa lub większa od liczby elementów układanki bez elementu pustego i jest parzysta
+    for (int i=0;i<2*(zakres/2)*zakres;i++) { //liczba losowan  jest równa 4-krotności liczby elementów układanki
         int los = (int)(QRandomGenerator::global()->bounded(0,zakres-2)); //generuje losową liczbę uint32 z zakresu 0 do zakres-2; ostatnia pozycja (o nr zakres-1) jest zarezerwowana dla elementu pustego
         int temp = plansza->dostepLiniowy(los);
         plansza->dostepLiniowy(los) = plansza->dostepLiniowy(los+1);

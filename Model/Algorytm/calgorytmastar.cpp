@@ -14,7 +14,13 @@ CAlgorytmAStar::CAlgorytmAStar(CArray2D<int> *stanPoczatkowy, CHeurystyka *heury
 
 CAlgorytmAStar::~CAlgorytmAStar()
 {
-    wyczysc();
+    for (std::set<CWezel*,CWezelCompare>::iterator it = zbiorOPEN.begin(); it != zbiorOPEN.end(); it++)
+        if (*it!=0) delete *it;
+    for (std::set<CWezel*,CWezelCompare>::iterator it = zbiorCLOSED.begin(); it != zbiorCLOSED.end(); it++)
+        if (*it!=0) delete *it;
+    zbiorOPEN.clear();
+    zbiorCLOSED.clear();
+    if (aktualny!=0) delete aktualny;
 }
 
 
@@ -109,7 +115,7 @@ CHeurystyka *CAlgorytmAStar::getHeurystyka()
     return heurystyka;
 }
 
-void CAlgorytmAStar::wyczysc()
+void CAlgorytmAStar::wyczysc(CArray2D<int> *stanPoczatkowy)
 {
     for (std::set<CWezel*,CWezelCompare>::iterator it = zbiorOPEN.begin(); it != zbiorOPEN.end(); it++)
         if (*it!=0) delete *it;
@@ -119,6 +125,10 @@ void CAlgorytmAStar::wyczysc()
     zbiorCLOSED.clear();
     liczbaOdwiedzonych=0;
 
+    aktualny = new CWezel(stanPoczatkowy); //aktualny nie musi być usuwany, bo został usunięty wraz z usuwaniem obiektów wskazywanych przez zbiorCLOSED
+    zbiorOPEN.insert(aktualny);
+    //wyzeruj wskaźnik
+    aktualny = 0;
 }
 
 double CAlgorytmAStar::getAktHeur()

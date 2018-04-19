@@ -103,6 +103,11 @@ std::array<int, 2> CModelUkladanka::getOstatniRuch()
     return ostatniRuch;
 }
 
+bool CModelUkladanka::czyUlozona()
+{
+    return czyUlozona(plansza);
+}
+
 int CModelUkladanka::getCzas()
 {
     if (stan==EStan::rozwiazany) return czasUlozenia;
@@ -194,7 +199,7 @@ std::vector<int> CModelUkladanka::zwrocMozliweRuchy(CArray2D<int> *stan)
     if (zero%stan->getN()!=0) wynik.push_back(zero-1); //sprawdź, czy pusty element nie jest na lewym brzegu - jeśli nie dodaj ruch elementu z pola po lewej pola pustego
     if (zero%stan->getN()!=stan->getN()-1) wynik.push_back(zero+1); //sprawdź, czy pusty element nie jest na prawym brzegu - jeśli nie dodaj ruch elementu z pola po prawej pola pustego
     if (zero/stan->getN()!=0) wynik.push_back(zero-stan->getN()); //sprawdź, czy pusty element nie jest na górnym brzegu - jeśli nie dodaj ruch elementu z pola u góry pola pustego
-    if (zero/stan->getN()!=stan->getN()-1) wynik.push_back(zero+stan->getN()); //sprawdź, czy pusty element nie jest na dolnym brzegu - jeśli nie dodaj ruch elementu z pola u dołu pola pustego
+    if (zero/stan->getN()!=stan->getM()-1) wynik.push_back(zero+stan->getN()); //sprawdź, czy pusty element nie jest na dolnym brzegu - jeśli nie dodaj ruch elementu z pola u dołu pola pustego
     return wynik;
 }
 

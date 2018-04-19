@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['getaktheur',['getAktHeur',['../class_c_algorytm_a_star.html#aff961ca50f32b944c19547fdc6c9108c',1,'CAlgorytmAStar::getAktHeur()'],['../class_i_algorytm.html#a332feb952c97d01e042ae6f4625873c2',1,'IAlgorytm::getAktHeur()']]],
   ['getalgorytm',['getAlgorytm',['../class_c_watek_algorytm.html#a530e772756de38487d4a7d71a149b5b7',1,'CWatekAlgorytm']]],
   ['getczas',['getCzas',['../class_c_model_ukladanka.html#a87ce3cb7e700a588c387dc7feb78fbff',1,'CModelUkladanka::getCzas()'],['../class_i_ukladanka.html#ad72b7fa3012c94d1e6e0756e2033fb1c',1,'IUkladanka::getCzas()']]],
   ['getheurystyka',['getHeurystyka',['../class_c_algorytm_a_star.html#a8e2a4c9a9aba10644280bd49e16db24a',1,'CAlgorytmAStar::getHeurystyka()'],['../class_i_algorytm.html#a0b624b0efbfac7b4c2df20572deed86d',1,'IAlgorytm::getHeurystyka()']]],

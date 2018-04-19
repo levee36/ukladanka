@@ -101,12 +101,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b624b0efbfac7b4c2df20572deed86d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_heurystyka.html">CHeurystyka</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_algorytm.html#a0b624b0efbfac7b4c2df20572deed86d">getHeurystyka</a> ()=0</td></tr>
 <tr class="memdesc:a0b624b0efbfac7b4c2df20572deed86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca wskaźnik na obiekt heurystyki wykorzystywanej przy szacowaniu oceny wezłów  <a href="#a0b624b0efbfac7b4c2df20572deed86d">More...</a><br /></td></tr>
 <tr class="separator:a0b624b0efbfac7b4c2df20572deed86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a054a16a81dd53a9f8b5a09cf5643b882"><td class="memItemLeft" align="right" valign="top"><a id="a054a16a81dd53a9f8b5a09cf5643b882"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_algorytm.html#a054a16a81dd53a9f8b5a09cf5643b882">wyczysc</a> ()=0</td></tr>
-<tr class="memdesc:a054a16a81dd53a9f8b5a09cf5643b882"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca wskaźnik na aktualny węzeł oraz zerująca statystyki <br /></td></tr>
-<tr class="separator:a054a16a81dd53a9f8b5a09cf5643b882"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a332feb952c97d01e042ae6f4625873c2"><td class="memItemLeft" align="right" valign="top"><a id="a332feb952c97d01e042ae6f4625873c2"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getAktHeur</b> ()=0</td></tr>
+<tr class="memitem:a025b25106ae4360b112102f26d87e0cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_algorytm.html#a025b25106ae4360b112102f26d87e0cb">wyczysc</a> (<a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *stanPoczatkowy)=0</td></tr>
+<tr class="memdesc:a025b25106ae4360b112102f26d87e0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca statystyki i tworząca węzeł początkowy ze stanem podanym wskazywanym przez wskaźnik przekazany jako parametr metody  <a href="#a025b25106ae4360b112102f26d87e0cb">More...</a><br /></td></tr>
+<tr class="separator:a025b25106ae4360b112102f26d87e0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332feb952c97d01e042ae6f4625873c2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_algorytm.html#a332feb952c97d01e042ae6f4625873c2">getAktHeur</a> ()=0</td></tr>
+<tr class="memdesc:a332feb952c97d01e042ae6f4625873c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca wartość funkcji heurystyki dla ostatnio wybranego węzła  <a href="#a332feb952c97d01e042ae6f4625873c2">More...</a><br /></td></tr>
 <tr class="separator:a332feb952c97d01e042ae6f4625873c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -115,6 +114,36 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getAktHeur<
 <dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2018-04-11 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a332feb952c97d01e042ae6f4625873c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332feb952c97d01e042ae6f4625873c2">&#9670;&nbsp;</a></span>getAktHeur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double IAlgorytm::getAktHeur </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda zwracająca wartość funkcji heurystyki dla ostatnio wybranego węzła </p>
+<dl class="section return"><dt>Returns</dt><dd>wartość funkcji heurystyki dla ostatnio wybranego węzła </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_algorytm_a_star.html#aff961ca50f32b944c19547fdc6c9108c">CAlgorytmAStar</a>.</p>
+
+</div>
+</div>
 <a id="a0b624b0efbfac7b4c2df20572deed86d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b624b0efbfac7b4c2df20572deed86d">&#9670;&nbsp;</a></span>getHeurystyka()</h2>
 
@@ -208,6 +237,42 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getAktHeur<
 </dl>
 
 <p>Implemented in <a class="el" href="class_c_algorytm_a_star.html#a609e2218b3a008fea721c465881a895f">CAlgorytmAStar</a>.</p>
+
+</div>
+</div>
+<a id="a025b25106ae4360b112102f26d87e0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a025b25106ae4360b112102f26d87e0cb">&#9670;&nbsp;</a></span>wyczysc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IAlgorytm::wyczysc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>stanPoczatkowy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca statystyki i tworząca węzeł początkowy ze stanem podanym wskazywanym przez wskaźnik przekazany jako parametr metody </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stanPoczatkowy</td><td>wskaźnik na stan początkowy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_algorytm_a_star.html#a9078376029654ae35ffa6e44f2c2c0a5">CAlgorytmAStar</a>.</p>
 
 </div>
 </div>

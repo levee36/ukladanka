@@ -6,21 +6,23 @@
 CPlansza::CPlansza(std::vector<int> tbl, int N, int M, IKontroler *kontroler, QWidget *parent)
     : QFrame(parent), N(N), M(M), kontroler(kontroler)
 {
+    //twórz i parametryzuj layout siatkowy
     QGridLayout *layout = new QGridLayout();
     layout->setHorizontalSpacing(0);
     layout->setVerticalSpacing(0);
-    CPole *p;
+    CPole *p; //pomocniczy wskaźnik na obiekt typu CPole
     listaPol = std::vector<CPole*>();
     int i = 0;
+    //twórz kolejne pola i dodawaj do listaPol oraz do layoutu
     for(std::vector<int>::iterator it=tbl.begin();it!=tbl.end() && i<N*M;it++) {
         p=new CPole(i,*it);
         layout->addWidget(p,i / N,i % N);
         listaPol.push_back(p);
-        connect(p,SIGNAL(pressed()),this,SLOT(on_actionPole_pressed()));
+        connect(p,SIGNAL(pressed()),this,SLOT(on_actionPole_pressed())); //połącz sygnał wysyłany przez tę instancję CPole ze slotem
         i++;
     }
     setLayout(layout);
-
+    //ustaw kolor tła
     QPalette pal = palette();
     pal.setColor(QPalette::Background, Qt::white);
     setAutoFillBackground(true);

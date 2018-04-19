@@ -29,7 +29,7 @@ public:
     CWatekAlgorytm();
 
     ///
-    /// @brief destruktor
+    /// @brief destruktor - usuwa obiekt algorytmu, jeśli nie wskazywał na null
     ///
     ~CWatekAlgorytm();
 

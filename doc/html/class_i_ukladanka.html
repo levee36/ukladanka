@@ -108,9 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4daa19c6724955c4d5c5dd83c4fa42ec"><td class="memItemLeft" align="right" valign="top">virtual std::array&lt; int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_ukladanka.html#a4daa19c6724955c4d5c5dd83c4fa42ec">getOstatniRuch</a> ()=0</td></tr>
 <tr class="memdesc:a4daa19c6724955c4d5c5dd83c4fa42ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca ostatni wykonany ruch na planszy (w postaci pary wartości - nr pola z którego przesunięto element i nr pola na który przesunięto element)  <a href="#a4daa19c6724955c4d5c5dd83c4fa42ec">More...</a><br /></td></tr>
 <tr class="separator:a4daa19c6724955c4d5c5dd83c4fa42ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f5168c6db3ae1b16aafedaff0e1f3d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_ukladanka.html#a1f5168c6db3ae1b16aafedaff0e1f3d6">czyUlozona</a> ()</td></tr>
-<tr class="memdesc:a1f5168c6db3ae1b16aafedaff0e1f3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda sprawdzająca czy rozstawienie elementów na planszy jest ustawieniem końcowym (rozwiązaniem)  <a href="#a1f5168c6db3ae1b16aafedaff0e1f3d6">More...</a><br /></td></tr>
-<tr class="separator:a1f5168c6db3ae1b16aafedaff0e1f3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1958da0cb72fc020f5c89f89f9c6e344"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_ukladanka.html#a1958da0cb72fc020f5c89f89f9c6e344">czyUlozona</a> ()=0</td></tr>
+<tr class="memdesc:a1958da0cb72fc020f5c89f89f9c6e344"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda sprawdzająca czy rozstawienie elementów na planszy jest ustawieniem końcowym (rozwiązaniem)  <a href="#a1958da0cb72fc020f5c89f89f9c6e344">More...</a><br /></td></tr>
+<tr class="separator:a1958da0cb72fc020f5c89f89f9c6e344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad72b7fa3012c94d1e6e0756e2033fb1c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_ukladanka.html#ad72b7fa3012c94d1e6e0756e2033fb1c">getCzas</a> ()=0</td></tr>
 <tr class="memdesc:ad72b7fa3012c94d1e6e0756e2033fb1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca aktualny czas rozwiązywania układanki lub czas rozwiązania układanki  <a href="#ad72b7fa3012c94d1e6e0756e2033fb1c">More...</a><br /></td></tr>
 <tr class="separator:ad72b7fa3012c94d1e6e0756e2033fb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,23 +152,33 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Robert Płatkowski </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2018-04-04 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1f5168c6db3ae1b16aafedaff0e1f3d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f5168c6db3ae1b16aafedaff0e1f3d6">&#9670;&nbsp;</a></span>czyUlozona() <span class="overload">[1/2]</span></h2>
+<a id="a1958da0cb72fc020f5c89f89f9c6e344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1958da0cb72fc020f5c89f89f9c6e344">&#9670;&nbsp;</a></span>czyUlozona() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool IUkladanka::czyUlozona </td>
+          <td class="memname">virtual bool IUkladanka::czyUlozona </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>metoda sprawdzająca czy rozstawienie elementów na planszy jest ustawieniem końcowym (rozwiązaniem) </p>
 <dl class="section return"><dt>Returns</dt><dd>true - jeśli rozstawienie elementów na planszy jest ustawieniem końcowym (rozwiązaniem) </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_model_ukladanka.html#aced5e62485f5272eb8ea1584b3f6faf2">CModelUkladanka</a>.</p>
 
 </div>
 </div>

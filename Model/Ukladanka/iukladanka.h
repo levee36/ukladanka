@@ -97,7 +97,7 @@ public:
     ///
     /// @return true - jeśli rozstawienie elementów na planszy jest ustawieniem końcowym (rozwiązaniem)
     ///
-    bool czyUlozona();
+    virtual bool czyUlozona() = 0;
 
     ///
     /// @brief metoda zwracająca aktualny czas rozwiązywania układanki lub czas rozwiązania układanki

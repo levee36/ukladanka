@@ -30,7 +30,7 @@ COknoPopup::~COknoPopup()
 
 void COknoPopup::on_buttonBox_accepted()
 {
-    emit zamykany(); //emituje sygnał do komunikacji zamknięcia dla okna głownego (żeby wyzerować wskaźnik)
+    emit zamykany(); //emituje sygnał do komunikacji zamknięcia dla okna głownego (żeby wyzerować wskaźnik na aktywne okno popup)
     kontroler->wyslijWiadomosc(new CGUIMsgPopup(ui->buttonBox->button(QDialogButtonBox::Ok)->text().toStdString()));
 }
 

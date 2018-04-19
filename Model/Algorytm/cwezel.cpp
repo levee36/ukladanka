@@ -12,7 +12,7 @@ CWezel::CWezel(CArray2D<int> *stan) :
 
 CWezel::~CWezel()
 {
-    delete stan;
+    if (stan!=0) delete stan;
 }
 
 double CWezel::getOcena()
@@ -51,8 +51,9 @@ CWezel *CWezel::getPoprzednik()
 std::vector<CWezel *> CWezel::getNastepniki()
 {
     std::vector<CWezel *> wynik;
-    std::vector<int> mozliweRuchy = CModelUkladanka::zwrocMozliweRuchy(stan);
+    std::vector<int> mozliweRuchy = CModelUkladanka::zwrocMozliweRuchy(stan); //pobierz z układanki nry pól możliwych ruchów dla stanu z przekazanego węzła
     for(typename std::vector<int>::iterator it=mozliweRuchy.begin();it!=mozliweRuchy.end();it++) {
+        //dla każdego ruchu utwórz nowy obiekt CArray2D<int> wyliczony z przekazanego przez wykonanie ruchu
         CArray2D<int> *nowyStan = new CArray2D<int>(*stan);
         int nowyRuch = CModelUkladanka::wykonajRuch(*it,*nowyStan);
         if (nowyRuch!=-1) {

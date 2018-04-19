@@ -28,5 +28,5 @@ var searchData=
   ['cpole',['CPole',['../class_c_pole.html#a2010d734e6ed4def106d6e6ecbbb6ce8',1,'CPole']]],
   ['cwatekalgorytm',['CWatekAlgorytm',['../class_c_watek_algorytm.html#a97ccfff7d7708d4f1fae4c4c028e260b',1,'CWatekAlgorytm']]],
   ['cwezel',['CWezel',['../class_c_wezel.html#a9a7c36d0ce6240d3de4242294516b6cc',1,'CWezel']]],
-  ['czyulozona',['czyUlozona',['../class_c_model_ukladanka.html#aced5e62485f5272eb8ea1584b3f6faf2',1,'CModelUkladanka::czyUlozona()'],['../class_c_model_ukladanka.html#af63442b7a4ba9f51fe8d547137dd48c6',1,'CModelUkladanka::czyUlozona(CArray2D&lt; int &gt; *stan)'],['../class_i_ukladanka.html#a1f5168c6db3ae1b16aafedaff0e1f3d6',1,'IUkladanka::czyUlozona()'],['../class_i_ukladanka.html#ac70b506c029acad90130d4549797c5b7',1,'IUkladanka::czyUlozona(CArray2D&lt; int &gt; *stan)']]]
+  ['czyulozona',['czyUlozona',['../class_c_model_ukladanka.html#aced5e62485f5272eb8ea1584b3f6faf2',1,'CModelUkladanka::czyUlozona()'],['../class_c_model_ukladanka.html#af63442b7a4ba9f51fe8d547137dd48c6',1,'CModelUkladanka::czyUlozona(CArray2D&lt; int &gt; *stan)'],['../class_i_ukladanka.html#a1958da0cb72fc020f5c89f89f9c6e344',1,'IUkladanka::czyUlozona()=0'],['../class_i_ukladanka.html#ac70b506c029acad90130d4549797c5b7',1,'IUkladanka::czyUlozona(CArray2D&lt; int &gt; *stan)']]]
 ];

@@ -107,12 +107,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e2a4c9a9aba10644280bd49e16db24a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_heurystyka.html">CHeurystyka</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_algorytm_a_star.html#a8e2a4c9a9aba10644280bd49e16db24a">getHeurystyka</a> ()</td></tr>
 <tr class="memdesc:a8e2a4c9a9aba10644280bd49e16db24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca wskaźnik na obiekt heurystyki używany do szacowania odległości od węzła końcowego  <a href="#a8e2a4c9a9aba10644280bd49e16db24a">More...</a><br /></td></tr>
 <tr class="separator:a8e2a4c9a9aba10644280bd49e16db24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcc95bb442fa4a4348e47d8eb900b35d"><td class="memItemLeft" align="right" valign="top"><a id="afcc95bb442fa4a4348e47d8eb900b35d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_algorytm_a_star.html#afcc95bb442fa4a4348e47d8eb900b35d">wyczysc</a> ()</td></tr>
-<tr class="memdesc:afcc95bb442fa4a4348e47d8eb900b35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca wskaźnik na aktualny węzeł oraz zerująca statystyki <br /></td></tr>
-<tr class="separator:afcc95bb442fa4a4348e47d8eb900b35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff961ca50f32b944c19547fdc6c9108c"><td class="memItemLeft" align="right" valign="top"><a id="aff961ca50f32b944c19547fdc6c9108c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAktHeur</b> ()</td></tr>
+<tr class="memitem:a9078376029654ae35ffa6e44f2c2c0a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_algorytm_a_star.html#a9078376029654ae35ffa6e44f2c2c0a5">wyczysc</a> (<a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *stanPoczatkowy)</td></tr>
+<tr class="memdesc:a9078376029654ae35ffa6e44f2c2c0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca statystyki i tworząca węzeł początkowy ze stanem podanym wskazywanym przez wskaźnik przekazany jako parametr metody  <a href="#a9078376029654ae35ffa6e44f2c2c0a5">More...</a><br /></td></tr>
+<tr class="separator:a9078376029654ae35ffa6e44f2c2c0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff961ca50f32b944c19547fdc6c9108c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_algorytm_a_star.html#aff961ca50f32b944c19547fdc6c9108c">getAktHeur</a> ()</td></tr>
+<tr class="memdesc:aff961ca50f32b944c19547fdc6c9108c"><td class="mdescLeft">&#160;</td><td class="mdescRight">metoda zwracająca wartość funkcji heurystyki dla ostatnio wybranego węzła  <a href="#aff961ca50f32b944c19547fdc6c9108c">More...</a><br /></td></tr>
 <tr class="separator:aff961ca50f32b944c19547fdc6c9108c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -179,6 +178,36 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getAktHeur</b> ()</
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aff961ca50f32b944c19547fdc6c9108c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff961ca50f32b944c19547fdc6c9108c">&#9670;&nbsp;</a></span>getAktHeur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CAlgorytmAStar::getAktHeur </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda zwracająca wartość funkcji heurystyki dla ostatnio wybranego węzła </p>
+<dl class="section return"><dt>Returns</dt><dd>wartość funkcji heurystyki dla ostatnio wybranego węzła </dd></dl>
+
+<p>Implements <a class="el" href="class_i_algorytm.html#a332feb952c97d01e042ae6f4625873c2">IAlgorytm</a>.</p>
+
+</div>
+</div>
 <a id="a8e2a4c9a9aba10644280bd49e16db24a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e2a4c9a9aba10644280bd49e16db24a">&#9670;&nbsp;</a></span>getHeurystyka()</h2>
 
@@ -272,6 +301,42 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getAktHeur</b> ()</
 </dl>
 
 <p>Implements <a class="el" href="class_i_algorytm.html#a192b92f925a009c4d7272ed204f1b8ee">IAlgorytm</a>.</p>
+
+</div>
+</div>
+<a id="a9078376029654ae35ffa6e44f2c2c0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9078376029654ae35ffa6e44f2c2c0a5">&#9670;&nbsp;</a></span>wyczysc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CAlgorytmAStar::wyczysc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_array2_d.html">CArray2D</a>&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>stanPoczatkowy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca statystyki i tworząca węzeł początkowy ze stanem podanym wskazywanym przez wskaźnik przekazany jako parametr metody </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stanPoczatkowy</td><td>wskaźnik na stan początkowy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_i_algorytm.html#a025b25106ae4360b112102f26d87e0cb">IAlgorytm</a>.</p>
 
 </div>
 </div>

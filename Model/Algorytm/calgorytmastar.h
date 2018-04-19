@@ -116,10 +116,17 @@ public:
     CHeurystyka* getHeurystyka();
 
     ///
-    /// @brief metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca wskaźnik na aktualny węzeł oraz zerująca statystyki
+    /// @brief metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca statystyki i tworząca węzeł początkowy ze stanem podanym wskazywanym przez wskaźnik przekazany jako parametr metody
     ///
-    void wyczysc();
+    /// @param[in] stanPoczatkowy wskaźnik na stan początkowy
+    ///
+    void wyczysc(CArray2D<int> *stanPoczatkowy);
 
+    ///
+    /// @brief metoda zwracająca wartość funkcji heurystyki dla ostatnio wybranego węzła
+    ///
+    /// @return wartość funkcji heurystyki dla ostatnio wybranego węzła
+    ///
     double getAktHeur();
 
 private:

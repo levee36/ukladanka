@@ -9,17 +9,18 @@ CWatekAlgorytm::CWatekAlgorytm() :
 
 CWatekAlgorytm::~CWatekAlgorytm()
 {
+    if (algorytm!=0) delete algorytm;
 }
 
 void CWatekAlgorytm::przerwij()
 {
-    QMutexLocker locker(&mutex);
+    QMutexLocker locker(&mutex); //blokuj dostęp do zmiennych dla innych wątków
     this->przerwanie = true;
 }
 
 void CWatekAlgorytm::setAlgorytm(IAlgorytm *algorytm)
 {
-    QMutexLocker locker(&mutex);
+    QMutexLocker locker(&mutex); //blokuj dostęp do zmiennych dla innych wątków
     this->algorytm = algorytm;
 }
 
@@ -33,7 +34,7 @@ void CWatekAlgorytm::run()
 {
     for(;;) {
         {
-            QMutexLocker locker(&mutex);
+            QMutexLocker locker(&mutex); //blokuj dostęp do zmiennych dla innych wątków e tym bloku
             if (przerwanie) {
                 emit przerwaneDzialanie();
                 przerwanie=false;
@@ -45,6 +46,7 @@ void CWatekAlgorytm::run()
                 break;
             }
         }
+        //tu dostęp nie jest blokowany
         emit krokWykonany(QString::number(algorytm->getLiczbaOdwiedzonych()));
     }
 }

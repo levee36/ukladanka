@@ -2,6 +2,7 @@
 #define IALGORYTM_H
 
 #include "Model/Algorytm/cwezel.h"
+#include "Model/carray2d.h"
 #include <vector>
 
 ///
@@ -60,11 +61,17 @@ public:
     virtual CHeurystyka* getHeurystyka() = 0;
 
     ///
-    /// @brief metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca wskaźnik na aktualny węzeł oraz zerująca statystyki
+    /// @brief metoda resetująca obiekt - czyszcząca zbiory OPEN i CLOSED, zerująca statystyki i tworząca węzeł początkowy ze stanem podanym wskazywanym przez wskaźnik przekazany jako parametr metody
     ///
-    virtual void wyczysc() = 0;
+    /// @param[in] stanPoczatkowy wskaźnik na stan początkowy
+    ///
+    virtual void wyczysc(CArray2D<int> *stanPoczatkowy) = 0;
 
-
+    ///
+    /// @brief metoda zwracająca wartość funkcji heurystyki dla ostatnio wybranego węzła
+    ///
+    /// @return wartość funkcji heurystyki dla ostatnio wybranego węzła
+    ///
     virtual double getAktHeur()=0;
 
 };

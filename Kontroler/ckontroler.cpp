@@ -16,9 +16,7 @@
 #include "Model/Ukladanka/cmodelukladanka.h"
 #include "Model/Algorytm/calgorytmastar.h"
 
-#include "Model/Ukladanka/heurystyki/cheurystykaliczbaroznic.h"
 #include "Model/Algorytm/cwezelcompare.h"
-#include "Model/Algorytm/calgorytmastar.h"
 
 #include <iostream>
 
@@ -60,6 +58,8 @@ void CKontroler::wyslijWiadomosc(CGUIMsg *wiadomosc)
 {
     //wyłącz prezentację, jeśli trwa
     if (prezentacjaTrwa) prezentacjaTrwa=false;
+
+    //eykonaj odpowiedni scenariusz na podstawie typu wiadomości (dynamicznie rzutując CGUIMsg na klasy pochodne i sprawdzając rezultat)
     if (dynamic_cast<CGUIMsgWcisnietePole*>(wiadomosc)!=0) {
         scWykonajRuch(wiadomosc);
         scObsluzStan();
@@ -97,6 +97,7 @@ void CKontroler::wyslijWiadomosc(CGUIMsg *wiadomosc)
     }
     else if (dynamic_cast<CGUIMsgPopup*>(wiadomosc)!=0) {
         CGUIMsgPopup *wiadomoscPopup=dynamic_cast<CGUIMsgPopup*>(wiadomosc);
+        //obsługa wiadomości wysłanej z okienka popup - identyfikacja na podstawie napisu na przycisku OK
         if (wiadomoscPopup->getPrzycisk()==std::string("Przerwij") && watek.isRunning())
             watek.przerwij();
         else if (wiadomoscPopup->getPrzycisk()==std::string("Pokaż!"))
@@ -129,8 +130,16 @@ void CKontroler::scTasuj()
 void CKontroler::scRozwiazuj()
 {
     if (!watek.isRunning()) {
-        if (algorytm!=0) algorytm->wyczysc(); //czyść dane w obiekcie algorytm
-        algorytm = new CAlgorytmAStar(new CArray2D<int>(*(ukladanka->getPlansza())),new CHeurystykaManhattan()); //tworzy nowy obiekt algorytm na kopii planszy (kopia potrzeba, by nie usunąc planszy w modelu po destrukcji obiektu algorytm)
+        if (ukladanka->czyUlozona()) { //zakończ jeśli bieżący układ jest rozwiązaniem, pokaż okienko popup z informacją
+            std::map<std::string,std::string> parametry;
+            parametry.insert(std::pair<std::string,std::string>("tytul","Szukanie rozwiązania"));
+            parametry.insert(std::pair<std::string,std::string>("tresc","Podany układ jest układem końcowym!"));
+            parametry.insert(std::pair<std::string,std::string>("przycisk","Oj!"));
+            gui->wyswietlOknoPopup(parametry);
+            return;
+        }
+        if (algorytm==0) algorytm = new CAlgorytmAStar(new CArray2D<int>(*(ukladanka->getPlansza())),new CHeurystykaManhattan()); //pierwsze uruchomienie algorytmu - twórz CAlgorytmAStar i przekaż kopię aktualnej planszy pobranej z modelu układanki
+        else algorytm->wyczysc(new CArray2D<int>(*(ukladanka->getPlansza()))); //czyść dane w obiekcie algorytm i przekaż kopię aktualnego stanu planszy przekazanego z modelu układanki
         watek.setAlgorytm(algorytm);
         watek.start();
         std::map<std::string,std::string> parametry;
